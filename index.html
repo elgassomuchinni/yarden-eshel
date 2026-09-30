@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Yarden Eshel · Fashion Photography</title>
+<meta name="description" content="Fashion photography in Israel. A calm set, an agreed shot list, and every frame back in the formats your channels take.">
+<meta name="theme-color" content="#F1E6E4">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23F1E6E4'/%3E%3Cpath d='M7 8l5 8 5-8' stroke='%231C1A18' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M12 16v8' stroke='%231C1A18' stroke-width='2' stroke-linecap='round'/%3E%3Ccircle cx='23' cy='21' r='3' fill='%23B4707B'/%3E%3C/svg%3E">
+
+<!-- DEPLOY STEP: patch og:url and og:image with the live absolute URL before zipping -->
+<meta property="og:title" content="Yarden Eshel · Fashion Photography">
+<meta property="og:description" content="Fashion photography in Israel. A calm set, an agreed shot list, and every frame back in the formats your channels take.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="REPLACE_AT_DEPLOY">
+<meta property="og:image" content="REPLACE_AT_DEPLOY/assets/hero-ending.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Karla:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+
+<style>
+/* ── tokens ─────────────────────────────────────────────────────────── */
+:root{
+  --canvas:#F1E6E4;        /* pale pink: the montage dissolves into this */
+  --canvas-deep:#E7D9D7;
+  --panel:#F8F0EF;
+  --ink:#1C1A18;
+  --ink-soft:#5C5651;
+  --ink-faint:#8A837D;
+  /* accent-muted and shadow-world are sampled straight out of hero-ending.jpg;
+     accent is that same rose hue pushed to clear 4.5:1 on its button. */
+  --accent:#9E5F63;
+  --accent-hover:#86494E;
+  --accent-muted:#A78E85;
+  --accent-wash:#E3D6D3;
+  --shadow-world:#453F40;
+  --line:#D8C8C5;
+
+  --display:'Jost',system-ui,sans-serif;
+  --body:'Karla',system-ui,sans-serif;
+  --mono:'IBM Plex Mono',ui-monospace,monospace;
+
+  --ease:cubic-bezier(.22,.61,.36,1);
+  --ease-soft:cubic-bezier(.4,0,.2,1);
+
+  --tshadow:0 1px 2px rgba(5,5,10,.95),0 3px 12px rgba(5,5,10,.78),0 10px 44px rgba(5,5,10,.8);
+  --gutter:clamp(16px,5vw,80px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html,body{overflow-x:hidden;overflow-x:clip}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--canvas);color:var(--ink);
+  font-family:var(--body);font-size:clamp(15px,1.05vw,17px);line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+}
+img,video,svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+.skip{position:absolute;left:-9999px;top:0;z-index:200;background:var(--ink);color:var(--canvas);padding:12px 18px;font-family:var(--mono);font-size:12px}
+.skip:focus{left:8px;top:8px}
+
+.sr{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+
+/* ── the fixed environment layer ────────────────────────────────────── */
+.env{position:fixed;inset:0;z-index:0;pointer-events:none;
+  background:
+    radial-gradient(ellipse 80% 60% at 20% 12%,rgba(180,112,123,.07),transparent 60%),
+    radial-gradient(ellipse 70% 55% at 85% 78%,rgba(42,37,34,.06),transparent 62%);
+  animation:envdrift 90s var(--ease-soft) -24s infinite alternate}
+@keyframes envdrift{from{transform:translate3d(0,0,0) scale(1)}to{transform:translate3d(-2.5%,1.8%,0) scale(1.06)}}
+
+/* ── the signature: the travelling light rail ───────────────────────── */
+.rail{position:fixed;left:max(14px,calc(var(--gutter) * .42));top:0;bottom:0;width:1px;z-index:40;pointer-events:none;
+  background:linear-gradient(180deg,transparent,var(--line) 12%,var(--line) 88%,transparent)}
+.rail__node{position:absolute;left:50%;top:0;width:7px;height:7px;margin-left:-3px;border-radius:50%;
+  background:var(--accent);
+  transform:translateY(calc(var(--rail,0) * 1px));
+  will-change:transform}
+.rail__node::after{content:"";position:absolute;inset:-9px;border-radius:50%;
+  background:radial-gradient(circle,var(--accent-muted),transparent 68%);opacity:.85}
+@media (max-width:860px){.rail{display:none}}
+
+/* ── nav ────────────────────────────────────────────────────────────── */
+.nav{position:fixed;inset:0 0 auto 0;z-index:90;display:flex;align-items:center;justify-content:space-between;
+  gap:16px;padding:18px var(--gutter);
+  transition:background .5s var(--ease),backdrop-filter .5s var(--ease),color .5s var(--ease)}
+.nav.over-hero{color:#F2EFEB}
+.nav.lifted{background:rgba(233,230,225,.86);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);color:var(--ink)}
+.mark{font-family:var(--display);font-weight:400;font-size:20px;letter-spacing:.26em;text-decoration:none;line-height:1}
+.mark span{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.34em;opacity:.7;margin-top:5px}
+/* Always visible, no hamburger. Logo left, everything else centred. */
+.nav__links{list-style:none;margin:0;padding:0;display:flex;align-items:baseline;
+  gap:clamp(14px,2.1vw,32px);flex-wrap:wrap;justify-content:center;
+  font-family:var(--mono);font-size:clamp(10px,.78vw,11.5px);letter-spacing:.14em;text-transform:uppercase}
+.nav__links a{text-decoration:none;opacity:.84;position:relative;padding:4px 0;
+  transition:opacity .3s var(--ease)}
+.nav__links a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;
+  background:currentColor;transform:scaleX(0);transform-origin:right;
+  transition:transform .4s var(--ease)}
+.nav__links a:hover{opacity:1}
+.nav__links a:hover::after{transform:scaleX(1);transform-origin:left}
+/* Portfolio is the one filled mark in the nav: a flat pink rectangle, nothing else. */
+.nav__pill{opacity:1 !important;background:var(--accent);color:#FFF8F8;
+  padding:7px 16px !important;border-radius:2px}
+.nav__pill::after{display:none}
+.nav__pill:hover{background:var(--accent-hover)}
+.nav__cta{opacity:1 !important;border:1px solid currentColor;border-radius:2px;
+  padding:7px 14px !important}
+.nav__cta::after{display:none}
+.nav__cta:hover{background:var(--accent);border-color:var(--accent);color:#FFF8F8}
+.nav__spacer{flex:none;width:clamp(30px,6vw,92px)}
+@media (max-width:720px){
+  .nav{flex-wrap:wrap;gap:10px;padding-top:12px;padding-bottom:12px}
+  .nav__spacer{display:none}
+  .nav__links{order:3;width:100%;gap:12px}
+}
+@media (pointer:coarse){.nav__links a{padding:10px 0}.nav__cta{padding:10px 14px !important}}
+
+/* ── hero ───────────────────────────────────────────────────────────── */
+/* ── the fixed background montage ───────────────────────────────────── */
+.bg{position:fixed;inset:0;z-index:0;overflow:hidden;background:var(--canvas)}
+
+.bg .poster{position:absolute;inset:0;background-size:cover;background-position:center;
+  transition:opacity .9s var(--ease)}
+#hero{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;
+  opacity:0;transition:opacity .9s var(--ease);
+  transform:translateZ(0);will-change:transform}
+.bg.video-ready #hero{opacity:1}
+.bg.video-ready .poster{opacity:0}
+.bg.video-failed .poster{opacity:1}
+.scrim{position:absolute;inset:0;pointer-events:none;
+  background:radial-gradient(ellipse 120% 90% at 50% 45%,rgba(10,10,18,0) 35%,rgba(10,10,18,.62) 100%)}
+/* Rises as the page leaves the intro so body copy stays readable over moving
+   footage, without washing the montage out entirely. */
+.veil{position:absolute;inset:0;pointer-events:none;background:var(--canvas);opacity:var(--veil,0)}
+
+/* ── the floating photo layer ───────────────────────────────────────── */
+/* Fixed like the montage, so the photos read as part of the animation rather than
+   as page content scrolling past. Sizes are capped so the concurrent set never
+   covers much more than half the viewport. */
+.floaters{position:fixed;inset:0;z-index:1;pointer-events:none;overflow:hidden}
+.floaters figure{position:absolute;margin:0;will-change:transform,opacity,filter;
+  box-shadow:0 26px 70px rgba(28,26,24,.28)}
+.floaters img{width:100%;height:100%;object-fit:cover;display:block}
+@media (max-width: 720px){.floaters figure{box-shadow:0 14px 38px rgba(28,26,24,.3)}}
+
+/* ── the caption layer: fixed above the photos, spread over the whole run ── */
+.captions{position:fixed;inset:0;z-index:3;pointer-events:none}
+.captions .band{position:absolute;inset:0;pointer-events:none}
+.captions .ctarow{pointer-events:auto}
+
+/* The name holds top centre for the whole animation, one size throughout. */
+.name{position:absolute;left:0;right:0;top:clamp(84px,13vh,140px);text-align:center;
+  color:var(--ink);z-index:2}
+.name .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.3em;
+  text-transform:uppercase;color:#403A36;margin:0 0 12px}
+.name h1{font-family:var(--display);font-weight:300;letter-spacing:-.02em;
+  font-size:clamp(34px,5.6vw,68px);line-height:1.05;margin:0}
+.name::before{content:"";position:absolute;inset:-28% -12% -60%;z-index:-1;pointer-events:none;
+  background:radial-gradient(ellipse 52% 100% at 50% 40%,rgba(241,230,228,.93) 0%,rgba(241,230,228,.64) 46%,rgba(241,230,228,0) 78%)}
+
+/* Each line sits lower and carries its own scrim, so it stays readable over
+   whatever the montage is doing underneath it at that moment. */
+.captions .band:not(.band--static){align-content:start;text-align:center;
+  padding:clamp(238px,34vh,360px) var(--gutter) 0}
+.captions .band h2{color:var(--ink);text-shadow:0 1px 2px rgba(245,240,238,.6);
+  margin-inline:auto}
+.captions .band::before{opacity:calc(.3 + .7*var(--k,1));
+  background:radial-gradient(ellipse 46% 26% at 50% 33%,rgba(241,230,228,.93) 0%,rgba(241,230,228,.66) 44%,rgba(241,230,228,0) 76%)}
+.band--cta{align-content:end !important;padding:0 var(--gutter) clamp(52px,12vh,128px) !important;
+  text-align:center}
+.band--cta .sub{margin:0 auto 22px;max-width:40ch;color:var(--ink-soft);
+  opacity:var(--ks,0);transform:translateY(calc((1 - var(--ks,0)) * 12px))}
+.band--cta .ctarow{justify-content:center;opacity:var(--kb,0);
+  transform:translateY(calc((1 - var(--kb,0)) * 14px))}
+.band--cta::before{background:radial-gradient(ellipse 58% 34% at 50% 78%,rgba(241,230,228,.86) 0%,rgba(241,230,228,.54) 50%,rgba(241,230,228,0) 80%) !important}
+
+/* Scroll distance only. Everything visible lives in the fixed layers behind it. */
+.intro{position:relative;height:420vh;z-index:2}
+
+.ring{position:absolute;right:clamp(18px,4vw,44px);bottom:clamp(18px,4vw,44px);width:48px;height:48px;color:rgba(242,239,235,.85);z-index:6;
+  transition:opacity .5s var(--ease)}
+.bg.video-ready .ring{opacity:0}
+.ring circle{transition:stroke-dashoffset .18s linear}
+.chev{position:absolute;right:clamp(18px,4vw,44px);bottom:clamp(18px,4vw,44px);width:48px;height:48px;color:rgba(242,239,235,.8);z-index:6;
+  animation:bob 2.6s var(--ease-soft) -.6s infinite alternate}
+@keyframes bob{from{transform:translateY(-3px)}to{transform:translateY(5px)}}
+
+/* Caption bands.
+   Measured off the footage: the top 36% of frame holds 51-68 luminance for the
+   whole clip and the bottom 28% holds 213-217. The middle is where the light
+   boundary travels, so no text goes there. Bands 1-3 light-on-dark up top,
+   the settle dark-on-bright at the bottom. */
+.band{position:absolute;inset:0;display:grid;align-content:start;
+  padding:clamp(86px,15vh,172px) var(--gutter) 0;
+  pointer-events:none;opacity:0;color:#F5F2EE;text-shadow:var(--tshadow);z-index:5}
+.band::before{content:"";position:absolute;inset:-4%;pointer-events:none;z-index:-1;
+  opacity:calc(.25 + .75*var(--k,1));
+  background:radial-gradient(ellipse 78% 46% at 50% 24%,rgba(5,5,10,.66) 0%,rgba(5,5,10,.42) 48%,rgba(5,5,10,0) 76%)}
+.band[data-band="1"]::before{background:radial-gradient(ellipse 76% 44% at 50% 22%,rgba(5,5,10,.70) 0%,rgba(5,5,10,.44) 48%,rgba(5,5,10,0) 76%)}
+.band[data-band="3"]::before{background:radial-gradient(ellipse 80% 48% at 50% 25%,rgba(5,5,10,.72) 0%,rgba(5,5,10,.46) 48%,rgba(5,5,10,0) 76%)}
+
+/* 22ch, on the text element itself so it resolves against Jost rather than the
+   body face. 17ch broke "Nothing stays in shadow." onto two lines while its two
+   neighbours sat on one, which read as an accident. */
+.band h2,.band p.lead{margin:0;font-family:var(--display);font-weight:300;
+  font-size:clamp(30px,6.2vw,74px);line-height:1.12;letter-spacing:-.012em;max-width:22ch}
+.band .w{display:inline-block;white-space:pre}
+.band .c{display:inline-block}
+
+/* The settle sits in the bright lower band of the ending frame, so it runs dark
+   ink on a light scrim. That also hands the hero off to the light canvas below. */
+.band--settle{color:var(--ink);text-shadow:0 1px 2px rgba(245,242,238,.55);
+  align-content:end;padding:0 var(--gutter) clamp(40px,9vh,104px)}
+.band--settle::before{background:radial-gradient(ellipse 86% 50% at 50% 82%,rgba(240,236,231,.72) 0%,rgba(240,236,231,.46) 52%,rgba(240,236,231,0) 80%)}
+/* mono at 11px with wide tracking over moving footage reads faint at the
+   4.5:1 minimum, so this one runs darker: measured 7.8:1 on the settle frame. */
+.band--settle .kicker{font-family:var(--mono);font-size:11px;letter-spacing:.3em;color:#403A36;margin:0 0 14px}
+.band--settle h2{font-size:clamp(38px,8vw,92px);letter-spacing:-.02em}
+.band--settle .sub{font-family:var(--body);font-size:clamp(14px,1.5vw,18px);color:var(--ink-soft);margin:14px 0 0;max-width:34ch;
+  opacity:var(--ks,0);transform:translateY(calc((1 - var(--ks,0)) * 12px))}
+.band--settle .ctarow{margin-top:26px;display:flex;gap:14px;flex-wrap:wrap;
+  opacity:var(--kb,0);transform:translateY(calc((1 - var(--kb,0)) * 14px))}
+
+/* entrances, transform and opacity only */
+.e-drift .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.8,1);opacity:var(--kc);
+  transform:translateY(calc((1 - var(--kc)) * -26px))}
+.e-grid .c{--kc:clamp(0,(var(--k,0) - var(--th,0))*2.6,1);opacity:var(--kc);
+  transform:translateX(calc((1 - var(--kc)) * var(--jx,0px)))}
+.e-rise .w{--kc:clamp(0,(var(--k,0) - var(--th,0))*3,1);opacity:var(--kc);
+  transform:translateY(calc((1 - var(--kc)) * 30px))}
+.e-blur{position:relative}
+.e-blur .soft{position:absolute;inset:0;filter:blur(11px);opacity:calc(1 - var(--k,0));pointer-events:none}
+.e-blur .sharp{opacity:var(--k,0)}
+
+.btn{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  text-decoration:none;padding:15px 26px;border-radius:2px;text-shadow:none;
+  transition:background .35s var(--ease),color .35s var(--ease),border-color .35s var(--ease),transform .35s var(--ease)}
+.btn--solid{background:var(--accent);color:#FFF8F8;border:1px solid var(--accent)}
+.btn--solid:hover{background:var(--accent-hover);border-color:var(--accent-hover);transform:translateY(-2px)}
+.btn--ghost{border:1px solid currentColor;background:none}
+.btn--ghost:hover{background:var(--ink);color:var(--canvas);border-color:var(--ink);transform:translateY(-2px)}
+.band .btn{text-shadow:none}
+@media (pointer:coarse){.btn{min-height:44px;display:inline-flex;align-items:center;justify-content:center}}
+
+/* dust, hero only */
+.dust{position:absolute;inset:0;pointer-events:none;z-index:4;opacity:.5}
+.dust i{position:absolute;width:2px;height:2px;border-radius:50%;background:rgba(245,240,232,.62);
+  animation:float 18s linear infinite}
+@keyframes float{
+  0%{transform:translate3d(0,14vh,0);opacity:0}
+  12%{opacity:1}
+  88%{opacity:1}
+  100%{transform:translate3d(2vw,-16vh,0);opacity:0}}
+
+/* ── page sections ──────────────────────────────────────────────────── */
+/* Transparent while the montage is behind, solid once it has gone at #about. */
+main{position:relative;z-index:2;background:transparent}
+.sec{padding:clamp(72px,11vw,150px) var(--gutter);position:relative}
+.sec--deep{background:transparent}
+#portfolio,#about,#contact{background:var(--canvas)}
+#about{padding-top:clamp(64px,8vw,110px)}
+.lab{font-family:var(--mono);font-size:11px;letter-spacing:.3em;text-transform:uppercase;
+  color:var(--ink-faint);margin:0 0 20px;display:flex;align-items:center;gap:12px;
+  transition:color .7s var(--ease)}
+.lab.lit{color:var(--accent)}
+.lab::before{content:"";width:22px;height:1px;background:currentColor;flex:none}
+h2.hd{font-family:var(--display);font-weight:300;font-size:clamp(27px,4.3vw,54px);
+  line-height:1.16;letter-spacing:-.012em;margin:0 0 .5em;max-width:20ch}
+.rule{width:100%;height:1px;border:0;background:var(--line);margin:0;
+  transform:scaleX(var(--draw,0));transform-origin:left;transition:transform 1.1s var(--ease)}
+
+/* work grid */
+.grid{display:grid;grid-template-columns:repeat(5,1fr);gap:2px}
+.grid figure{margin:0;position:relative;overflow:hidden;background:var(--canvas-deep);aspect-ratio:3/4}
+.grid img{width:100%;height:100%;object-fit:cover;
+  opacity:0;transform:scale(1.04);
+  transition:opacity 1s var(--ease),transform 1.4s var(--ease)}
+.grid figure.in img{opacity:1;transform:scale(1)}
+.grid figure:nth-child(2n) img{transition-delay:.09s}
+.grid figure::after{content:"";position:absolute;inset:0;background:var(--ink);opacity:0;
+  transition:opacity .5s var(--ease);pointer-events:none}
+.grid figure:hover::after{opacity:.07}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:720px){.grid{grid-template-columns:repeat(2,1fr)}}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,44px)}
+@media (max-width:860px){.steps{grid-template-columns:1fr;gap:44px}}
+.step{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.steps.in .step{opacity:1;transform:none}
+.steps.in .step:nth-child(2){transition-delay:.12s}
+.steps.in .step:nth-child(3){transition-delay:.24s}
+.steps.done .step,.steps.done .step:nth-child(2),.steps.done .step:nth-child(3){transition-delay:0s !important}
+/* height:auto is load bearing. The width/height attributes on these images are
+   presentational hints, and without it the height hint stays definite, which makes
+   the browser ignore aspect-ratio entirely. */
+.step img{width:100%;height:auto;aspect-ratio:4/3;object-fit:cover;margin-bottom:20px;background:var(--canvas-deep)}
+.step .n{font-family:var(--mono);font-size:11px;letter-spacing:.24em;color:var(--accent);display:block;margin-bottom:10px}
+.step h3{font-family:var(--display);font-weight:400;font-size:clamp(18px,1.9vw,23px);line-height:1.3;margin:0 0 10px;max-width:22ch}
+.step p{margin:0;color:var(--ink-soft);max-width:34ch}
+
+/* deliverables + hold */
+.deliver{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,80px);align-items:start}
+@media (max-width:900px){.deliver{grid-template-columns:1fr;gap:28px}}
+.dlist{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:2px}
+/* The unlit state still has to be readable: --ink-faint measured 3.00:1 on the
+   canvas, under the 4.5:1 floor. This is 4.6:1 and still clearly "not yet lit". */
+.dlist li{padding:17px 0 17px 40px;border-top:1px solid var(--line);position:relative;
+  color:#6B6560;transition:color .5s var(--ease)}
+.dlist li:last-child{border-bottom:1px solid var(--line)}
+.dlist li::before{content:"";position:absolute;left:0;top:50%;width:22px;height:1px;background:var(--line);
+  transform:scaleX(.35);transform-origin:left;transition:transform .5s var(--ease),background .5s var(--ease)}
+.dlist li.lit{color:var(--ink)}
+.dlist li.lit::before{transform:scaleX(1);background:var(--accent)}
+
+.deliver__lede{margin:0 0 6px;color:var(--ink);font-family:var(--display);font-weight:300;
+  font-size:clamp(17px,1.7vw,21px);line-height:1.45;max-width:30ch}
+
+/* about */
+.about{display:grid;grid-template-columns:1.25fr .75fr;gap:clamp(30px,5vw,80px);align-items:start}
+@media (max-width:900px){.about{grid-template-columns:1fr;gap:34px}}
+.about p{max-width:52ch;color:var(--ink-soft);margin:0 0 1.15em}
+.about p:first-of-type{color:var(--ink);font-size:clamp(17px,1.8vw,22px);font-family:var(--display);font-weight:300;line-height:1.45;max-width:26ch}
+.about img{width:100%;height:auto;aspect-ratio:3/2;object-fit:cover;background:var(--canvas-deep)}
+
+/* faq */
+.faq{max-width:74ch;margin-top:8px}
+.faq details{border-top:1px solid var(--line)}
+.faq details:last-of-type{border-bottom:1px solid var(--line)}
+.faq summary{list-style:none;cursor:pointer;padding:22px 44px 22px 0;position:relative;
+  font-family:var(--display);font-weight:400;font-size:clamp(16px,1.7vw,21px);line-height:1.4}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:11px;height:1px;background:var(--ink);
+  transition:transform .4s var(--ease)}
+.faq summary::before{content:"";position:absolute;right:6px;top:50%;width:11px;height:1px;background:var(--ink);
+  transform:rotate(90deg);transition:transform .4s var(--ease),opacity .4s var(--ease)}
+.faq details[open] summary::before{transform:rotate(0);opacity:0}
+.faq details p{margin:0 0 24px;color:var(--ink-soft);max-width:58ch}
+
+/* contact */
+.form{max-width:52ch;margin-top:30px}
+.field{margin-bottom:22px}
+.field label{display:block;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink-faint);margin-bottom:8px}
+.field input,.field textarea{width:100%;font:inherit;font-size:16px;color:var(--ink);
+  background:transparent;border:0;border-bottom:1px solid var(--line);padding:9px 0;border-radius:0;
+  transition:border-color .35s var(--ease)}
+.field input:focus,.field textarea:focus{outline:none;border-bottom-color:var(--accent)}
+.field textarea{resize:vertical;min-height:78px}
+.note{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;color:var(--ink-faint);margin:14px 0 0;line-height:1.7;
+  transition:color .5s var(--ease)}
+.note.sent{color:var(--accent)}
+
+footer{background:var(--canvas-deep);padding:clamp(46px,7vw,80px) var(--gutter);position:relative;z-index:2;
+  border-top:1px solid var(--line)}
+.foot{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:baseline;
+  font-family:var(--mono);font-size:11px;letter-spacing:.1em;color:var(--ink-soft)}
+.foot a{text-decoration:none;border-bottom:1px solid var(--line)}
+
+/* entrance for headings */
+.rv{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.in .rv,.rv.in{opacity:1;transform:none}
+
+/* short screens: hide small scroll overlays that have no room */
+@media (max-height:560px){.ring,.chev,.dust{display:none}}
+
+/* Declared BEFORE the gate block so the gate's display:grid wins inside it.
+   Putting this after would silently blank the phone hero. */
+.band--static{display:none}
+
+/* ── the five static-hero gates. These five strings must match the JS exactly ── */
+@media (max-width: 720px),
+       (orientation: portrait) and (max-width: 1024px),
+       (orientation: portrait) and (pointer: coarse),
+       (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
+       (prefers-reduced-motion: reduce){
+  .intro{height:auto}
+  .bg{position:absolute;height:100svh}
+  .captions{position:relative;height:auto}
+  /* Phones and reduced motion get the composed still hero; the floating layer is a
+     scroll animation with nothing to drive it there, so it does not render at all. */
+  #hero,.ring,.chev,.dust,.floaters{display:none}
+  /* The static hero needs its own still: the JS poster only runs inside the scrub
+     path, so without one the gated hero renders an empty stage. The image itself is
+     chosen by the two mutually exclusive rules below. */
+  .bg .poster{position:absolute;inset:0;opacity:1}
+  .band{display:none}
+  .band--static{display:grid;position:relative;opacity:1;min-height:100svh;align-content:end;
+    padding-bottom:clamp(44px,11vh,96px)}
+  .band--static::before{opacity:1}
+  .band--static .w,.band--static .c{opacity:1 !important;transform:none !important}
+  .band--static .sub,.band--static .ctarow{opacity:1 !important;transform:none !important}
+}
+
+/* The static hero's image, split across two rules that can never both match.
+   Overlapping rules do NOT cost only the winner: Chrome fetches every matching
+   background-image, which had phones pulling a landscape frame they never showed.
+   Portrait and narrow screens get the purpose-made portrait still, because
+   cover-cropping the landscape frame to a phone flattens the pleats to a grey wash. */
+@media (max-width: 720px),
+       (orientation: portrait) and (max-width: 1024px),
+       (orientation: portrait) and (pointer: coarse){
+  .bg .poster{background-image:url('assets/hero-mobile.jpg')}
+}
+/* The landscape gated cases: a sideways phone, and reduced motion on a wide screen. */
+@media (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
+       (orientation: landscape) and (min-width: 721px) and (prefers-reduced-motion: reduce){
+  .bg .poster{background-image:url('assets/hero-ending.jpg')}
+}
+
+/* ── reduced motion, honored completely ─────────────────────────────── */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{
+    animation-duration:.001ms !important;animation-iteration-count:1 !important;
+    transition-duration:.001ms !important;transition-delay:0s !important}
+  .grid img{opacity:1;transform:none}
+  .step{opacity:1;transform:none}
+  .rv{opacity:1;transform:none}
+  .rule{transform:scaleX(1)}
+  .dlist li{color:var(--ink)}
+  .dlist li::before{transform:scaleX(1);background:var(--accent)}
+  .env{animation:none}
+  /* positional transforms re-applied per breakpoint, never blanket-killed */
+  .overlay a{transform:translateY(105%)}
+  .menu-open .overlay a{transform:translateY(0)}
+}
+body.paused *,body.paused *::before,body.paused *::after{animation-play-state:paused !important}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="env" aria-hidden="true"></div>
+
+<div class="rail" aria-hidden="true"><span class="rail__node"></span></div>
+
+<nav class="nav over-hero" aria-label="Primary">
+  <a class="mark" href="#top">YE<span>Fashion</span></a>
+  <ul class="nav__links">
+    <li><a class="nav__pill" href="#portfolio">Portfolio</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="https://instagram.com/yarden.eshel" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    <li><a class="nav__cta" href="#contact">Contact</a></li>
+  </ul>
+  <span class="nav__spacer" aria-hidden="true"></span>
+</nav>
+
+<!-- The montage lives here, fixed behind the whole page, not inside the intro.
+     It scrubs from the top of the document to the start of #about, then leaves. -->
+<div class="bg" id="bg" aria-hidden="true">
+  <div class="poster"></div>
+  <video id="hero" preload="none" muted playsinline aria-hidden="true" tabindex="-1"></video>
+  <div class="scrim"></div>
+  <div class="veil"></div>
+  <div class="dust"></div>
+  <svg class="ring" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="20" fill="none" stroke="currentColor" stroke-width="2.5"
+            stroke-dasharray="126" style="stroke-dashoffset:var(--ld,126)"/>
+  </svg>
+</div>
+
+<!-- Photos live in the animation, not in a grid. Each one pops at its own point in
+     the scroll, holds, then blurs out to make room for the next. Positions and sizes
+     come from a seeded generator so they are random-looking but identical every load. -->
+<div class="floaters" id="floaters" aria-hidden="true"></div>
+
+<!-- The caption layer sits above the photos. The name holds top centre for the
+     whole animation; each line and the button row carry their own scrim. -->
+<div class="captions" id="captions">
+  <div class="name" id="nameBlock">
+    <p class="kicker">Fashion photography</p>
+    <h1>Yarden Eshel</h1>
+  </div>
+
+  <div class="band e-blur" data-band="1" data-range="0.05,0.30">
+    <h2>
+      <span class="sr">Anywhere.</span>
+      <span class="soft" aria-hidden="true">Anywhere.</span>
+      <span class="sharp" aria-hidden="true">Anywhere.</span>
+    </h2>
+  </div>
+
+  <div class="band e-drift" data-band="2" data-range="0.34,0.59">
+    <h2 data-split="word">Unhurried.</h2>
+  </div>
+
+  <div class="band e-grid" data-band="3" data-range="0.63,0.88" data-spread="0.5">
+    <h2 data-split="char">Nothing missed.</h2>
+  </div>
+
+  <div class="band band--cta e-rise" data-band="4" data-range="0.80,1">
+    <p class="sub">Campaigns, collections, and the days that matter. Israel, and wherever you need.</p>
+    <div class="ctarow">
+      <a class="btn btn--solid" href="#contact">Send the brief</a>
+      <a class="btn btn--ghost" href="#portfolio">See the work</a>
+    </div>
+  </div>
+
+  <div class="band band--static band--settle">
+    <p class="kicker">Fashion photography</p>
+    <h2>Nothing missed.</h2>
+    <p class="sub">Yarden Eshel. Campaigns, collections, and the days that matter.</p>
+    <div class="ctarow">
+      <a class="btn btn--solid" href="#contact">Send the brief</a>
+      <a class="btn btn--ghost" href="#portfolio">See the work</a>
+    </div>
+  </div>
+</div>
+
+<main id="main" tabindex="-1">
+<span id="top"></span>
+
+<!-- Scroll distance only. The name, the lines and the buttons all live in the fixed
+     caption layer above the montage, spread across this whole run rather than
+     crammed into a short intro at the top. -->
+<section class="intro" aria-label="Introduction"></section>
+
+<section class="sec" id="portfolio" aria-labelledby="work-h">
+  <p class="lab" data-lab>Portfolio</p>
+  <h2 class="hd rv" id="work-h">A few frames from recent shoots.</h2>
+  <hr class="rule" data-rule>
+  <div class="grid" style="margin-top:clamp(32px,5vw,64px)">
+    <!-- srcset so a phone takes the 800px file, not the 1200px one. Chrome's lazy
+         threshold pulls the first tiles in early, so this is real weight on a phone. -->
+    <figure><img src="assets/work-01.jpg" srcset="assets/work-01-800.jpg 800w, assets/work-01.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Editorial fashion portrait, cream tailoring against a warm grey backdrop" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-02.jpg" srcset="assets/work-02-800.jpg 800w, assets/work-02.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Close editorial portrait in profile with raking side light" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-03.jpg" srcset="assets/work-03-800.jpg 800w, assets/work-03.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Full length editorial frame, a dark dress caught mid stride" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-04.jpg" srcset="assets/work-04-800.jpg 800w, assets/work-04.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Detail of heavy cream wool draped across a shoulder" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-05.jpg" srcset="assets/work-05-800.jpg 800w, assets/work-05.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Seated editorial portrait in charcoal tailoring" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-06.jpg" srcset="assets/work-06-800.jpg 800w, assets/work-06.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Editorial frame from behind, open back of a rose silk dress" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-07.jpg" srcset="assets/work-07-800.jpg 800w, assets/work-07.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Editorial portrait in an oversized oat shirt under a hard overhead key" loading="lazy" width="1200" height="1600"></figure>
+    <figure><img src="assets/work-08.jpg" srcset="assets/work-08-800.jpg 800w, assets/work-08.jpg 1200w" sizes="(max-width: 720px) 50vw, 20vw" alt="Close portrait in a black polo neck, hard key light across the jaw" loading="lazy" width="1200" height="1600"></figure>
+  </div>
+</section>
+
+
+
+
+<section class="sec sec--deep" id="about" aria-labelledby="about-h">
+  <p class="lab" data-lab>About</p>
+  <h2 class="hd rv" id="about-h">Who is behind the camera.</h2>
+  <hr class="rule" data-rule>
+  <div class="about" style="margin-top:clamp(34px,5vw,64px)">
+    <img src="assets/about.jpg" srcset="assets/about-700.jpg 700w, assets/about.jpg 1300w" sizes="(max-width: 900px) 92vw, 56vw" alt="A photographer in the studio, camera strap across the shoulder" loading="lazy" width="1300" height="866">
+    <div>
+      <p>I am Yarden Eshel. I shoot fashion in Israel, for brands and for the people who design them.</p>
+      <p>I run a quiet set. You can bring whoever you need with you. We stop when anyone asks to stop, and we still finish the list, because a calm room is faster than a tense one.</p>
+      <p>I am early in this career and I work like it matters, because it does.</p>
+      <p><a class="btn btn--ghost" href="#contact" style="margin-top:10px">Send the brief</a></p>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec" id="deliver" aria-labelledby="del-h">
+  <div class="deliver">
+    <div>
+      <p class="lab" data-lab>What you get</p>
+      <h2 class="hd rv" id="del-h">What comes back after the shoot.</h2>
+    </div>
+    <div>
+      <p class="deliver__lede">A campaign, a lookbook, or one good afternoon. The list is agreed first, and it comes back complete.</p>
+      <ul class="dlist" id="dlist">
+        <li>Every frame in the sizes you actually need: upright, square, wide, and a clean cut for print.</li>
+        <li>Colour matched across the whole set, so nothing looks like it came from a different day.</li>
+        <li>Delivered to a date agreed in writing, before the shoot.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<section class="sec" id="contact" aria-labelledby="c-h">
+  <p class="lab" data-lab>Contact</p>
+  <h2 class="hd rv" id="c-h">Tell me what we are shooting.</h2>
+  <hr class="rule" data-rule>
+  <form class="form" id="form" action="mailto:hello@yardeneshel.com" method="post" enctype="text/plain" novalidate>
+    <div class="field">
+      <label for="f-name">Your name / your brand</label>
+      <input id="f-name" name="name" type="text" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="f-what">What are we shooting?</label>
+      <textarea id="f-what" name="what" rows="3" required></textarea>
+    </div>
+    <div class="field">
+      <label for="f-when">When?</label>
+      <input id="f-when" name="when" type="text" placeholder="A month is enough">
+    </div>
+    <button class="btn btn--solid" type="submit">Send the brief</button>
+    <p class="note" id="form-note">This opens your email app with the brief filled in. Nothing is sent until you press send there.</p>
+  </form>
+</section>
+</main>
+
+<footer>
+  <div class="foot">
+    <span>Yarden Eshel · Fashion photography · Israel</span>
+    <span><a href="mailto:hello@yardeneshel.com">hello@yardeneshel.com</a></span>
+    <span>&copy; 2026</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+'use strict';
+
+/* ══ the five gates. Character for character identical to the CSS block. ══ */
+const GATES = [
+  '(max-width: 720px)',
+  '(orientation: portrait) and (max-width: 1024px)',
+  '(orientation: portrait) and (pointer: coarse)',
+  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)',
+  '(prefers-reduced-motion: reduce)'
+];
+
+const VIDEO_URL   = 'assets/hero-scrub.mp4';
+const VIDEO_BYTES = 9209520;          /* measured off the encoded file */
+const POSTER_URL  = 'assets/hero-poster.jpg';
+
+const video   = document.getElementById('hero');
+const bgEl    = document.getElementById('bg');
+const introEl = document.querySelector('.intro');
+const ring    = document.querySelector('.ring');
+const poster  = document.querySelector('.poster');
+const railNode= document.querySelector('.rail__node');
+
+/* ── seeded rng so "random" offsets are identical on every load ── */
+function rng(seed){let s=seed>>>0;return()=>(s=(s*1664525+1013904223)>>>0)/4294967296}
+
+/* ── split headlines into word and char spans, once, at load ── */
+function splitAll(){
+  document.querySelectorAll('[data-split]').forEach((el,idx)=>{
+    const mode=el.getAttribute('data-split');
+    const text=el.textContent.trim();
+    const band=el.closest('.band');
+    const spread=parseFloat(band&&band.getAttribute('data-spread'))||0;
+    const r=rng(9781+idx*577);
+    const sr=document.createElement('span');
+    sr.className='sr';sr.textContent=text;
+    const vis=document.createElement('span');
+    vis.setAttribute('aria-hidden','true');
+    const words=text.split(' ');
+    let ci=0;const total=text.replace(/ /g,'').length;
+    words.forEach((w,wi)=>{
+      const ws=document.createElement('span');
+      ws.className='w';
+      if(mode==='word'){
+        ws.style.setProperty('--th',(wi/Math.max(1,words.length))*0.42);
+        ws.textContent=w;
+      }else{
+        [...w].forEach(ch=>{
+          const cs=document.createElement('span');
+          cs.className='c';cs.textContent=ch;
+          const ordered=(ci/Math.max(1,total))*(spread||0.5);
+          cs.style.setProperty('--th',ordered+r()*0.06);
+          cs.style.setProperty('--jx',(-18-r()*26).toFixed(1)+'px');
+          ws.appendChild(cs);ci++;
+        });
+      }
+      vis.appendChild(ws);
+      if(wi<words.length-1)vis.appendChild(document.createTextNode(' '));
+    });
+    el.textContent='';el.appendChild(sr);el.appendChild(vis);
+  });
+}
+splitAll();
+
+/* ── bands ── */
+const bands=[...document.querySelectorAll('.band[data-range]')].map(el=>{
+  const [a,b]=el.getAttribute('data-range').split(',').map(Number);
+  return {el,a,b,op:-1,k:-1};
+});
+const clamp=(v,lo,hi)=>Math.min(hi,Math.max(lo,v));
+const smoothstep=(p,e0,e1)=>{const t=clamp((p-e0)/(e1-e0),0,1);return t*t*(3-2*t)};
+
+let loadK=0,loadStart=0;
+
+/* One progression drives everything: the montage, the captions and the photos all
+   run on the scroll from the top of the document to #about. */
+function bgRange(){
+  const end=document.getElementById('portfolio')||document.getElementById('about');
+  if(!end)return Math.max(1,document.documentElement.scrollHeight-window.innerHeight);
+  return Math.max(1,end.getBoundingClientRect().top+window.scrollY-window.innerHeight*0.6);
+}
+function bgProgress(){ return clamp(window.scrollY/bgRange(),0,1) }
+
+/* The veil lifts across the work grid so body copy further down stays readable
+   without washing the montage out. Numbers validated against the contrast audit. */
+const VEIL_MAX=0.28;
+let lastVeil=-1, lastExit=-1;
+function updateVeil(y){
+  const introEnd=introEl.offsetTop+introEl.offsetHeight-window.innerHeight*0.5;
+  const about=document.getElementById('portfolio')||document.getElementById('about');
+  const end=about?about.getBoundingClientRect().top+y-window.innerHeight*0.8:introEnd+1;
+  let v;
+  if(y<=introEnd)v=0;
+  else if(y>=end)v=VEIL_MAX;
+  else v=VEIL_MAX*((y-introEnd)/Math.max(1,end-introEnd));
+  if(Math.abs(v-lastVeil)>0.006){lastVeil=v;bgEl.style.setProperty('--veil',v.toFixed(3))}
+  if(about){
+    /* A progressive hand-off, not an on/off switch. Fading too early left a screen
+       of nothing; fading too late left the caption layer sitting on top of About.
+       The animation now dissolves exactly as About rises into place. */
+    const at=about.getBoundingClientRect().top+y;
+    const start=at-window.innerHeight*1.0;
+    const exit=clamp((y-start)/(window.innerHeight*0.72),0,1);
+    if(Math.abs(exit-lastExit)>0.008){
+      lastExit=exit;
+      const o=(1-exit).toFixed(3);
+      bgEl.style.opacity=o;
+      const fl=document.getElementById('floaters');if(fl)fl.style.opacity=o;
+      const cp=document.getElementById('captions');
+      if(cp){cp.style.opacity=o;cp.style.pointerEvents=exit>0.9?'none':''}
+      /* the seek loop can stop once the montage is invisible */
+      bgEl.classList.toggle('gone',exit>=1);
+    }
+  }
+}
+
+function updateCaptions(p){
+  bands.forEach((b,i)=>{
+    const f=Math.min(0.02,(b.b-b.a)/3);
+    const inRamp =(i===0)?1:smoothstep(p,b.a,b.a+f);
+    const outRamp=(i===bands.length-1)?1:(1-smoothstep(p,b.b-f,b.b));
+    let op=inRamp*outRamp;
+    let k=clamp((p-b.a)/(Math.min(0.025,(b.b-b.a)*0.35)),0,1);
+    if(i===0)k=Math.max(k,loadK);
+    if(Math.abs(op-b.op)>0.004){b.op=op;b.el.style.opacity=op.toFixed(3)}
+    if(Math.abs(k-b.k)>0.008){
+      b.k=k;b.el.style.setProperty('--k',k.toFixed(3));
+      /* --ks and --kb drive the subline and the button row. The CTA band needs them
+         too, or both fall back to 0 and the buttons never appear. */
+      if(b.el.classList.contains('band--settle')||b.el.classList.contains('band--cta')){
+        b.el.style.setProperty('--ks',clamp((k-0.50)*2.4,0,1).toFixed(3));
+        b.el.style.setProperty('--kb',clamp((k-0.68)*3.1,0,1).toFixed(3));
+      }
+    }
+  });
+}
+
+/* ── gated seeks, deadlock safe ── */
+let seekBusy=false,pendingTime=null;
+function requestSeek(t){
+  if(!video.duration)return;
+  if(seekBusy){pendingTime=t;return}
+  seekBusy=true;video.currentTime=t;
+}
+video.addEventListener('seeked',()=>{
+  seekBusy=false;
+  if(pendingTime!==null){const t=pendingTime;pendingTime=null;requestSeek(t)}
+});
+video.addEventListener('error',()=>{seekBusy=false;pendingTime=null;failVideo()});
+
+/* ── the lerp loop that rests ── */
+let target=0,shown=0,rafId=null,lastTick=0;
+function tick(now){
+  const dt=Math.min(100,now-(lastTick||now));lastTick=now;
+  const k=0.30;   /* was 0.16: the scrub now catches the scroll twice as fast */
+  shown+=(target-shown)*(1-Math.pow(1-k,dt/16.667));
+  let running=true;
+  if(Math.abs(target-shown)<0.0005&&loadK>=1){shown=target;lastTick=0;running=false}
+  if(loadStart){
+    loadK=clamp((now-loadStart)/900,0,1);
+    if(loadK<1)running=true;
+  }
+  /* Montage, captions and photos all run on the same lerped page progress now,
+     so the words are spread across the whole animation rather than the top of it. */
+  if(video.duration&&!bgEl.classList.contains('gone'))requestSeek(shown*video.duration);
+  updateCaptions(shown);
+  updateFloaters(shown);
+  if(running)rafId=requestAnimationFrame(tick);else rafId=null;
+}
+/* No IntersectionObserver gate here any more: the background spans almost the whole
+   document, so there is no "off screen" to rest for. The loop still rests on its own
+   the moment it converges, which is what actually saves the battery. */
+function onScroll(){
+  target=bgProgress();
+  if(rafId===null&&scrubOn)rafId=requestAnimationFrame(tick);
+}
+
+/* ── blob loader with ring + watchdog ── */
+let started=false;
+function startBlobFetch(){
+  if(started)return;started=true;
+  loadHeroBlob().catch(failVideo);
+}
+async function loadHeroBlob(){
+  const ctrl=new AbortController();
+  let watchdog=setTimeout(()=>ctrl.abort(),20000);
+  const res=await fetch(VIDEO_URL,{signal:ctrl.signal});
+  if(!res.ok||!res.body)throw new Error('video unavailable');
+  const total=Number(res.headers.get('Content-Length'))||VIDEO_BYTES;
+  const reader=res.body.getReader();
+  const chunks=[];let got=0,lastRing=0;
+  for(;;){
+    const {done,value}=await reader.read();
+    if(done)break;
+    clearTimeout(watchdog);
+    watchdog=setTimeout(()=>ctrl.abort(),20000);
+    chunks.push(value);got+=value.length;
+    const frac=Math.min(1,got/total),now=performance.now();
+    if(now-lastRing>100||frac===1){
+      lastRing=now;
+      if(ring)ring.style.setProperty('--ld',Math.round(126*(1-frac)));
+    }
+  }
+  clearTimeout(watchdog);
+  if(ring)ring.style.setProperty('--ld',0);
+  video.src=URL.createObjectURL(new Blob(chunks));
+  video.load();
+  video.addEventListener('canplay',()=>{
+    requestSeek(bgProgress()*video.duration);
+    bgEl.classList.add('video-ready');
+  },{once:true});
+}
+function failVideo(){
+  if(ring&&ring.parentNode){
+    const c=document.createElementNS('http://www.w3.org/2000/svg','svg');
+    c.setAttribute('class','chev');c.setAttribute('viewBox','0 0 48 48');
+    c.setAttribute('aria-hidden','true');
+    c.innerHTML='<path d="M16 20l8 8 8-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>';
+    ring.replaceWith(c);
+  }
+  bgEl.classList.add('video-failed');
+}
+
+let heroInit=false;
+function initHeroOnce(){
+  if(heroInit)return;heroInit=true;
+  poster.style.backgroundImage="url('"+POSTER_URL+"')";
+  const img=new Image();
+  img.onload=startBlobFetch;img.onerror=startBlobFetch;img.src=POSTER_URL;
+  setTimeout(startBlobFetch,4000);
+  loadStart=performance.now();
+  buildDust();
+}
+
+function buildDust(){
+  const d=document.querySelector('.dust');if(!d||d.childElementCount)return;
+  const r=rng(4242);
+  for(let i=0;i<26;i++){
+    const s=document.createElement('i');
+    s.style.left=(r()*100).toFixed(2)+'%';
+    s.style.top=(60+r()*45).toFixed(2)+'%';
+    s.style.animationDuration=(13+r()*14).toFixed(1)+'s';
+    s.style.animationDelay=(-r()*26).toFixed(1)+'s';
+    s.style.opacity=(0.25+r()*0.6).toFixed(2);
+    d.appendChild(s);
+  }
+}
+
+/* ── the live gate ── */
+let scrubOn=false;
+function enableScrub(){
+  if(scrubOn)return;scrubOn=true;
+  initHeroOnce();
+  addEventListener('scroll',onScroll,{passive:true});
+  bands.forEach(b=>{b.op=-1;b.k=-1});
+  unpinFinalStates();
+  updateCaptions(bgProgress());
+  onScroll();
+}
+function disableScrub(){
+  if(!scrubOn)return;scrubOn=false;
+  removeEventListener('scroll',onScroll);
+  if(rafId!==null){cancelAnimationFrame(rafId);rafId=null}
+}
+function applyHeroMode(){
+  if(GATES.some(q=>matchMedia(q).matches))disableScrub();
+  else enableScrub();
+}
+const MQLS=GATES.map(q=>matchMedia(q));
+MQLS.forEach(m=>m.addEventListener('change',applyHeroMode));
+
+/* ── reduced motion, live, both directions ── */
+function pinToFinalStates(){
+  document.querySelectorAll('[data-rule]').forEach(r=>r.style.setProperty('--draw',1));
+  document.querySelectorAll('[data-lab]').forEach(l=>l.classList.add('lit'));
+  document.querySelectorAll('.grid figure').forEach(f=>f.classList.add('in'));
+  document.querySelectorAll('.steps').forEach(s=>{s.classList.add('in','done')});
+  document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));
+  document.querySelectorAll('#dlist li').forEach(li=>li.classList.add('lit'));
+  const fl=document.getElementById('floaters');if(fl)fl.style.display='none';
+  if(railNode)railNode.style.transform='translateY('+(window.innerHeight*0.5)+'px)';
+  disableScrub();
+}
+function unpinFinalStates(){
+  /* The delivery lines are scroll-lit now, so nothing here needs unpinning;
+     the observer re-lights them as they come back into view. */
+}
+function reduced(){return matchMedia('(prefers-reduced-motion: reduce)').matches}
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{
+  if(e.matches)pinToFinalStates();else applyHeroMode();
+});
+
+/* ── the floating photos, driven by the same progress as the montage ──
+   Each photo owns a band of scroll. Inside it: blur and scale in, hold, then blur
+   out and drift up so the next one has room. Bands overlap by design, so roughly
+   three are alive at once and the set never crowds the frame. */
+/* twenty slots cycling the eight images, so the page keeps popping new ones */
+const PHOTOS=[1,2,3,4,5,6,7,8,3,6,1,4,7,2,8,5,2,7,4,6,
+              5,1,8,3,6,2,7,4,1,5,8,2,6,3,4,7,3,8,5,1];
+const floatEls=[];
+(function buildFloaters(){
+  const wrap=document.getElementById('floaters');
+  if(!wrap)return;
+  const r=rng(20260929);
+  PHOTOS.forEach((n,i)=>{
+    const fig=document.createElement('figure');
+    const img=document.createElement('img');
+    const nn=String(n).padStart(2,'0');
+    /* No src yet. loading="lazy" is useless here: this layer is position:fixed and
+       covers the viewport, so the browser counts every photo as visible and fetches
+       all eight up front. The src is assigned in updateFloaters as each band nears. */
+    img.dataset.src='assets/work-'+nn+'-600.jpg';
+    img.dataset.srcset='assets/work-'+nn+'-600.jpg 600w, assets/work-'+nn+'-800.jpg 800w';
+    img.sizes='24vw';
+    img.alt='';
+    img.decoding='async';
+    fig.appendChild(img);
+    /* Random placement, not a grid: the structured version read as a layout.
+       Height is in vh, not vw. Mixing the two made every photo sit high, because
+       a figure measured in vw is far taller in vh on a wide screen. */
+    const w=16+r()*13;                 /* 16 to 29 vw */
+    const hv=27+r()*26;                /* 27 to 53 vh */
+    const left=-7+r()*(114-w);
+    const top =-7+r()*(114-hv);
+    fig.style.width=w.toFixed(2)+'vw';
+    fig.style.height=hv.toFixed(2)+'vh';
+    fig.style.left=left.toFixed(2)+'vw';
+    fig.style.top=top.toFixed(2)+'vh';
+    const a=-0.15+i*0.0235, b=a+0.31;
+    floatEls.push({fig,a,b,o:-1,loaded:false,eager:i<5,seedRot:(r()-0.5)*3});
+    wrap.appendChild(fig);
+  });
+})();
+
+function updateFloaters(p){
+  for(const f of floatEls){
+    /* fetch a little before it is needed, so it is decoded by the time it fades in */
+    if(!f.loaded&&(f.eager||p>f.a-0.03)){
+      f.loaded=true;
+      const im=f.fig.firstElementChild;
+      im.srcset=im.dataset.srcset; im.src=im.dataset.src;
+    }
+    const span=f.b-f.a;
+    const k=clamp((p-f.a)/span,0,1);
+    let o,blur,scale,lift;
+    if(p<f.a||p>f.b){o=0;blur=16;scale=0.92;lift=0}
+    else if(k<0.20){const e=smoothstep(k,0,0.20);o=e;blur=16*(1-e);scale=0.92+0.08*e;lift=18*(1-e)}
+    else if(k<0.70){o=1;blur=0;scale=1;lift=0}
+    else{const e=smoothstep(k,0.70,1);o=1-e;blur=18*e;scale=1+0.06*e;lift=-26*e}
+    if(Math.abs(o-f.o)>0.006){
+      f.o=o;
+      f.fig.style.opacity=o.toFixed(3);
+      f.fig.style.filter=blur<0.05?'none':'blur('+blur.toFixed(1)+'px)';
+      f.fig.style.transform='translate3d(0,'+lift.toFixed(1)+'px,0) scale('+scale.toFixed(3)+') rotate('+f.seedRot.toFixed(2)+'deg)';
+    }
+  }
+}
+
+/* ── the travelling light rail, and the background veil ── */
+let railRaf=null;
+function railTick(){
+  railRaf=null;
+  const doc=document.documentElement;
+  const max=doc.scrollHeight-window.innerHeight;
+  const y=window.scrollY;
+  const p=max>0?clamp(y/max,0,1):0;
+  if(railNode)railNode.style.setProperty('--rail',Math.round(p*window.innerHeight));
+  updateVeil(y);
+}
+function onRailScroll(){if(railRaf===null)railRaf=requestAnimationFrame(railTick)}
+addEventListener('scroll',onRailScroll,{passive:true});
+addEventListener('resize',onRailScroll);
+
+/* ── nav state ── */
+const nav=document.querySelector('.nav');
+let lastNav='';
+function navTick(){
+  const past=window.scrollY>(introEl.offsetHeight-window.innerHeight*0.6);
+  const s=past?'lifted':'over-hero';
+  if(s!==lastNav){
+    lastNav=s;
+    nav.classList.toggle('lifted',past);
+    nav.classList.toggle('over-hero',!past);
+  }
+}
+addEventListener('scroll',navTick,{passive:true});navTick();
+
+/* ── entrances ── */
+if('IntersectionObserver' in window){
+  const io=new IntersectionObserver(es=>{
+    es.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const t=e.target;
+      if(t.hasAttribute('data-rule'))t.style.setProperty('--draw',1);
+      else if(t.hasAttribute('data-lab')||t.matches('#dlist li'))t.classList.add('lit');
+      else t.classList.add('in');
+      if(t.classList.contains('steps'))setTimeout(()=>t.classList.add('done'),1400);
+      io.unobserve(t);
+    });
+  },{rootMargin:'0px 0px -12% 0px',threshold:0.15});
+  document.querySelectorAll('.grid figure,.steps,.rv,[data-rule],[data-lab],#dlist li').forEach(e=>io.observe(e));
+}
+
+
+/* ── the form: build the mailto ourselves ──
+   A form with action="mailto:" and method="post" is handled inconsistently across
+   browsers (some do nothing at all). The microcopy promises the mail app opens with
+   the brief filled in, so build the URL by hand and say what happened. */
+(function(){
+  const form=document.getElementById('form');
+  const note=document.getElementById('form-note');
+  if(!form)return;
+  const ADDRESS='hello@yardeneshel.com';
+  form.addEventListener('submit',e=>{
+    e.preventDefault();
+    const g=n=>(form.elements[n]&&form.elements[n].value||'').trim();
+    const name=g('name'),what=g('what'),when=g('when');
+    const subject='Shoot brief'+(name?' from '+name:'');
+    const body=[
+      name?'Name: '+name:'',
+      what?'What we are shooting: '+what:'',
+      when?'When: '+when:''
+    ].filter(Boolean).join('\n');
+    location.href='mailto:'+ADDRESS+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    note.textContent='Your email app should be opening now, with the brief filled in. If nothing happens, write to '+ADDRESS+' directly.';
+    note.classList.add('sent');
+  });
+})();
+
+/* ── pause everything on a hidden tab ── */
+addEventListener('visibilitychange',()=>{
+  document.body.classList.toggle('paused',document.hidden);
+});
+
+/* ── boot ── */
+if(reduced())pinToFinalStates();else applyHeroMode();
+railTick();
+})();
+</script>
+</body>
+</html>
