@@ -183,7 +183,10 @@ a{color:inherit}
 .band--cta::before{background:radial-gradient(ellipse 58% 34% at 50% 78%,rgba(241,230,228,.86) 0%,rgba(241,230,228,.54) 50%,rgba(241,230,228,0) 80%) !important}
 
 /* Scroll distance only. Everything visible lives in the fixed layers behind it. */
-.intro{position:relative;height:420vh;z-index:2}
+/* Scroll distance for the whole montage. Halved from 420vh: the hero was taking
+   too long to get past. Captions now travel at twice the speed, so any further
+   cut needs the flick test re-run on the shortest line. */
+.intro{position:relative;height:210vh;z-index:2}
 
 .ring{position:absolute;right:clamp(18px,4vw,44px);bottom:clamp(18px,4vw,44px);width:48px;height:48px;color:rgba(242,239,235,.85);z-index:6;
   transition:opacity .5s var(--ease)}
@@ -376,9 +379,12 @@ footer{background:var(--canvas-deep);padding:clamp(46px,7vw,80px) var(--gutter);
    Putting this after would silently blank the phone hero. */
 .band--static{display:none}
 
-/* ── the static-hero gates. These strings must match the JS exactly ── */
-@media (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
-       (prefers-reduced-motion: reduce){
+/* ── the static-hero gate. This string must match the JS exactly ──
+   Reduced motion no longer lands here. The montage is the site's face and plays
+   for everyone; it is scrubbed rather than autoplaying, so it only ever moves as
+   far as the visitor scrolls it. The decorative motion - photos blurring in,
+   captions travelling - is still stood down for those readers further below. */
+@media (orientation: landscape) and (pointer: coarse) and (max-height: 560px){
   .intro{height:auto}
   .bg{position:absolute;height:100svh}
   .captions{position:relative;height:auto}
@@ -402,13 +408,10 @@ footer{background:var(--canvas-deep);padding:clamp(46px,7vw,80px) var(--gutter);
    background-image, which had phones pulling a landscape frame they never showed.
    Only the reduced-motion reader still lands here on a phone; the scrubbing path
    sets its own poster from JS, so these two rules cover the static cases alone. */
-@media (prefers-reduced-motion: reduce) and (orientation: portrait) and (max-width: 820px){
-  .bg .poster{background-image:url('assets/hero-mobile.jpg')}
-}
-/* The landscape gated cases: a sideways phone, and reduced motion anywhere wider. */
-@media (orientation: landscape) and (pointer: coarse) and (max-height: 560px),
-       (prefers-reduced-motion: reduce) and (orientation: landscape),
-       (prefers-reduced-motion: reduce) and (orientation: portrait) and (min-width: 821px){
+/* Only one case still shows a still: a phone held sideways, which is landscape,
+   so it gets the landscape frame. Every other visitor gets the montage, and the
+   scrubbing path sets its own poster from JS while the file downloads. */
+@media (orientation: landscape) and (pointer: coarse) and (max-height: 560px){
   .bg .poster{background-image:url('assets/hero-ending.jpg')}
 }
 
@@ -624,14 +627,13 @@ if(!location.hash){
   addEventListener('load',()=>scrollTo(0,0),{once:true});
 }
 
-/* ══ the static-hero gates. Character for character identical to the CSS block. ══
-   Phones used to be gated out of the scrub entirely. They are not any more: the
-   montage is the face of the site and has to run there too. What is left here is
-   the two cases with no way to show it - a reader who asked for no motion, and a
-   sideways phone with no vertical room for the captions. */
+/* ══ the static-hero gate. Character for character identical to the CSS block. ══
+   Phones and reduced-motion readers used to be gated out of the scrub. Neither is
+   any more: the montage is the face of the site and runs for everyone. The one
+   case left is a phone held sideways, where there is no vertical room for the
+   captions and nothing to show alongside the montage. */
 const GATES = [
-  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)',
-  '(prefers-reduced-motion: reduce)'
+  '(orientation: landscape) and (pointer: coarse) and (max-height: 560px)'
 ];
 
 /* A phone gets a portrait re-cut of the same montage. Cover-cropping the landscape
@@ -768,15 +770,24 @@ function updateCaptions(p){
 
 /* ── gated seeks, deadlock safe ── */
 let seekBusy=false,pendingTime=null;
+let seekTimer=null;
+function releaseSeek(){
+  seekBusy=false;
+  if(pendingTime!==null){const t=pendingTime;pendingTime=null;requestSeek(t)}
+}
 function requestSeek(t){
   if(!video.duration)return;
   if(seekBusy){pendingTime=t;return}
   seekBusy=true;video.currentTime=t;
+  /* The gate was opened only by 'seeked'. A browser that swallows that event even
+     once - Safari can, on a blob-backed video that has never played - latches it
+     shut for good, every later seek is dropped, and the montage freezes on one
+     frame while the page still scrolls past it: a static hero that will not move.
+     Never let the gate depend on an event arriving. */
+  clearTimeout(seekTimer);
+  seekTimer=setTimeout(releaseSeek,220);
 }
-video.addEventListener('seeked',()=>{
-  seekBusy=false;
-  if(pendingTime!==null){const t=pendingTime;pendingTime=null;requestSeek(t)}
-});
+video.addEventListener('seeked',()=>{clearTimeout(seekTimer);releaseSeek()});
 video.addEventListener('error',()=>{seekBusy=false;pendingTime=null;failVideo()});
 
 /* ── the lerp loop that rests ── */
@@ -837,6 +848,11 @@ async function loadHeroBlob(){
   video.src=URL.createObjectURL(new Blob(chunks));
   video.load();
   video.addEventListener('canplay',()=>{
+    /* Prime the decoder with one play/pause. A muted inline video is allowed to
+       start without a gesture, and Safari will not paint seeks on a video that
+       has never run - which leaves the montage stuck on its first frame. */
+    const p=video.play();
+    if(p&&p.then)p.then(()=>video.pause()).catch(()=>{});
     requestSeek(bgProgress()*video.duration);
     bgEl.classList.add('video-ready');
   },{once:true});
@@ -900,7 +916,10 @@ function applyHeroMode(){
 const MQLS=GATES.map(q=>matchMedia(q));
 MQLS.forEach(m=>m.addEventListener('change',applyHeroMode));
 
-/* ── reduced motion, live, both directions ── */
+/* ── reduced motion, live, both directions ──
+   This stands down the decorative motion only. It no longer stops the montage:
+   that is the site's face, it is scrubbed rather than autoplaying, and it moves
+   only as far as the reader scrolls it. */
 function pinToFinalStates(){
   document.querySelectorAll('[data-rule]').forEach(r=>r.style.setProperty('--draw',1));
   document.querySelectorAll('[data-lab]').forEach(l=>l.classList.add('lit'));
@@ -910,7 +929,6 @@ function pinToFinalStates(){
   document.querySelectorAll('#dlist li').forEach(li=>li.classList.add('lit'));
   const fl=document.getElementById('floaters');if(fl)fl.style.display='none';
   if(railNode)railNode.style.transform='translateY('+(window.innerHeight*0.5)+'px)';
-  disableScrub();
 }
 function unpinFinalStates(){
   /* The delivery lines are scroll-lit now, so nothing here needs unpinning;
@@ -918,7 +936,8 @@ function unpinFinalStates(){
 }
 function reduced(){return matchMedia('(prefers-reduced-motion: reduce)').matches}
 matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',e=>{
-  if(e.matches)pinToFinalStates();else applyHeroMode();
+  if(e.matches)pinToFinalStates();
+  applyHeroMode();          /* the montage runs either way now */
 });
 
 /* ── the floating photos, driven by the same progress as the montage ──
@@ -1089,7 +1108,8 @@ addEventListener('visibilitychange',()=>{
 });
 
 /* ── boot ── */
-if(reduced())pinToFinalStates();else applyHeroMode();
+if(reduced())pinToFinalStates();
+applyHeroMode();          /* the montage runs either way now */
 railTick();
 })();
 </script>
