@@ -611,6 +611,19 @@ body.paused *,body.paused *::before,body.paused *::after{animation-play-state:pa
 (function(){
 'use strict';
 
+/* ══ always open at the beginning ══
+   Scroll position IS the playhead here: the montage shows whatever frame the
+   scroll says. So a browser restoring the last scroll position - which it does
+   on every reload and on back - opens the site on a still frame with the whole
+   animation already behind it, looking like a static hero that will not move.
+   Anyone arriving at a named section still gets it. */
+if('scrollRestoration' in history) history.scrollRestoration='manual';
+if(!location.hash){
+  scrollTo(0,0);
+  /* Some browsers restore after load fires, so undo it once more on the far side. */
+  addEventListener('load',()=>scrollTo(0,0),{once:true});
+}
+
 /* ══ the static-hero gates. Character for character identical to the CSS block. ══
    Phones used to be gated out of the scrub entirely. They are not any more: the
    montage is the face of the site and has to run there too. What is left here is
