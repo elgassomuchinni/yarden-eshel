@@ -4,12 +4,12 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yarden Eshel · Fashion Photography</title>
-<meta name="description" content="Yarden Eshel, fashion photographer in Tel Aviv. Campaigns, collections, and the days that matter.">
+<meta name="description" content="Yarden Eshel, fashion photographer in Israel. Campaigns, collections, and the days that matter.">
 <meta name="theme-color" content="#0A0A0A">
 <!-- Demo build: most portfolio images are placeholders, not Yarden's work. Keep this until her real photographs replace them. -->
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <meta property="og:title" content="Yarden Eshel · Fashion Photography">
-<meta property="og:description" content="Fashion photography in Tel Aviv. Campaigns, collections, and the days that matter.">
+<meta property="og:description" content="Fashion photography in Israel. Campaigns, collections, and the days that matter.">
 <meta property="og:type" content="website">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23F5F2EE' text-anchor='middle'%3EYE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,24 +27,26 @@
   --bg-hero:#0A0A0A; --bg-portfolio:#F0F0F0; --bg-about:#F0F0F0; --bg-contact:#0A0A0A; --bg-footer:#3E4A28;
 }
 /* text colours follow the page colour: dark text on the white zones, light text everywhere else */
-body{--halo:rgba(10,10,10,.55);--ink:#F5F2EE;--soft:#A8A19A;--mute:#8F8781;--line:rgba(245,242,238,.16);--field:rgba(245,242,238,.3);--accent:#C9959A;--tile:#151413;--error:#F0A8A8}
-body[data-zone="portfolio"],body[data-zone="about"]{--halo:rgba(240,240,240,.9);--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--field:#9C9692;--accent:#844A4E;--tile:#E2E2E2;--error:#9B2C2C}
+body{--halo:rgba(10,10,10,.55);--ink:#F5F2EE;--soft:#A8A19A;--mute:#8F8781;--line:rgba(245,242,238,.16);--field:rgba(245,242,238,.3);--accent:#A8A19A;--tile:#151413;--error:#F0A8A8}
+body[data-zone="portfolio"],body[data-zone="about"]{--halo:rgba(240,240,240,.9);--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--field:#9C9692;--accent:#6B6560;--tile:#E2E2E2;--error:#9B2C2C}
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
 html,body{overflow-x:clip}
-body{margin:0;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg-hero);
-  transition:background-color var(--fade);-webkit-font-smoothing:antialiased}
-body[data-zone="hero"]{background:var(--bg-hero)}
-body[data-zone="portfolio"]{background:var(--bg-portfolio)}
-body[data-zone="about"]{background:var(--bg-about)}
-body[data-zone="contact"]{background:var(--bg-contact)}
-body[data-zone="footer"]{background:var(--bg-footer)}
+html{background:#0A0A0A}
+body{margin:0;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--ink);background:transparent;-webkit-font-smoothing:antialiased}
+/* page colour: one fixed layer per section colour; the new one fades in on top (opacity only, so phones animate it on the graphics chip) */
+.bgfx{position:fixed;inset:0;z-index:-1;pointer-events:none}
+.bgfx i{position:absolute;inset:0;opacity:0;z-index:0;transition:opacity var(--fade);will-change:opacity}
+.bgfx i.under{opacity:1;transition:none}
+.bgfx i.on{opacity:1;z-index:1}
+.bgfx [data-z="hero"]{background:var(--bg-hero)} .bgfx [data-z="portfolio"]{background:var(--bg-portfolio)} .bgfx [data-z="about"]{background:var(--bg-about)}
+.bgfx [data-z="contact"]{background:var(--bg-contact)} .bgfx [data-z="footer"]{background:var(--bg-footer)}
 #portfolio *,#about *,#contact *{transition-property:color,background-color,border-color;transition-duration:.9s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
 img,video,svg{display:block;max-width:100%}
 a{color:inherit}
 a:hover{opacity:.72}
-:focus-visible{outline:2px solid #C9959A;outline-offset:3px}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
 .skip{position:absolute;left:-9999px;top:0;z-index:200;background:#F5F2EE;color:#1C1A18;padding:12px 18px}
 .skip:focus{left:8px;top:8px}
 .label{font-weight:600;font-size:11px;letter-spacing:.3em;text-transform:uppercase}
@@ -170,11 +172,12 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   #hero .kicker{top:auto;bottom:calc(48px + 150px)}
   .dock{bottom:12px;gap:14px;padding:6px 8px}
   .dock .brand{display:none}
+  #hero img{object-position:center 30%}
   #hero .settle{padding-bottom:48px}
   #hero h1{font-size:44px}
   #portfolio{padding:72px 0}
-  .tabs{column-gap:18px}
-  .tab{min-height:56px;font-size:13px}
+  .tabs{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:6px;padding:0 10px}
+  .tab{min-height:56px;padding:8px 0;font-size:10px;letter-spacing:.08em;line-height:1.35}
   .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   #about{padding:64px var(--gutter) 72px}
   .about-inner{max-width:100%}
@@ -187,6 +190,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   footer{padding:120px var(--gutter) 160px}
   .foot-cols{grid-template-columns:repeat(2,minmax(0,1fr))}
 }
+@media (max-width:720px),(pointer:coarse){.grain{display:none}}
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
   .grain svg{animation:none}
@@ -196,6 +200,8 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
 </head>
 <body data-zone="hero">
 <a class="skip" href="#main">Skip to content</a>
+
+<div class="bgfx" id="bgfx" aria-hidden="true"><i data-z="hero" class="on"></i><i data-z="portfolio"></i><i data-z="about"></i><i data-z="contact"></i><i data-z="footer"></i></div>
 
 <div class="grain" aria-hidden="true">
   <svg><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="100%" height="100%" filter="url(#noise)"/></svg>
@@ -224,8 +230,11 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
 <span id="top"></span>
 
 <section id="hero" aria-label="Introduction" data-zone="hero">
-  <img src="assets/hero-green.jpg" srcset="assets/hero-green-1200.jpg 1200w, assets/hero-green.jpg 2400w" sizes="100vw"
+  <picture>
+    <source media="(max-width:720px)" srcset="assets/hero-green-phone.jpg">
+    <img src="assets/hero-green.jpg" srcset="assets/hero-green-1200.jpg 1200w, assets/hero-green.jpg 2400w" sizes="100vw"
        alt="Model in a sculpted cream satin jacket with beaded collar against a green backdrop" fetchpriority="high">
+  </picture>
   <p class="kicker label">Fashion photography</p>
   <div class="settle">
     <h1>Nothing missed.</h1>
@@ -255,7 +264,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     <div class="about-row">
       <img src="assets/about-bw.jpg" alt="Black and white portrait, short dark hair with a fringe, silver hoops, looking down at the camera" loading="lazy" width="991" height="1400">
       <div class="about-text">
-        <p class="lead">I’m Yarden Eshel, a photographer based in Tel Aviv.</p>
+        <p class="lead">I’m Yarden Eshel, a photographer based in Israel.</p>
         <p>My work focuses on clean composition, strong presence, and capturing moments that feel both intimate and powerful.</p>
         <p>I’m drawn to minimal aesthetics, bold faces, and the space between softness and strength.</p>
         <a class="btn-line caps" href="#contact">Send the brief</a>
@@ -304,7 +313,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   <div class="foot-top">
     <div class="foot-brand">
       <p class="brand">Yarden Eshel</p>
-      <p>Fashion photography in Tel Aviv. Campaigns, collections, and the days that matter.</p>
+      <p>Fashion photography in Israel. Campaigns, collections, and the days that matter.</p>
     </div>
     <nav class="foot-cols" aria-label="Footer">
       <div>
@@ -318,7 +327,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       </div>
       <div>
         <h3>Studio</h3>
-        <p class="plain">Tel Aviv, Israel</p>
+        <p class="plain">Israel</p>
         <p class="plain" style="color:#D2CCC1">Available for travel</p>
       </div>
     </nav>
@@ -447,15 +456,30 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   });
   var dock = document.getElementById('dock'), hero = document.getElementById('hero');
   var ticking = false, current = 'hero';
+  var layers = document.getElementById('bgfx').children;
+  function setZone(zone) {
+    current = zone; document.body.dataset.zone = zone;
+    for (var i = 0; i < layers.length; i++) {
+      var l = layers[i];
+      if (l.dataset.z === zone) { l.classList.remove('under'); l.classList.add('on'); }
+      else if (l.classList.contains('on')) { l.classList.remove('on'); l.classList.add('under'); }
+      else { l.classList.remove('under'); }
+    }
+  }
+  document.getElementById('bgfx').addEventListener('transitionend', function (e) {
+    if (!e.target.classList.contains('on')) return;
+    for (var i = 0; i < layers.length; i++) if (layers[i] !== e.target) layers[i].classList.remove('under');
+  });
   function update() {
     ticking = false;
-    var vh = window.innerHeight, best = -1, zone = current;
+    var vh = window.innerHeight, best = -1, zone = current, seenNow = 0;
     zones.forEach(function (z) {
       var r = z.el.getBoundingClientRect();
       var seen = Math.min(vh, r.bottom) - Math.max(0, r.top);
+      if (z.id === current) seenNow = seen;
       if (seen > best) { best = seen; zone = z.id; }
     });
-    if (zone !== current) { current = zone; document.body.dataset.zone = zone; }
+    if (zone !== current && best - seenNow > vh * 0.08) { setZone(zone); }
     // start loading the film a screen before Contact arrives
     if (zones[3].el.getBoundingClientRect().top < vh * 2) startFilm();
     var on = window.scrollY > hero.offsetHeight - 120;
