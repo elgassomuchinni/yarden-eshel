@@ -5,13 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Yarden Eshel · Fashion Photography</title>
 <meta name="description" content="Yarden Eshel, fashion photographer in Tel Aviv. Campaigns, collections, and the days that matter.">
-<meta name="theme-color" content="#232220">
+<meta name="theme-color" content="#0A0A0A">
 <!-- Demo build: most portfolio images are placeholders, not Yarden's work. Keep this until her real photographs replace them. -->
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <meta property="og:title" content="Yarden Eshel · Fashion Photography">
 <meta property="og:description" content="Fashion photography in Tel Aviv. Campaigns, collections, and the days that matter.">
 <meta property="og:type" content="website">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23232220'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23F5F2EE' text-anchor='middle'%3EYE%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23F5F2EE' text-anchor='middle'%3EYE%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,300..600;1,8..60,300..600&display=swap">
@@ -24,7 +24,7 @@
   --ease:cubic-bezier(.22,.61,.36,1);
   --fade:.9s cubic-bezier(.4,0,.2,1);
   /* one colour per section; the page wears the one filling most of the screen */
-  --bg-hero:#232220; --bg-portfolio:#F0F0F0; --bg-about:#F0F0F0; --bg-contact:#0A0A0A; --bg-footer:#3E4A28;
+  --bg-hero:#0A0A0A; --bg-portfolio:#F0F0F0; --bg-about:#F0F0F0; --bg-contact:#0A0A0A; --bg-footer:#3E4A28;
 }
 /* text colours follow the page colour: dark text on the white zones, light text everywhere else */
 body{--halo:rgba(10,10,10,.55);--ink:#F5F2EE;--soft:#A8A19A;--mute:#8F8781;--line:rgba(245,242,238,.16);--field:rgba(245,242,238,.3);--accent:#C9959A;--tile:#151413;--error:#F0A8A8}
@@ -78,7 +78,7 @@ a:hover{opacity:.72}
 #hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 20%}
 #hero .kicker{position:absolute;left:0;right:0;top:4%;margin:0;text-align:center;color:#F5F2EE;text-shadow:0 1px 3px rgba(5,5,10,.6)}
 #hero .settle{position:absolute;left:0;right:0;bottom:0;padding:160px var(--gutter) 96px;display:flex;flex-direction:column;align-items:center;
-  text-align:center;color:#F5F2EE;background:linear-gradient(180deg,rgba(35,34,32,0) 0%,rgba(35,34,32,.55) 60%,#232220 100%)}
+  text-align:center;color:#F5F2EE;background:linear-gradient(180deg,rgba(10,10,10,0) 0%,rgba(10,10,10,.55) 60%,#0A0A0A 100%)}
 #hero h1{font-weight:300;font-size:92px;letter-spacing:-.02em;line-height:1.1;margin:0;text-shadow:0 2px 18px rgba(5,5,10,.5)}
 #hero .settle p{font-size:17px;color:#EDE8E2;margin:14px 0 0;max-width:40ch;text-shadow:0 1px 8px rgba(5,5,10,.6)}
 
@@ -139,8 +139,9 @@ form{max-width:52ch;margin-top:30px}
   padding:9px 0;border-radius:0}
 .field textarea{resize:vertical;min-height:78px}
 .field input::placeholder,.field textarea::placeholder{color:var(--mute)}
-.btn-solid{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;background:#9E5F63;border:1px solid #9E5F63;color:#FFF8F8;
-  font-family:var(--serif);border-radius:2px;cursor:pointer}
+.btn-solid{display:inline-flex;align-items:center;min-height:48px;padding:0 26px;background:transparent;border:1px solid var(--ink);color:var(--ink);
+  font-family:var(--serif);border-radius:2px;cursor:pointer;transition:background-color .3s,color .3s}
+.btn-solid:hover,.btn-solid:focus-visible{background:var(--ink);color:#0A0A0A}
 .note{font-size:12px;color:var(--soft);margin:14px 0 0;line-height:1.7}
 .note a{color:var(--ink)}
 .msg{font-size:13px;color:var(--error);margin:14px 0 0}
