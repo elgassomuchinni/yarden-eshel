@@ -1,12 +1,48 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-12T00:00:00.000Z",
+  "publishedAt": "2026-10-12T08:24:57.111Z",
   "sections": {
-    "hero": { "desktop": [], "phone": [] },
-    "fashion-editorial": { "desktop": [], "phone": [] },
-    "model-tests": { "desktop": [], "phone": [] },
-    "actor-musicians": { "desktop": [], "phone": [] },
-    "personal-work": { "desktop": [], "phone": [] },
-    "about": { "desktop": [], "phone": [] }
+    "fashion-editorial": {
+      "desktop": [],
+      "phone": []
+    },
+    "model-tests": {
+      "desktop": [
+        {
+          "id": "a53648cc-d4f3-49ac-8e9d-50ebff63b234",
+          "src": "photos/a53648cc-d4f3-49ac-8e9d-50ebff63b234-1600.jpg",
+          "srcSmall": "photos/a53648cc-d4f3-49ac-8e9d-50ebff63b234-800.jpg",
+          "alt": "",
+          "width": 369,
+          "height": 781,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "phone": [
+        {
+          "id": "a53648cc-d4f3-49ac-8e9d-50ebff63b234",
+          "src": "photos/a53648cc-d4f3-49ac-8e9d-50ebff63b234-1600.jpg",
+          "srcSmall": "photos/a53648cc-d4f3-49ac-8e9d-50ebff63b234-800.jpg",
+          "alt": "",
+          "width": 369,
+          "height": 781,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "actor-musicians": {
+      "desktop": [],
+      "phone": []
+    },
+    "personal-work": {
+      "desktop": [],
+      "phone": []
+    }
   }
 }
