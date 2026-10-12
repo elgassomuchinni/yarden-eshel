@@ -114,9 +114,13 @@ a:hover{opacity:.72}
 .track{display:flex;transition:transform .55s var(--ease)}
 .track.jump{transition:none}
 .panel{flex:none;width:100%;padding:0 var(--gutter)}
-.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px}
+.grid{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:2px}
 .grid figure{margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--tile)}
 .grid img{width:100%;height:100%;object-fit:cover}
+.grid a{display:block;width:100%;height:100%}
+.stage a{cursor:pointer}
+.more{margin:22px 0 0;text-align:center}
+.more a{display:inline-block;padding:14px 4px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid currentColor}
 .follow{position:absolute;z-index:3;left:0;top:0;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:rgba(18,17,16,.82);
   border:1px solid rgba(245,242,238,.28);display:none;align-items:center;justify-content:center;pointer-events:none;color:#F5F2EE}
 .follow.on{display:flex}
@@ -191,7 +195,6 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   #portfolio{padding:72px 0}
   .tabs{display:grid;grid-template-columns:repeat(var(--n,4),minmax(0,1fr));column-gap:6px;padding:0 10px}
   .tab{min-height:56px;padding:8px 0;font-size:10px;letter-spacing:.08em;line-height:1.35}
-  .grid{grid-template-columns:repeat(2,minmax(0,1fr))}
   #about{padding:64px var(--gutter) 72px}
   .about-inner{max-width:100%}
   .about-row{margin-top:32px}
@@ -386,6 +389,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   ];
 
   // Only paths of exactly this shape are ever used as an image address: photos/<letters, digits, dashes>-800.jpg or -1600.jpg
+  var SAFE_ID = /^[A-Za-z0-9-]{1,64}$/;
   var SAFE_PATH = /^photos\/[A-Za-z0-9-]{1,64}-(800|1600)\.jpg$/;
   function num(v, lo, hi, fallback) { return typeof v === 'number' && isFinite(v) && v >= lo && v <= hi ? v : fallback; }
   function cleanPhoto(p) {
@@ -395,6 +399,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     if (!big && !small) return null;
     var focus = Array.isArray(p.focus) ? p.focus : [];
     return {
+      id: typeof p.id === 'string' && SAFE_ID.test(p.id) ? p.id : null,
       src: big || small, small: small || big,
       alt: typeof p.alt === 'string' ? p.alt.slice(0, 300) : '',
       w: Math.round(num(p.width, 1, 20000, 0)), h: Math.round(num(p.height, 1, 20000, 0)),
@@ -410,6 +415,17 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       for (var i = 0; i < arr.length; i++) { var c = cleanPhoto(arr[i]); if (c) out.push(c); }
       return out;
     };
+  }
+  // Grid size chosen in the admin. Missing or out-of-range values are clamped. Columns and rows are linked: columns x rows may not
+  // exceed the cap (desktop 16, phone 12), so a hand-edited file can never make the page load an unbounded number of photos.
+  var GRID_LIMITS = { desktop: { cMax: 8, rMax: 6, cap: 16, c: 3, r: 2 }, phone: { cMax: 3, rMax: 6, cap: 12, c: 2, r: 3 } };
+  function gridFor(data, section) {
+    var layout = phone.matches ? 'phone' : 'desktop', L = GRID_LIMITS[layout];
+    var g = data && data.grid && data.grid[section] && data.grid[section][layout];
+    function pick(v, hi, d) { return typeof v === 'number' && isFinite(v) ? Math.min(hi, Math.max(1, Math.round(v))) : d; }
+    var c = pick(g && g.columns, L.cMax, L.c), r = pick(g && g.rows, L.rMax, L.r);
+    if (c * r > L.cap) r = Math.max(1, Math.floor(L.cap / c));
+    return { columns: c, rows: r };
   }
   function cropPosition(p) { return (Math.round(p.fx * 10000) / 100) + '% ' + (Math.round(p.fy * 10000) / 100) + '%'; }
 
@@ -436,15 +452,30 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       var panel = document.createElement('div');
       panel.className = 'panel'; panel.setAttribute('role', 'tabpanel');
       var grid = document.createElement('div'); grid.className = 'grid';
-      cats[p % N].photos.forEach(function (ph) {
+      var cat = cats[p % N], cols = cat.cols || (phone.matches ? 2 : 3);
+      grid.style.setProperty('--cols', cols);
+      var shownPhotos = cat.cap ? cat.photos.slice(0, cat.cap) : cat.photos;
+      shownPhotos.forEach(function (ph) {
         var fig = document.createElement('figure');
         var img = document.createElement('img');
-        img.alt = ph.alt; img.dataset.src = ph.small; img.decoding = 'async';
+        img.alt = ph.alt; img.dataset.src = ph.small; img.decoding = 'async'; img.loading = 'lazy';
         if (ph.w > 0 && ph.h > 0) { img.setAttribute('width', ph.w); img.setAttribute('height', ph.h); }
         if (ph.fx !== 0.5 || ph.fy !== 0.5) img.style.objectPosition = cropPosition(ph);
-        fig.appendChild(img); grid.appendChild(fig);
+        if (cat.key && ph.id) {
+          var a = document.createElement('a');
+          a.href = 'album.html?a=' + encodeURIComponent(cat.key) + '&p=' + encodeURIComponent(ph.id);
+          a.appendChild(img); fig.appendChild(a);
+        } else fig.appendChild(img);
+        grid.appendChild(fig);
       });
-      panel.appendChild(grid); track.appendChild(panel); panels.push(panel);
+      panel.appendChild(grid);
+      if (cat.key && cat.photos.length > shownPhotos.length) {
+        var more = document.createElement('p'); more.className = 'more';
+        var ml = document.createElement('a');
+        ml.href = 'album.html?a=' + encodeURIComponent(cat.key);
+        ml.textContent = 'View the full album \u00b7 ' + cat.photos.length + ' photographs';
+        more.appendChild(ml); panel.appendChild(more);
+      } track.appendChild(panel); panels.push(panel);
     }
     load(0); paint(true);
   }
@@ -462,7 +493,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       b.setAttribute('aria-selected', String(i === idx));
       b.tabIndex = i === idx ? 0 : -1;
     });
-    panels.forEach(function (pn, i) { pn.setAttribute('aria-hidden', String(i !== pos)); });
+    panels.forEach(function (pn, i) { pn.setAttribute('aria-hidden', String(i !== pos)); if ('inert' in pn) pn.inert = i !== pos; });
   }
   function navigate(d) {
     if (!d || N < 2) return;
@@ -511,7 +542,8 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     if (published) {
       SECTION_TABS.forEach(function (t) {
         var photos = published(t[0]);
-        if (photos.length) list.push({ label: t[1], photos: photos });
+        var g = gridFor(data, t[0]);
+        if (photos.length) list.push({ label: t[1], key: t[0], photos: photos, cols: g.columns, cap: g.columns * g.rows });
       });
       var h = published('hero'); if (h.length) applyHero(h[0]);
       var a = published('about'); if (a.length) applyAbout(a[0]);
@@ -524,13 +556,14 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   var fine = window.matchMedia('(pointer: fine)');
   stage.addEventListener('mousemove', function (e) {
     if (!fine.matches) return;
+    if (e.target.closest && e.target.closest('a')) { follow.classList.remove('on'); return; }   // over a photo or link: normal pointer, click opens it
     var r = stage.getBoundingClientRect(), x = e.clientX - r.left;
     side = x < r.width / 2 ? -1 : 1;
     follow.style.left = x + 'px'; follow.style.top = (e.clientY - r.top) + 'px';
     follow.classList.add('on'); follow.classList.toggle('left', side < 0);
   });
   stage.addEventListener('mouseleave', function () { follow.classList.remove('on'); });
-  stage.addEventListener('click', function () { if (fine.matches) navigate(side); });
+  stage.addEventListener('click', function (e) { if (fine.matches && !(e.target.closest && e.target.closest('a'))) navigate(side); });
   // phones: swipe
   var tx = null;
   stage.addEventListener('touchstart', function (e) { tx = e.touches[0].clientX; }, { passive: true });

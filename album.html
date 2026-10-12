@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Album · Yarden Eshel</title>
+<meta name="description" content="A full album of photographs by Yarden Eshel, fashion photographer in Israel.">
+<meta name="theme-color" content="#F0F0F0">
+<!-- Demo build: most portfolio images are placeholders, not Yarden's work. Keep this until her real photographs replace them. -->
+<meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23F5F2EE' text-anchor='middle'%3EYE%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300..600&display=swap">
+<!-- Starts fetching the published photo list at once; "no-cache" = always ask the server whether it changed. Any failure becomes null. -->
+<script>
+window.__photosReady = (function () {
+  if (!window.fetch || !window.Promise) return Promise.resolve(null);
+  var ctl = window.AbortController ? new AbortController() : null;
+  var timer = ctl ? setTimeout(function () { ctl.abort(); }, 6000) : 0;
+  return fetch('data/photos.json', { cache: 'no-cache', signal: ctl ? ctl.signal : undefined })
+    .then(function (r) { clearTimeout(timer); return r.ok ? r.json() : null; })
+    .catch(function () { return null; });
+})();
+</script>
+<style>
+:root{--serif:'Source Serif 4',Georgia,serif;--bg:#F0F0F0;--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--tile:#E2E2E2;--gutter:80px;--row:230px}
+*,*::before,*::after{box-sizing:border-box}
+html{background:var(--bg)}
+body{margin:0;min-height:100vh;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:hover{opacity:.72}
+:focus-visible{outline:2px solid currentColor;outline-offset:3px}
+img{display:block;max-width:100%}
+.caps{font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:18px var(--gutter);border-bottom:1px solid var(--line)}
+.top a{text-decoration:none;padding:12px 0}
+.brand{font-size:20px;letter-spacing:.06em;line-height:1}
+.back{border-bottom:1px solid currentColor;padding:12px 0 6px!important}
+main{padding:72px var(--gutter) 96px}
+.head{text-align:center;margin:0 0 40px}
+.head .label{margin:0 0 14px;color:var(--soft);letter-spacing:.5em;padding-left:.5em;font-weight:600;font-size:11px;text-transform:uppercase}
+h1{margin:0;font-weight:300;font-size:64px;letter-spacing:-.02em;line-height:1.1}
+.count{margin:14px 0 0;color:var(--soft);font-size:15px}
+.others{display:flex;flex-wrap:wrap;justify-content:center;gap:0 40px;margin:28px 0 0;padding:0;list-style:none}
+.others a{display:inline-block;padding:14px 4px;text-decoration:none;color:var(--mute)}
+/* Photos sit in rows that fill the width. Each keeps its own shape (width and height are set), so nothing jumps while loading. */
+.photos{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0;list-style:none}
+.photos li{flex:calc(var(--r) * 100) 1 calc(var(--r) * var(--row));min-width:0;margin:0;background:var(--tile);overflow:hidden}
+.photos::after{content:'';flex-grow:1000000}
+.photos img{width:100%;height:auto;aspect-ratio:var(--r)}
+.photos li.target{outline:2px solid var(--ink);outline-offset:-2px}
+.msg{text-align:center;padding:96px 0;color:var(--soft)}
+.msg a{display:inline-block;margin-top:14px;padding:12px 4px;border-bottom:1px solid currentColor;text-decoration:none}
+@media (max-width:720px){
+  :root{--gutter:16px;--row:150px}
+  main{padding:40px var(--gutter) 64px}
+  h1{font-size:38px}
+  .others{gap:0 18px}
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="index.html">Yarden Eshel</a>
+  <a class="back caps" href="index.html#portfolio">&larr; Portfolio</a>
+</header>
+<main id="main">
+  <div id="head" class="head" hidden>
+    <p class="label">Album</p>
+    <h1 id="title"></h1>
+    <p class="count" id="count"></p>
+    <ul class="others" id="others" aria-label="Other albums"></ul>
+  </div>
+  <ol class="photos" id="photos"></ol>
+  <div class="msg" id="msg" hidden>
+    <p id="msg-text"></p>
+    <a class="caps" href="index.html#portfolio">Back to the portfolio</a>
+  </div>
+</main>
+<script>
+(function () {
+  var ALBUMS = [
+    ['fashion-editorial', 'Fashion & Editorial'], ['model-tests', 'Model Tests'],
+    ['actor-musicians', 'Actor & Musicians'], ['personal-work', 'Personal Work']
+  ];
+  var SAFE_ID = /^[A-Za-z0-9-]{1,64}$/;
+  var SAFE_PATH = /^photos\/[A-Za-z0-9-]{1,64}-(800|1600)\.jpg$/;
+  var phone = window.matchMedia('(max-width: 720px)');
+  var layout = phone.matches ? 'phone' : 'desktop';
+  var q = new URLSearchParams(location.search);
+  var key = q.get('a') || '', target = q.get('p') || '';
+
+  function num(v, lo, hi, d) { return typeof v === 'number' && isFinite(v) && v >= lo && v <= hi ? v : d; }
+  function clean(p) {
+    if (!p || typeof p !== 'object') return null;
+    var big = typeof p.src === 'string' && SAFE_PATH.test(p.src) ? p.src : null;
+    var small = typeof p.srcSmall === 'string' && SAFE_PATH.test(p.srcSmall) ? p.srcSmall : null;
+    if (!big && !small) return null;
+    return {
+      id: typeof p.id === 'string' && SAFE_ID.test(p.id) ? p.id : '',
+      big: big || small, small: small || big,
+      alt: typeof p.alt === 'string' ? p.alt.slice(0, 300) : '',
+      w: Math.round(num(p.width, 1, 20000, 0)), h: Math.round(num(p.height, 1, 20000, 0))
+    };
+  }
+  function listFor(data, k) {
+    var s = data.sections[k], arr = s && Array.isArray(s[layout]) ? s[layout] : [], out = [];
+    for (var i = 0; i < arr.length; i++) { var c = clean(arr[i]); if (c) out.push(c); }
+    return out;
+  }
+  function $(id) { return document.getElementById(id); }
+  function say(text) { $('msg-text').textContent = text; $('msg').hidden = false; }
+
+  function show(data) {
+    var name = '';
+    for (var i = 0; i < ALBUMS.length; i++) if (ALBUMS[i][0] === key) name = ALBUMS[i][1];
+    var photos = name ? listFor(data, key) : [];
+    if (!name || !photos.length) { say('This album is not available. It may have moved, or it has no photographs yet.'); return; }
+
+    document.title = name + ' · Yarden Eshel';
+    $('title').textContent = name;
+    $('count').textContent = photos.length + (photos.length === 1 ? ' photograph' : ' photographs');
+    $('head').hidden = false;
+
+    var others = $('others');
+    ALBUMS.forEach(function (a) {
+      if (a[0] === key || !listFor(data, a[0]).length) return;
+      var li = document.createElement('li'), l = document.createElement('a');
+      l.className = 'caps'; l.href = 'album.html?a=' + encodeURIComponent(a[0]); l.textContent = a[1];
+      li.appendChild(l); others.appendChild(li);
+    });
+
+    var list = $('photos'), lazy = [], targetEl = null, eager = 0;
+    photos.forEach(function (p, i) {
+      var li = document.createElement('li'), img = document.createElement('img');
+      var ratio = p.w > 0 && p.h > 0 ? p.w / p.h : 0.75;
+      li.style.setProperty('--r', (Math.round(ratio * 1000) / 1000).toString());
+      img.alt = p.alt || (name + ', photograph ' + (i + 1));
+      img.width = p.w > 0 ? p.w : 800; img.height = p.h > 0 ? p.h : 1067;
+      img.decoding = 'async';
+      img.sizes = phone.matches ? '50vw' : '33vw';
+      var set = function () {
+        img.srcset = p.small + ' 800w, ' + p.big + ' 1600w'; img.src = p.small;
+      };
+      var isTarget = target && p.id === target;
+      if (isTarget) { targetEl = li; li.className = 'target'; img.fetchPriority = 'high'; set(); }
+      else if (i < 4 && !target) { eager++; set(); }
+      else { img.loading = 'lazy'; img.dataset.s = '1'; lazy.push([img, set]); }
+      li.appendChild(img); list.appendChild(li);
+    });
+
+    // Photos load only when they are about to scroll into view (plus a small head start), so a 60-photo album does not download 60 photos at once.
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (e) {
+          if (!e.isIntersecting) return;
+          var item = lazy.filter(function (x) { return x[0] === e.target; })[0];
+          if (item) item[1](); io.unobserve(e.target);
+        });
+      }, { rootMargin: '300px 0px' });
+      lazy.forEach(function (x) { io.observe(x[0]); });
+    } else lazy.forEach(function (x) { x[1](); });
+
+    if (targetEl) targetEl.scrollIntoView({ block: 'center' });
+  }
+
+  (window.__photosReady || Promise.resolve(null)).then(function (data) {
+    if (!data || typeof data !== 'object' || data.version !== 1 || !data.sections || typeof data.sections !== 'object') {
+      say('The albums could not be loaded right now. Please try again in a moment.'); return;
+    }
+    try { show(data); } catch (e) { say('The albums could not be loaded right now. Please try again in a moment.'); }
+  });
+})();
+</script>
+</body>
+</html>
