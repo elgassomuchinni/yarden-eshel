@@ -1,10 +1,156 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-12T08:24:57.111Z",
+  "publishedAt": "2026-10-12T09:33:13.447Z",
   "sections": {
     "fashion-editorial": {
-      "desktop": [],
-      "phone": []
+      "desktop": [
+        {
+          "id": "62573b67-3d83-47b3-8ced-89ea7290d4a0",
+          "src": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-1600.jpg",
+          "srcSmall": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2c254eb8-984f-4a57-a072-6b2c354ee276",
+          "src": "photos/2c254eb8-984f-4a57-a072-6b2c354ee276-1600.jpg",
+          "srcSmall": "photos/2c254eb8-984f-4a57-a072-6b2c354ee276-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bd0487e1-0b9b-4a73-b686-d501e14c9834",
+          "src": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-1600.jpg",
+          "srcSmall": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "afd2b05b-4faa-4715-8417-48de56358a85",
+          "src": "photos/afd2b05b-4faa-4715-8417-48de56358a85-1600.jpg",
+          "srcSmall": "photos/afd2b05b-4faa-4715-8417-48de56358a85-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1638,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
+          "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
+          "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c35952b7-f19c-4574-b52f-061896dce4d6",
+          "src": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-1600.jpg",
+          "srcSmall": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "phone": [
+        {
+          "id": "62573b67-3d83-47b3-8ced-89ea7290d4a0",
+          "src": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-1600.jpg",
+          "srcSmall": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2c254eb8-984f-4a57-a072-6b2c354ee276",
+          "src": "photos/2c254eb8-984f-4a57-a072-6b2c354ee276-1600.jpg",
+          "srcSmall": "photos/2c254eb8-984f-4a57-a072-6b2c354ee276-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bd0487e1-0b9b-4a73-b686-d501e14c9834",
+          "src": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-1600.jpg",
+          "srcSmall": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "afd2b05b-4faa-4715-8417-48de56358a85",
+          "src": "photos/afd2b05b-4faa-4715-8417-48de56358a85-1600.jpg",
+          "srcSmall": "photos/afd2b05b-4faa-4715-8417-48de56358a85-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1638,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
+          "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
+          "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c35952b7-f19c-4574-b52f-061896dce4d6",
+          "src": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-1600.jpg",
+          "srcSmall": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
     },
     "model-tests": {
       "desktop": [
@@ -43,6 +189,48 @@
     "personal-work": {
       "desktop": [],
       "phone": []
+    }
+  },
+  "grid": {
+    "fashion-editorial": {
+      "desktop": {
+        "columns": 3,
+        "rows": 5
+      },
+      "phone": {
+        "columns": 2,
+        "rows": 3
+      }
+    },
+    "model-tests": {
+      "desktop": {
+        "columns": 3,
+        "rows": 2
+      },
+      "phone": {
+        "columns": 2,
+        "rows": 3
+      }
+    },
+    "actor-musicians": {
+      "desktop": {
+        "columns": 3,
+        "rows": 2
+      },
+      "phone": {
+        "columns": 2,
+        "rows": 3
+      }
+    },
+    "personal-work": {
+      "desktop": {
+        "columns": 3,
+        "rows": 2
+      },
+      "phone": {
+        "columns": 2,
+        "rows": 3
+      }
     }
   }
 }
