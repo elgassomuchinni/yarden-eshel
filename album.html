@@ -63,9 +63,37 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
 .pics.rows{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--gap)}
 .pics.rows img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
 .pics.rows a{height:100%}
-.pics.stack{max-width:calc(1000px + 2 * var(--gutter));margin-inline:auto;padding:0 var(--gutter)}
-.pics.stack li{margin:0 0 28px}
+.pics.stack{max-width:calc(900px + 2 * var(--gutter));margin-inline:auto;padding:0 var(--gutter)}
+/* standard sizes: a stacked photo is never wider than 900 px and never taller than 88% of the window, so it is shown whole */
+.pics.stack li{margin:0 auto 28px;max-width:min(900px,calc(88vh * var(--r)));max-width:min(900px,calc(88svh * var(--r)))}
+/* 2 columns on a computer: every photo keeps its shape and is at most 800 px wide, the pair sits in the middle of the page */
+.pics.fit{--gap:24px;width:calc(100% - 2 * var(--gutter));max-width:calc(var(--cols) * 800px + (var(--cols) - 1) * var(--gap));margin-inline:auto}
 .pics li.target{outline:2px solid var(--ink);outline-offset:-2px}
+/* the slideshow: one photo at a time, with a strip of small previews under it */
+body.slide .head{padding:24px var(--gutter) 6px}
+body.slide h1{font-size:34px;margin-top:8px;max-width:none}
+body.slide .count{margin:6px 0 0}
+body.slide main{padding-bottom:96px}
+.viewer{display:flex;flex-direction:column;height:calc(100vh - var(--above,160px));height:calc(100svh - var(--above,160px));min-height:420px;padding:8px var(--gutter) 18px}
+.viewer[hidden]{display:none}
+.vstage{flex:1 1 auto;min-height:0;display:flex;align-items:stretch;justify-content:center;gap:12px}
+.vfig{margin:0;flex:1 1 auto;min-width:0;display:flex;align-items:center;justify-content:center}
+.vfig img{display:block;max-width:none;object-fit:contain;transition:opacity .25s}
+.vfig img.busy{opacity:.25}
+.vnav{flex:none;align-self:center;width:48px;height:64px;padding:0;border:0;background:none;color:var(--soft);cursor:pointer;display:flex;align-items:center;justify-content:center}
+.vnav:hover{color:var(--ink)}
+.vnav[hidden]{display:none}
+.vstrip{flex:none;display:flex;gap:8px;justify-content:safe center;margin:14px 0 0;padding:4px;list-style:none;overflow-x:auto;scrollbar-width:none}
+.vstrip::-webkit-scrollbar{display:none}
+.vstrip[hidden]{display:none}
+.vstrip li{flex:none;margin:0}
+.vstrip button{display:block;width:72px;height:96px;padding:0;border:0;background:var(--tile);cursor:pointer;opacity:.5;transition:opacity .25s;overflow:hidden}
+.vstrip button:hover{opacity:.85}
+.vstrip button[aria-current="true"]{opacity:1;outline:1px solid var(--ink);outline-offset:3px}
+.vstrip img{width:100%;height:100%;object-fit:cover}
+.below{max-width:36rem;margin:56px auto 0;padding:0 var(--gutter)}
+.below[hidden]{display:none}
+.below .text{margin:0}
 .foot{text-align:center;margin:72px var(--gutter) 0}
 .foot a{display:inline-block;padding:14px 4px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid currentColor;text-decoration:none}
 .msg{text-align:center;padding:120px var(--gutter);color:var(--soft)}
@@ -77,12 +105,18 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
   h1{font-size:40px}
   .text{font-size:17px;margin-top:28px}
   .others{gap:0 18px}
+  body.slide h1{font-size:26px}
+  body.slide .head{padding:16px var(--gutter) 4px}
+  .viewer{padding:6px var(--gutter) 12px;min-height:380px}
+  .vnav{display:none}
+  .vstrip button{width:52px;height:68px}
+  .below{margin-top:36px}
 }
 @media (max-width:720px){.pics.grid,.pics.masonry{--cols:2!important}}
 </style>
 </head>
 <body>
-<header class="top">
+<header class="top" id="top">
   <a class="brand" href="index.html">Yarden Eshel</a>
   <a class="back caps" href="index.html#portfolio">&larr; Portfolio</a>
 </header>
@@ -94,6 +128,15 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
     <p class="count" id="count"></p>
     <ul class="others" id="others" aria-label="Other albums"></ul>
   </div>
+  <section class="viewer" id="viewer" aria-roledescription="carousel" aria-label="Photographs" hidden>
+    <div class="vstage">
+      <button class="vnav" id="vprev" type="button" aria-label="Previous photograph"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6"/></svg></button>
+      <figure class="vfig" id="vfig"><img id="vmain" alt="" decoding="async"></figure>
+      <button class="vnav" id="vnext" type="button" aria-label="Next photograph"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7.5 4 6 6-6 6"/></svg></button>
+    </div>
+    <ul class="vstrip" id="vstrip" aria-label="All photographs of this album"></ul>
+  </section>
+  <section class="below" id="below" hidden></section>
   <ol class="pics" id="photos"></ol>
   <p class="foot" id="foot" hidden><a href="index.html#portfolio">Back to the portfolio</a></p>
   <div class="msg" id="msg" hidden>
@@ -107,7 +150,8 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
     ['fashion-editorial', 'Fashion & Editorial'], ['model-tests', 'Model Tests'],
     ['actor-musicians', 'Actor & Musicians'], ['personal-work', 'Personal Work']
   ];
-  var LAYOUTS = ['grid', 'masonry', 'rows', 'stack'];
+  var LAYOUTS = ['slideshow', 'grid', 'masonry', 'rows', 'stack'];
+  var MAX_ALBUM = 12;   // an album shows its cover and at most 11 more photographs, so the page stays fast
   var SAFE_ID = /^[A-Za-z0-9-]{1,64}$/;
   var SAFE_PATH = /^photos\/[A-Za-z0-9-]{1,64}-(800|1600)\.jpg$/;
   var phone = window.matchMedia('(max-width: 720px)');
@@ -148,19 +192,19 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
   function albumFor(data, id) {
     var a = data.albums && typeof data.albums === 'object' ? data.albums[id] : null;
     if (a && typeof a === 'object') {
-      var photos = cleanList(a.photos, 60);
+      var photos = cleanList(a.photos, MAX_ALBUM);
       if (!photos.length) return null;
       return {
         section: nameOf(a.section) ? a.section : '',
         title: typeof a.title === 'string' ? a.title.slice(0, 120) : '',
         text: typeof a.text === 'string' ? a.text.slice(0, 3000) : '',
-        layout: LAYOUTS.indexOf(a.layout) >= 0 ? a.layout : 'grid',
+        layout: LAYOUTS.indexOf(a.layout) >= 0 ? a.layout : 'slideshow',
         columns: Math.round(num(a.columns, 2, 4, 3)), photos: photos
       };
     }
     for (var i = 0; i < SECTIONS.length; i++) {
       var list = sectionList(data, SECTIONS[i][0]);
-      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { section: SECTIONS[i][0], title: '', text: '', layout: 'grid', columns: 3, photos: [list[j]] };
+      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { section: SECTIONS[i][0], title: '', text: '', layout: 'slideshow', columns: 3, photos: [list[j]] };
     }
     return null;
   }
@@ -218,15 +262,102 @@ h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spaci
     if (row.length) place(row, sum, false);
   }
 
+  /** The slideshow: one large photo at a time, small previews under it. Arrows, the keyboard, a swipe and the previews all move it. */
+  function renderSlideshow(album, name) {
+    var photos = album.photos, n = photos.length, cur = 0;
+    var viewer = $('viewer'), fig = $('vfig'), img = $('vmain'), strip = $('vstrip');
+    document.body.classList.add('slide');
+    viewer.hidden = false;
+    $('vprev').hidden = $('vnext').hidden = n < 2;
+    strip.hidden = n < 2;
+    if (!$('text').hidden) { $('below').appendChild($('text')); $('below').hidden = false; }   // the album's text goes under the photos
+    var thumbs = photos.map(function (p, i) {
+      var li = document.createElement('li'), b = document.createElement('button'), t = document.createElement('img');
+      b.type = 'button'; b.setAttribute('aria-label', 'Show photograph ' + (i + 1) + ' of ' + n);
+      t.alt = ''; t.decoding = 'async'; t.width = 72; t.height = 96;
+      if (p.fx !== 0.5 || p.fy !== 0.5) t.style.objectPosition = Math.round(p.fx * 10000) / 100 + '% ' + Math.round(p.fy * 10000) / 100 + '%';
+      b.appendChild(t); li.appendChild(b); strip.appendChild(li);
+      b.addEventListener('click', function () { go(i); });
+      return t;
+    });
+    function ratioOf(p) { return p.w > 0 && p.h > 0 ? p.w / p.h : 0.75; }
+    // the photo is shown whole: as large as the free space allows, never cropped; the browser is told that size so it loads a file that is sharp but not larger than needed
+    function sizeFor(p) {
+      var r = ratioOf(p), bw = fig.clientWidth, bh = fig.clientHeight;
+      var w = Math.max(40, Math.min(bw, bh * r)), h = w / r;
+      return { w: Math.round(w), h: Math.round(h) };
+    }
+    function point(el, p, s) {
+      el.sizes = s.w + 'px';
+      el.srcset = p.small + ' 800w, ' + p.big + ' 1600w';
+      el.src = p.small;
+    }
+    function go(i) {
+      cur = ((i % n) + n) % n;
+      var p = photos[cur], s = sizeFor(p);
+      img.style.width = s.w + 'px'; img.style.height = s.h + 'px';
+      img.width = p.w > 0 ? p.w : 800; img.height = p.h > 0 ? p.h : 1067;
+      img.alt = p.alt || (name + ', photograph ' + (cur + 1) + ' of ' + n);
+      img.classList.add('busy');
+      point(img, p, s);
+      thumbs.forEach(function (t, k) { t.parentNode.setAttribute('aria-current', String(k === cur)); });
+      var cb = thumbs[cur] && thumbs[cur].parentNode;
+      if (cb && strip.scrollWidth > strip.clientWidth) strip.scrollLeft = cb.offsetLeft - (strip.clientWidth - cb.offsetWidth) / 2;
+      if (n > 1) $('count').textContent = (cur + 1) + ' / ' + n;
+      if (n > 1) { var nx = photos[(cur + 1) % n], pre = new Image(); point(pre, nx, sizeFor(nx)); }   // the next one is fetched ahead
+      if (n > 1 && history.replaceState) { try { history.replaceState(null, '', cur ? '#' + (cur + 1) : location.pathname + location.search); } catch (e) {} }
+    }
+    img.addEventListener('load', function () { img.classList.remove('busy'); });
+    img.addEventListener('error', function () { img.classList.remove('busy'); });
+    $('vprev').addEventListener('click', function () { go(cur - 1); });
+    $('vnext').addEventListener('click', function () { go(cur + 1); });
+    document.addEventListener('keydown', function (e) {
+      if (e.altKey || e.ctrlKey || e.metaKey || e.shiftKey || n < 2) return;
+      var t = e.target && e.target.tagName;
+      if (t === 'INPUT' || t === 'TEXTAREA' || t === 'SELECT') return;
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(cur + 1); } else if (e.key === 'ArrowLeft') { e.preventDefault(); go(cur - 1); }
+    });
+    var sx = null;
+    fig.addEventListener('touchstart', function (e) { sx = e.touches[0].clientX; }, { passive: true });
+    fig.addEventListener('touchend', function (e) {
+      if (sx === null) return;
+      var dx = e.changedTouches[0].clientX - sx; sx = null;
+      if (n > 1 && Math.abs(dx) >= 40) go(cur + (dx < 0 ? 1 : -1));
+    });
+    // the viewer is exactly as tall as the free part of the window, so the photo and the previews are always in view together
+    function measure() {
+      document.documentElement.style.setProperty('--above', ($('top').offsetHeight + $('head').offsetHeight) + 'px');
+      var p = photos[cur], s = sizeFor(p);
+      img.style.width = s.w + 'px'; img.style.height = s.h + 'px'; img.sizes = s.w + 'px';
+    }
+    var rt = 0;
+    window.addEventListener('resize', function () { clearTimeout(rt); rt = setTimeout(measure, 80); });
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { measure(); });
+    measure();
+    var start = Number((location.hash || '').replace('#', ''));
+    go(start >= 1 && start <= n ? start - 1 : 0);
+    // the small previews load once the large photo is in, so they never compete with it
+    var started = false;
+    function loadThumbs() { if (started) return; started = true; thumbs.forEach(function (t, k) { t.src = photos[k].small; }); }
+    img.addEventListener('load', loadThumbs, { once: true });
+    setTimeout(loadThumbs, 1500);
+    $('foot').hidden = false;
+  }
+
   function render(album, opts) {
+    if (album.layout === 'slideshow') { renderSlideshow(album, opts.name); return; }
     var list = $('photos');
-    list.className = 'pics ' + album.layout;
     var cols = phone.matches ? Math.min(album.columns, 2) : album.columns;
+    // 1 or 2 columns on a computer: every photo keeps its own shape (nothing is cropped) and is at most 800 px wide
+    var fit = !phone.matches && cols <= 2 && (album.layout === 'grid' || album.layout === 'masonry');
+    var layout = fit ? 'masonry' : album.layout;
+    list.className = 'pics ' + layout + (fit ? ' fit' : '');
     list.style.setProperty('--cols', String(cols));
-    var sizes = album.layout === 'stack' ? 'min(100vw, 1000px)' : album.layout === 'rows' ? (phone.matches ? '100vw' : '50vw') : phone.matches ? '50vw' : Math.round(100 / cols) + 'vw';
-    var o = { name: opts.name, sizes: sizes, focus: album.layout === 'grid', link: opts.link, target: opts.target, targetEl: null };
+    var sizes = layout === 'stack' ? 'min(100vw, 900px)' : layout === 'rows' ? (phone.matches ? '100vw' : '50vw')
+      : phone.matches ? '50vw' : fit ? 'min(800px, calc((100vw - 184px) / ' + cols + '))' : Math.round(100 / cols) + 'vw';
+    var o = { name: opts.name, sizes: sizes, focus: layout === 'grid', link: opts.link, target: opts.target, targetEl: null };
     album.photos.forEach(function (p, i) { addPhoto(list, p, i, o); });
-    if (album.layout === 'rows') {
+    if (layout === 'rows') {
       justify(list);
       var t = 0; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(function () { justify(list); }, 120); });
     }

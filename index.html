@@ -41,6 +41,10 @@ window.__photosReady = (function () {
 /* text colours follow the page colour: dark text on the white zones, light text everywhere else */
 body{--halo:rgba(10,10,10,.55);--ink:#F5F2EE;--soft:#A8A19A;--mute:#8F8781;--line:rgba(245,242,238,.16);--field:rgba(245,242,238,.3);--accent:#A8A19A;--tile:#151413;--error:#F0A8A8}
 body[data-zone="portfolio"],body[data-zone="about"]{--halo:rgba(240,240,240,.9);--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--field:#9C9692;--accent:#6B6560;--tile:#E2E2E2;--error:#9B2C2C}
+/* About always wears the light-page colours and Contact the dark-page colours, whatever the page behind them is doing at that moment
+   (the page dims between them as you scroll, see "dim" in the script), so their text never changes colour half way */
+#about{--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--field:#9C9692;--accent:#6B6560;--tile:#E2E2E2;--error:#9B2C2C}
+#contact{--ink:#F5F2EE;--soft:#A8A19A;--mute:#8F8781;--line:rgba(245,242,238,.16);--field:rgba(245,242,238,.3);--accent:#A8A19A;--error:#F0A8A8}
 
 *,*::before,*::after{box-sizing:border-box}
 html{scroll-behavior:smooth}
@@ -53,8 +57,9 @@ body{margin:0;font-family:var(--serif);font-size:16px;line-height:1.65;color:var
 .bgfx i.under{opacity:1;transition:none}
 .bgfx i.on{opacity:1;z-index:1}
 .bgfx [data-z="hero"]{background:var(--bg-hero)} .bgfx [data-z="portfolio"]{background:var(--bg-portfolio)} .bgfx [data-z="about"]{background:var(--bg-about)}
-.bgfx [data-z="contact"]{background:var(--bg-contact)} .bgfx [data-z="footer"]{background:var(--bg-footer)}
-#portfolio *,#about *,#contact *{transition-property:color,background-color,border-color;transition-duration:.9s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
+.bgfx [data-z="contact"]{background:var(--bg-contact);z-index:1;transition:none}   /* its opacity is set from the scroll position (see "dim" in the script) */
+.bgfx [data-z="footer"]{background:var(--bg-footer)}
+#portfolio *{transition-property:color,background-color,border-color;transition-duration:.9s;transition-timing-function:cubic-bezier(.4,0,.2,1)}
 img,video,svg{display:block;max-width:100%}
 a{color:inherit}
 a:hover{opacity:.72}
@@ -117,8 +122,21 @@ a:hover{opacity:.72}
 .grid{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:2px}
 .grid figure{margin:0;aspect-ratio:3/4;overflow:hidden;background:var(--tile)}
 .grid img{width:100%;height:100%;object-fit:cover}
-.grid a{display:block;width:100%;height:100%}
+.grid a{display:block;width:100%;height:100%;position:relative}
+.grid a:hover{opacity:1}
 .stage a{cursor:pointer}
+/* the album's name, shown over the photo while the mouse is on it (screens without a mouse never show it) */
+.cap{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:16px;text-align:center;color:#F5F2EE;
+  background:rgba(10,10,10,.42);font-weight:600;font-size:clamp(14px,1.5vw,24px);letter-spacing:.1em;line-height:1.3;text-transform:uppercase;
+  text-shadow:0 1px 10px rgba(0,0,0,.45);opacity:0;pointer-events:none;transition:opacity .35s var(--ease);overflow-wrap:anywhere}
+@media (hover:hover){.grid a:hover .cap{opacity:1}}
+.grid a:focus-visible .cap{opacity:1}
+/* 1 or 2 columns ("fit"): every photo keeps its own shape and is shown whole, never wider than --cap-w (800 px for 2 columns, 900 px for 1)
+   and never taller than 88% of the window, so it is never stretched past the size of the file and never needs scrolling to see all of it */
+.grid.fit{grid-template-columns:repeat(var(--cols),minmax(0,var(--cap-w,800px)));justify-content:center;gap:40px 24px;align-items:center}
+.grid.fit figure{aspect-ratio:auto;overflow:visible;background:none;display:flex;justify-content:center}
+.grid.fit a{width:min(100%,calc(88vh * var(--r,.75)));width:min(100%,calc(88svh * var(--r,.75)));height:auto}
+.grid.fit img{width:100%;height:auto;aspect-ratio:var(--r,.75);object-fit:contain}
 .more{margin:22px 0 0;text-align:center}
 .more a{display:inline-block;padding:14px 4px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid currentColor}
 .follow{position:absolute;z-index:3;left:0;top:0;width:46px;height:46px;margin:-23px 0 0 -23px;border-radius:50%;background:rgba(18,17,16,.82);
@@ -143,8 +161,7 @@ hr{height:1px;border:0;background:var(--line);margin:0}
 
 /* ── contact ── */
 #contact{position:relative;overflow:hidden;min-height:100svh;padding:140px var(--gutter);color:var(--ink)}
-.film{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity var(--fade)}
-body[data-zone="contact"] .film,body[data-zone="footer"] .film{opacity:1}
+.film{position:absolute;inset:0;pointer-events:none;opacity:0}   /* opacity follows the scroll position (see "dim" in the script) */
 .film .black{position:absolute;inset:0;background:#0A0A0A}
 .film video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05);opacity:.32}
 .film .shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.93) 0%,rgba(10,10,10,.82) 34%,rgba(10,10,10,.35) 62%,rgba(10,10,10,.12) 100%)}
@@ -400,7 +417,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     var focus = Array.isArray(p.focus) ? p.focus : [];
     return {
       id: typeof p.id === 'string' && SAFE_ID.test(p.id) ? p.id : null,
-      src: big || small, small: small || big,
+      src: big || small, small: small || big, big: big,
       alt: typeof p.alt === 'string' ? p.alt.slice(0, 300) : '',
       w: Math.round(num(p.width, 1, 20000, 0)), h: Math.round(num(p.height, 1, 20000, 0)),
       fx: num(focus[0], 0, 1, 0.5), fy: num(focus[1], 0, 1, 0.5)
@@ -429,6 +446,19 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   }
   function cropPosition(p) { return (Math.round(p.fx * 10000) / 100) + '% ' + (Math.round(p.fy * 10000) / 100) + '%'; }
 
+  // The name of each photo's album (shown when the mouse is over the photo). Only plain text of a sensible length is kept.
+  var albumTitle = {};
+  function readTitles(data) {
+    var a = data && typeof data === 'object' && data.albums && typeof data.albums === 'object' ? data.albums : null;
+    if (!a) return;
+    Object.keys(a).forEach(function (k) {
+      var t = a[k] && typeof a[k].title === 'string' ? a[k].title.replace(/\s+/g, ' ').trim().slice(0, 120) : '';
+      if (SAFE_ID.test(k) && t) albumTitle[k] = t;
+    });
+  }
+  // 1 or 2 columns on a computer, 1 column on a phone: "fit" mode (photos shown whole at a fixed standard size, see .grid.fit)
+  function fitMode(cols) { return phone.matches ? cols === 1 : cols <= 2; }
+
   var cats = [], N = 0, idx = 0, pos = 0, mid = 0, settle = null, loaded = {}, panels = [];
   var tabsEl = document.getElementById('tabs');
   var track = document.getElementById('track');
@@ -453,18 +483,34 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       panel.className = 'panel'; panel.setAttribute('role', 'tabpanel');
       var grid = document.createElement('div'); grid.className = 'grid';
       var cat = cats[p % N], cols = cat.cols || (phone.matches ? 2 : 3);
+      var fit = fitMode(cols);
       grid.style.setProperty('--cols', cols);
+      if (fit) { grid.classList.add('fit'); grid.style.setProperty('--cap-w', cols === 1 ? '900px' : '800px'); }
       var shownPhotos = cat.cap ? cat.photos.slice(0, cat.cap) : cat.photos;
       shownPhotos.forEach(function (ph) {
         var fig = document.createElement('figure');
         var img = document.createElement('img');
         img.alt = ph.alt; img.dataset.src = ph.small; img.decoding = 'async'; img.loading = 'lazy';
+        // two files per photo (800 and 1600 wide): the browser picks the smaller one that is still sharp on this screen
+        if (ph.big && ph.big !== ph.small) {
+          img.dataset.srcset = ph.small + ' 800w, ' + ph.big + ' 1600w';
+          img.dataset.sizes = fit
+            ? (phone.matches ? 'calc(100vw - 32px)' : cols === 1 ? 'min(900px, calc(100vw - 160px))' : 'min(800px, calc((100vw - 184px) / 2))')
+            : 'calc((100vw - ' + (phone.matches ? 32 : 160) + 'px) / ' + cols + ')';
+        }
         if (ph.w > 0 && ph.h > 0) { img.setAttribute('width', ph.w); img.setAttribute('height', ph.h); }
-        if (ph.fx !== 0.5 || ph.fy !== 0.5) img.style.objectPosition = cropPosition(ph);
+        if (fit) fig.style.setProperty('--r', String(ph.w > 0 && ph.h > 0 ? Math.round(ph.w / ph.h * 1000) / 1000 : 0.75));
+        if (!fit && (ph.fx !== 0.5 || ph.fy !== 0.5)) img.style.objectPosition = cropPosition(ph);
         if (cat.key && ph.id) {
           var a = document.createElement('a');
           a.href = 'album.html?p=' + encodeURIComponent(ph.id);
-          a.appendChild(img); fig.appendChild(a);
+          a.appendChild(img);
+          var name = albumTitle[ph.id];
+          if (name) {
+            var cap = document.createElement('span'); cap.className = 'cap'; cap.textContent = name; cap.setAttribute('aria-hidden', 'true');
+            a.setAttribute('aria-label', name); a.appendChild(cap);
+          }
+          fig.appendChild(a);
         } else fig.appendChild(img);
         grid.appendChild(fig);
       });
@@ -483,7 +529,10 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     if (loaded[c]) return; loaded[c] = true;
     panels.forEach(function (pn, i) {
       if (i % N !== c) return;
-      pn.querySelectorAll('img').forEach(function (im) { im.src = im.dataset.src; });
+      pn.querySelectorAll('img').forEach(function (im) {
+        if (im.dataset.srcset) { im.sizes = im.dataset.sizes; im.srcset = im.dataset.srcset; }
+        im.src = im.dataset.src;
+      });
     });
   }
   function paint(jump) {
@@ -540,6 +589,7 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     try { published = readPublished(data); } catch (e) { published = null; }
     var list = [];
     if (published) {
+      try { readTitles(data); } catch (e) { /* no names, nothing else changes */ }
       SECTION_TABS.forEach(function (t) {
         var photos = published(t[0]);
         var g = gridFor(data, t[0]);
@@ -592,9 +642,11 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
   var layers = document.getElementById('bgfx').children;
   function setZone(zone) {
     current = zone; document.body.dataset.zone = zone;
+    var layerZone = zone === 'contact' ? 'about' : zone;   // the Contact layer is not switched here: it dims in as you scroll (see "dim" below)
     for (var i = 0; i < layers.length; i++) {
       var l = layers[i];
-      if (l.dataset.z === zone) { l.classList.remove('under'); l.classList.add('on'); }
+      if (l.dataset.z === 'contact') continue;
+      if (l.dataset.z === layerZone) { l.classList.remove('under'); l.classList.add('on'); }
       else if (l.classList.contains('on')) { l.classList.remove('on'); l.classList.add('under'); }
       else { l.classList.remove('under'); }
     }
@@ -603,6 +655,43 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
     if (!e.target.classList.contains('on')) return;
     for (var i = 0; i < layers.length; i++) if (layers[i] !== e.target) layers[i].classList.remove('under');
   });
+
+  /* ── dim: the page goes from the light About colour to the dark Contact colour in step with your scrolling ──
+     progress 0 = the top edge of Contact is at 95% of the window height (just appearing), 1 = it is at 20% (nearly at the top).
+     What is shown follows that progress with a short, soft delay (about 0.2 s), so a mouse wheel that moves in jumps still dims smoothly.
+     About's text fades out while the page darkens and Contact's text fades in out of the dark. Only opacity changes (fast on phones). */
+  var contactLayer = layers[3], filmBox = document.querySelector('#contact .film');
+  var aboutBox = document.querySelector('#about .about-inner'), contactBox = document.querySelector('#contact .contact-inner');
+  var dimTarget = 0, dimShown = 0, dimLast = 0, dimRaf = 0, dimFirst = true, userMoved = false;
+  ['wheel', 'touchstart', 'keydown', 'mousedown'].forEach(function (t) { window.addEventListener(t, function () { userMoved = true; }, { passive: true, once: true }); });
+  // "arriving" = the page is brand new and nobody has scrolled it yet: the first second, or four seconds when the address ends in #something
+  function arriving() { var t = performance.now(); return !userMoved && (t < 1200 || (!!location.hash && t < 4000)); }
+  function smooth(t) { t = t < 0 ? 0 : t > 1 ? 1 : t; return t * t * (3 - 2 * t); }
+  function paintDim(s) {
+    var d = smooth(s);
+    contactLayer.style.opacity = d ? String(d) : '';
+    var f = smooth((d - 0.75) / 0.25), a = 1 - smooth(d / 0.6), c = smooth((d - 0.45) / 0.55);
+    if (filmBox) filmBox.style.opacity = String(f);
+    if (aboutBox) aboutBox.style.opacity = a < 1 ? String(a) : '';
+    if (contactBox) contactBox.style.opacity = c < 1 ? String(c) : '';
+  }
+  function stepDim(now) {
+    dimRaf = 0;
+    var dt = Math.min(64, Math.max(0, now - dimLast)); dimLast = now;
+    if (reduce.matches) dimShown = dimTarget;
+    else dimShown += (dimTarget - dimShown) * (1 - Math.exp(-dt / 220));
+    if (Math.abs(dimTarget - dimShown) < 0.0015) dimShown = dimTarget;
+    paintDim(dimShown);
+    if (dimShown !== dimTarget) dimRaf = requestAnimationFrame(stepDim);
+  }
+  function setDim(p) {
+    dimTarget = p;
+    // opening the page already at Contact (a link to #contact, or the browser restoring the scroll position): no dimming on arrival
+    if (dimFirst || arriving()) { dimFirst = false; dimShown = p; paintDim(p); return; }
+    if (dimShown === p && !dimRaf) return;
+    if (!dimRaf) { dimLast = performance.now(); dimRaf = requestAnimationFrame(stepDim); }
+  }
+  var dimSide = 'about';
   function update() {
     ticking = false;
     var vh = window.innerHeight, best = -1, zone = current, seenNow = 0;
@@ -612,7 +701,15 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
       if (z.id === current) seenNow = seen;
       if (seen > best) { best = seen; zone = z.id; }
     });
-    if (zone !== current && best - seenNow > vh * 0.08) { setZone(zone); }
+    var p = (0.95 * vh - zones[3].el.getBoundingClientRect().top) / (0.75 * vh);
+    p = p < 0 ? 0 : p > 1 ? 1 : p;
+    setDim(p);
+    // between About and Contact the text-colour switch of the fixed menu happens half way through the dimming, not at a separate moment
+    if (zone === 'about' || zone === 'contact') {
+      if (dimSide === 'about' && p >= 0.55) dimSide = 'contact'; else if (dimSide === 'contact' && p <= 0.45) dimSide = 'about';
+      zone = dimSide;
+      if (zone !== current) setZone(zone);
+    } else if (zone !== current && best - seenNow > vh * 0.08) { setZone(zone); }
     // start loading the film a screen before Contact arrives
     if (zones[3].el.getBoundingClientRect().top < vh * 2) startFilm();
     var on = window.scrollY > hero.offsetHeight - 120;
