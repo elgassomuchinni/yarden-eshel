@@ -509,6 +509,13 @@ footer .wash{position:absolute;inset:0;background:linear-gradient(180deg,#0A0A0A
           if (name) {
             var cap = document.createElement('span'); cap.className = 'cap'; cap.textContent = name; cap.setAttribute('aria-hidden', 'true');
             a.setAttribute('aria-label', name); a.appendChild(cap);
+            // a long name in a small photo: the letters shrink (down to 9 px) until the whole name fits inside the photo
+            var fitCap = function () {
+              cap.style.fontSize = '';
+              var fs = parseFloat(getComputedStyle(cap).fontSize) || 14;
+              while (cap.scrollHeight > cap.clientHeight + 1 && fs > 9) { fs -= 1; cap.style.fontSize = fs + 'px'; }
+            };
+            a.addEventListener('mouseenter', fitCap); a.addEventListener('focusin', fitCap);
           }
           fig.appendChild(a);
         } else fig.appendChild(img);
