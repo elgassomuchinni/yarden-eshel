@@ -43,8 +43,8 @@ main{padding:0 0 120px}
 .head{text-align:center;padding:112px var(--gutter) 64px}
 .head .label{margin:0;color:var(--soft);letter-spacing:.5em;padding-left:.5em;font-weight:600;font-size:11px;text-transform:uppercase}
 h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spacing:-.02em;line-height:1.1}
-.text{max-width:36rem;margin:36px auto 0;color:var(--soft);font-size:18px;line-height:1.8;text-align:left}
-.text p{margin:0 0 1.2em;white-space:pre-line}
+.text{color:var(--soft);font-size:18px;line-height:1.8;text-align:left;overflow-wrap:anywhere;word-break:normal;min-width:0}
+.text p{margin:0 0 1.2em;white-space:pre-line;overflow-wrap:anywhere}
 .text p:last-child{margin-bottom:0}
 .count{margin:28px 0 0;color:var(--mute);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
 .others{display:flex;flex-wrap:wrap;justify-content:center;gap:0 36px;margin:20px 0 0;padding:0;list-style:none}
@@ -91,9 +91,24 @@ body.slide main{padding-bottom:96px}
 .vstrip button:hover{opacity:.85}
 .vstrip button[aria-current="true"]{opacity:1;outline:1px solid var(--ink);outline-offset:3px}
 .vstrip img{width:100%;height:100%;object-fit:cover}
-.below{max-width:36rem;margin:56px auto 0;padding:0 var(--gutter)}
-.below[hidden]{display:none}
-.below .text{margin:0}
+/* the album's text: the photographer chooses where it sits (above, below, left, right or not shown) */
+.page{display:flex;flex-direction:column}
+.stage{order:1;min-width:0}
+.note{order:2;width:100%;max-width:calc(36rem + 2 * var(--gutter));margin:56px auto 0;padding:0 var(--gutter);min-width:0}
+.note[hidden]{display:none}
+.page.tp-above .note{order:0;margin:0 auto 36px}
+body:not(.slide) .page.tp-above .note{margin-top:-28px}
+body.slide .page.tp-above .note{margin-top:18px;margin-bottom:6px}
+@media (min-width:901px){
+  .page.tp-left,.page.tp-right{flex-direction:row;align-items:flex-start;gap:56px;padding:0 var(--gutter)}
+  .page.tp-left .note,.page.tp-right .note{flex:0 0 min(24rem,30%);width:auto;max-width:none;margin:12px 0 0;padding:0;position:sticky;top:24px}
+  .page.tp-left .note{order:0}
+  .page.tp-left .stage,.page.tp-right .stage{flex:1 1 0}
+  .page.tp-left .viewer,.page.tp-right .viewer{padding-inline:0}
+  .page.tp-left .pics,.page.tp-right .pics{margin-inline:0}
+  .page.tp-left .pics.fit,.page.tp-right .pics.fit{width:100%}
+  .page.tp-left .pics.stack,.page.tp-right .pics.stack{padding-inline:0}
+}
 .foot{text-align:center;margin:72px var(--gutter) 0}
 .foot a{display:inline-block;padding:14px 4px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid currentColor;text-decoration:none}
 .msg{text-align:center;padding:120px var(--gutter);color:var(--soft)}
@@ -103,14 +118,14 @@ body.slide main{padding-bottom:96px}
   .top{padding:16px var(--gutter)}
   .head{padding:64px var(--gutter) 40px}
   h1{font-size:40px}
-  .text{font-size:17px;margin-top:28px}
+  .text{font-size:17px}
   .others{gap:0 18px}
   body.slide h1{font-size:26px}
   body.slide .head{padding:16px var(--gutter) 4px}
   .viewer{padding:6px var(--gutter) 12px;min-height:380px}
   .vnav{display:none}
   .vstrip button{width:52px;height:68px}
-  .below{margin-top:36px}
+  .note{margin-top:36px}
 }
 @media (max-width:720px){.pics.grid,.pics.masonry{--cols:2!important}}
 </style>
@@ -124,10 +139,12 @@ body.slide main{padding-bottom:96px}
   <div id="head" class="head" hidden>
     <p class="label" id="label">Album</p>
     <h1 id="title"></h1>
-    <div class="text" id="text" hidden></div>
     <p class="count" id="count"></p>
     <ul class="others" id="others" aria-label="Other albums"></ul>
   </div>
+  <div class="page tp-below" id="page">
+  <aside class="note" id="note" hidden><div class="text" id="text"></div></aside>
+  <div class="stage" id="stage">
   <section class="viewer" id="viewer" aria-roledescription="carousel" aria-label="Photographs" hidden>
     <div class="vstage">
       <button class="vnav" id="vprev" type="button" aria-label="Previous photograph"><svg width="22" height="22" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12.5 4 6.5 10l6 6"/></svg></button>
@@ -136,8 +153,9 @@ body.slide main{padding-bottom:96px}
     </div>
     <ul class="vstrip" id="vstrip" aria-label="All photographs of this album"></ul>
   </section>
-  <section class="below" id="below" hidden></section>
   <ol class="pics" id="photos"></ol>
+  </div>
+  </div>
   <p class="foot" id="foot" hidden><a href="index.html#portfolio">Back to the portfolio</a></p>
   <div class="msg" id="msg" hidden>
     <p id="msg-text"></p>
@@ -151,6 +169,7 @@ body.slide main{padding-bottom:96px}
     ['actor-musicians', 'Actor & Musicians'], ['personal-work', 'Personal Work']
   ];
   var LAYOUTS = ['slideshow', 'grid', 'masonry', 'rows', 'stack'];
+  var TEXT_POS = ['above', 'below', 'left', 'right', 'hidden'];   // where the album's text sits; anything else counts as 'below'
   var MAX_ALBUM = 12;   // an album shows its cover and at most 11 more photographs, so the page stays fast
   var SAFE_ID = /^[A-Za-z0-9-]{1,64}$/;
   var SAFE_PATH = /^photos\/[A-Za-z0-9-]{1,64}-(800|1600)\.jpg$/;
@@ -199,12 +218,13 @@ body.slide main{padding-bottom:96px}
         title: typeof a.title === 'string' ? a.title.slice(0, 120) : '',
         text: typeof a.text === 'string' ? a.text.slice(0, 3000) : '',
         layout: LAYOUTS.indexOf(a.layout) >= 0 ? a.layout : 'slideshow',
+        textPos: TEXT_POS.indexOf(a.textPos) >= 0 ? a.textPos : 'below',
         columns: Math.round(num(a.columns, 2, 4, 3)), photos: photos
       };
     }
     for (var i = 0; i < SECTIONS.length; i++) {
       var list = sectionList(data, SECTIONS[i][0]);
-      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { section: SECTIONS[i][0], title: '', text: '', layout: 'slideshow', columns: 3, photos: [list[j]] };
+      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { section: SECTIONS[i][0], title: '', text: '', layout: 'slideshow', textPos: 'below', columns: 3, photos: [list[j]] };
     }
     return null;
   }
@@ -270,7 +290,6 @@ body.slide main{padding-bottom:96px}
     viewer.hidden = false;
     $('vprev').hidden = $('vnext').hidden = n < 2;
     strip.hidden = n < 2;
-    if (!$('text').hidden) { $('below').appendChild($('text')); $('below').hidden = false; }   // the album's text goes under the photos
     var thumbs = photos.map(function (p, i) {
       var li = document.createElement('li'), b = document.createElement('button'), t = document.createElement('img');
       b.type = 'button'; b.setAttribute('aria-label', 'Show photograph ' + (i + 1) + ' of ' + n);
@@ -326,7 +345,8 @@ body.slide main{padding-bottom:96px}
     });
     // the viewer is exactly as tall as the free part of the window, so the photo and the previews are always in view together
     function measure() {
-      document.documentElement.style.setProperty('--above', ($('top').offsetHeight + $('head').offsetHeight) + 'px');
+      // everything above the photo: the top bar, the heading and (when the text is placed above) the text
+      document.documentElement.style.setProperty('--above', Math.round($('stage').getBoundingClientRect().top + window.pageYOffset) + 'px');
       var p = photos[cur], s = sizeFor(p);
       img.style.width = s.w + 'px'; img.style.height = s.h + 'px'; img.sizes = s.w + 'px';
     }
@@ -375,7 +395,7 @@ body.slide main{padding-bottom:96px}
       if (!para) return;
       var p = document.createElement('p'); p.textContent = para; box.appendChild(p);
     });
-    box.hidden = box.children.length === 0;
+    $('note').hidden = box.children.length === 0;
     $('count').textContent = count + (count === 1 ? ' photograph' : ' photographs');
     $('head').hidden = false;
     document.title = title + ' · Yarden Eshel';
@@ -386,7 +406,8 @@ body.slide main{padding-bottom:96px}
     var album = albumFor(data, coverId);
     if (!album) { say('This album is not available. It may have moved, or it has no photographs yet.'); return; }
     var section = nameOf(album.section);
-    showHead(album.title ? (section || 'Album') : 'Album', album.title || section || 'Album', album.text, album.photos.length);
+    showHead(album.title ? (section || 'Album') : 'Album', album.title || section || 'Album', album.textPos === 'hidden' ? '' : album.text, album.photos.length);
+    $('page').className = 'page tp-' + album.textPos;
     render(album, { name: album.title || section || 'Album', link: false, target: '' });
   }
 
