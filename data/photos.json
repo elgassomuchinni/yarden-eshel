@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-13T16:04:35.766Z",
+  "publishedAt": "2026-10-13T16:07:09.005Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -662,8 +662,8 @@
     "9c928ac4-3131-4d02-a55d-22e5a248454b": {
       "section": "actor-musicians",
       "title": "",
-      "text": "",
-      "layout": "slideshow",
+      "text": "hhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhfffffffffff",
+      "layout": "grid",
       "columns": 3,
       "photos": [
         {
@@ -673,6 +673,42 @@
           "alt": "",
           "width": 1600,
           "height": 1639,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "88fd01d8-7ce0-4e86-a64d-c69d6b24f50f",
+          "src": "photos/88fd01d8-7ce0-4e86-a64d-c69d6b24f50f-1600.jpg",
+          "srcSmall": "photos/88fd01d8-7ce0-4e86-a64d-c69d6b24f50f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c5bb142d-f1be-4f85-85c1-e7c735187c15",
+          "src": "photos/c5bb142d-f1be-4f85-85c1-e7c735187c15-1600.jpg",
+          "srcSmall": "photos/c5bb142d-f1be-4f85-85c1-e7c735187c15-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "87862eec-b1d1-4b84-b750-0ad41c13d180",
+          "src": "photos/87862eec-b1d1-4b84-b750-0ad41c13d180-1600.jpg",
+          "srcSmall": "photos/87862eec-b1d1-4b84-b750-0ad41c13d180-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
