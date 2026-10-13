@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Album · Yarden Eshel</title>
-<meta name="description" content="A full album of photographs by Yarden Eshel, fashion photographer in Israel.">
+<meta name="description" content="An album of photographs by Yarden Eshel, fashion photographer in Israel.">
 <meta name="theme-color" content="#F0F0F0">
 <!-- Demo build: most portfolio images are placeholders, not Yarden's work. Keep this until her real photographs replace them. -->
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
@@ -24,40 +24,61 @@ window.__photosReady = (function () {
 })();
 </script>
 <style>
-:root{--serif:'Source Serif 4',Georgia,serif;--bg:#F0F0F0;--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--tile:#E2E2E2;--gutter:80px;--row:230px}
+/* Same colours, type and spacing as the portfolio on the home page. */
+:root{--serif:'Source Serif 4',Georgia,serif;--bg:#F0F0F0;--ink:#1C1A18;--soft:#4F4A46;--mute:#6B6560;--line:#D2D2D2;--tile:#E2E2E2;--gutter:80px;--gap:2px}
 *,*::before,*::after{box-sizing:border-box}
-html{background:var(--bg)}
-body{margin:0;min-height:100vh;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
+html{background:var(--bg);overflow-x:clip}
+body{margin:0;min-height:100vh;overflow-x:clip;font-family:var(--serif);font-size:16px;line-height:1.65;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased}
 a{color:inherit}
 a:hover{opacity:.72}
 :focus-visible{outline:2px solid currentColor;outline-offset:3px}
 img{display:block;max-width:100%}
 .caps{font-weight:600;font-size:11px;letter-spacing:.14em;text-transform:uppercase}
-.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:18px var(--gutter);border-bottom:1px solid var(--line)}
+.top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 16px;padding:22px var(--gutter);border-bottom:1px solid var(--line)}
 .top a{text-decoration:none;padding:12px 0}
 .brand{font-size:20px;letter-spacing:.06em;line-height:1}
 .back{border-bottom:1px solid currentColor;padding:12px 0 6px!important}
-main{padding:72px var(--gutter) 96px}
-.head{text-align:center;margin:0 0 40px}
-.head .label{margin:0 0 14px;color:var(--soft);letter-spacing:.5em;padding-left:.5em;font-weight:600;font-size:11px;text-transform:uppercase}
-h1{margin:0;font-weight:300;font-size:64px;letter-spacing:-.02em;line-height:1.1}
-.count{margin:14px 0 0;color:var(--soft);font-size:15px}
-.others{display:flex;flex-wrap:wrap;justify-content:center;gap:0 40px;margin:28px 0 0;padding:0;list-style:none}
+main{padding:0 0 120px}
+/* heading block: the portfolio's own heading style, then the album's text */
+.head{text-align:center;padding:112px var(--gutter) 64px}
+.head .label{margin:0;color:var(--soft);letter-spacing:.5em;padding-left:.5em;font-weight:600;font-size:11px;text-transform:uppercase}
+h1{margin:18px auto 0;max-width:20ch;font-weight:300;font-size:72px;letter-spacing:-.02em;line-height:1.1}
+.text{max-width:36rem;margin:36px auto 0;color:var(--soft);font-size:18px;line-height:1.8;text-align:left}
+.text p{margin:0 0 1.2em;white-space:pre-line}
+.text p:last-child{margin-bottom:0}
+.count{margin:28px 0 0;color:var(--mute);font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.others{display:flex;flex-wrap:wrap;justify-content:center;gap:0 36px;margin:20px 0 0;padding:0;list-style:none}
 .others a{display:inline-block;padding:14px 4px;text-decoration:none;color:var(--mute)}
-/* Photos sit in rows that fill the width. Each keeps its own shape (width and height are set), so nothing jumps while loading. */
-.photos{display:flex;flex-wrap:wrap;gap:4px;margin:0;padding:0;list-style:none}
-.photos li{flex:calc(var(--r) * 100) 1 calc(var(--r) * var(--row));min-width:0;margin:0;background:var(--tile);overflow:hidden}
-.photos::after{content:'';flex-grow:1000000}
-.photos img{width:100%;height:auto;aspect-ratio:var(--r)}
-.photos li.target{outline:2px solid var(--ink);outline-offset:-2px}
-.msg{text-align:center;padding:96px 0;color:var(--soft)}
+/* photos: four ways to lay them out, chosen per album in the admin */
+.pics{margin:0 var(--gutter);padding:0;list-style:none}
+.pics li{margin:0;background:var(--tile);overflow:hidden}
+.pics a{display:block}
+.pics img{width:100%;height:auto;aspect-ratio:var(--r)}
+.pics.grid{display:grid;grid-template-columns:repeat(var(--cols,3),minmax(0,1fr));gap:var(--gap)}
+.pics.grid li{aspect-ratio:3/4}
+.pics.grid a,.pics.grid img{width:100%;height:100%}
+.pics.grid img{object-fit:cover;aspect-ratio:auto}
+.pics.masonry{display:block;columns:var(--cols,3);column-gap:var(--gap)}
+.pics.masonry li{break-inside:avoid;margin:0 0 var(--gap)}
+.pics.rows{display:flex;flex-wrap:wrap;justify-content:center;gap:var(--gap)}
+.pics.rows img{width:100%;height:100%;aspect-ratio:auto;object-fit:cover}
+.pics.rows a{height:100%}
+.pics.stack{max-width:calc(1000px + 2 * var(--gutter));margin-inline:auto;padding:0 var(--gutter)}
+.pics.stack li{margin:0 0 28px}
+.pics li.target{outline:2px solid var(--ink);outline-offset:-2px}
+.foot{text-align:center;margin:72px var(--gutter) 0}
+.foot a{display:inline-block;padding:14px 4px;font-size:12px;letter-spacing:.2em;text-transform:uppercase;border-bottom:1px solid currentColor;text-decoration:none}
+.msg{text-align:center;padding:120px var(--gutter);color:var(--soft)}
 .msg a{display:inline-block;margin-top:14px;padding:12px 4px;border-bottom:1px solid currentColor;text-decoration:none}
 @media (max-width:720px){
-  :root{--gutter:16px;--row:150px}
-  main{padding:40px var(--gutter) 64px}
-  h1{font-size:38px}
+  :root{--gutter:16px}
+  .top{padding:16px var(--gutter)}
+  .head{padding:64px var(--gutter) 40px}
+  h1{font-size:40px}
+  .text{font-size:17px;margin-top:28px}
   .others{gap:0 18px}
 }
+@media (max-width:720px){.pics.grid,.pics.masonry{--cols:2!important}}
 </style>
 </head>
 <body>
@@ -67,12 +88,14 @@ h1{margin:0;font-weight:300;font-size:64px;letter-spacing:-.02em;line-height:1.1
 </header>
 <main id="main">
   <div id="head" class="head" hidden>
-    <p class="label">Album</p>
+    <p class="label" id="label">Album</p>
     <h1 id="title"></h1>
+    <div class="text" id="text" hidden></div>
     <p class="count" id="count"></p>
     <ul class="others" id="others" aria-label="Other albums"></ul>
   </div>
-  <ol class="photos" id="photos"></ol>
+  <ol class="pics" id="photos"></ol>
+  <p class="foot" id="foot" hidden><a href="index.html#portfolio">Back to the portfolio</a></p>
   <div class="msg" id="msg" hidden>
     <p id="msg-text"></p>
     <a class="caps" href="index.html#portfolio">Back to the portfolio</a>
@@ -80,96 +103,187 @@ h1{margin:0;font-weight:300;font-size:64px;letter-spacing:-.02em;line-height:1.1
 </main>
 <script>
 (function () {
-  var ALBUMS = [
+  var SECTIONS = [
     ['fashion-editorial', 'Fashion & Editorial'], ['model-tests', 'Model Tests'],
     ['actor-musicians', 'Actor & Musicians'], ['personal-work', 'Personal Work']
   ];
+  var LAYOUTS = ['grid', 'masonry', 'rows', 'stack'];
   var SAFE_ID = /^[A-Za-z0-9-]{1,64}$/;
   var SAFE_PATH = /^photos\/[A-Za-z0-9-]{1,64}-(800|1600)\.jpg$/;
   var phone = window.matchMedia('(max-width: 720px)');
-  var layout = phone.matches ? 'phone' : 'desktop';
+  var which = phone.matches ? 'phone' : 'desktop';
   var q = new URLSearchParams(location.search);
-  var key = q.get('a') || '', target = q.get('p') || '';
+  var sectionKey = q.get('a') || '', coverId = q.get('p') || '';
 
   function num(v, lo, hi, d) { return typeof v === 'number' && isFinite(v) && v >= lo && v <= hi ? v : d; }
+  function $(id) { return document.getElementById(id); }
+  function say(text) { $('msg-text').textContent = text; $('msg').hidden = false; }
+  function nameOf(key) { for (var i = 0; i < SECTIONS.length; i++) if (SECTIONS[i][0] === key) return SECTIONS[i][1]; return ''; }
+  // Only well-formed entries are used; anything else in the file is ignored.
   function clean(p) {
     if (!p || typeof p !== 'object') return null;
     var big = typeof p.src === 'string' && SAFE_PATH.test(p.src) ? p.src : null;
     var small = typeof p.srcSmall === 'string' && SAFE_PATH.test(p.srcSmall) ? p.srcSmall : null;
     if (!big && !small) return null;
+    var f = Array.isArray(p.focus) ? p.focus : [];
     return {
       id: typeof p.id === 'string' && SAFE_ID.test(p.id) ? p.id : '',
       big: big || small, small: small || big,
       alt: typeof p.alt === 'string' ? p.alt.slice(0, 300) : '',
-      w: Math.round(num(p.width, 1, 20000, 0)), h: Math.round(num(p.height, 1, 20000, 0))
+      w: Math.round(num(p.width, 1, 20000, 0)), h: Math.round(num(p.height, 1, 20000, 0)),
+      fx: num(f[0], 0, 1, 0.5), fy: num(f[1], 0, 1, 0.5)
     };
   }
-  function listFor(data, k) {
-    var s = data.sections[k], arr = s && Array.isArray(s[layout]) ? s[layout] : [], out = [];
-    for (var i = 0; i < arr.length; i++) { var c = clean(arr[i]); if (c) out.push(c); }
+  function cleanList(arr, max) {
+    var out = [];
+    for (var i = 0; Array.isArray(arr) && i < arr.length && out.length < max; i++) { var c = clean(arr[i]); if (c) out.push(c); }
     return out;
   }
-  function $(id) { return document.getElementById(id); }
-  function say(text) { $('msg-text').textContent = text; $('msg').hidden = false; }
+  function sectionList(data, key) {
+    var s = data.sections[key];
+    return cleanList(s && s[which], 200);
+  }
 
-  function show(data) {
-    var name = '';
-    for (var i = 0; i < ALBUMS.length; i++) if (ALBUMS[i][0] === key) name = ALBUMS[i][1];
-    var photos = name ? listFor(data, key) : [];
-    if (!name || !photos.length) { say('This album is not available. It may have moved, or it has no photographs yet.'); return; }
-
-    document.title = name + ' · Yarden Eshel';
-    $('title').textContent = name;
-    $('count').textContent = photos.length + (photos.length === 1 ? ' photograph' : ' photographs');
-    $('head').hidden = false;
-
-    var others = $('others');
-    ALBUMS.forEach(function (a) {
-      if (a[0] === key || !listFor(data, a[0]).length) return;
-      var li = document.createElement('li'), l = document.createElement('a');
-      l.className = 'caps'; l.href = 'album.html?a=' + encodeURIComponent(a[0]); l.textContent = a[1];
-      li.appendChild(l); others.appendChild(li);
-    });
-
-    var list = $('photos'), lazy = [], targetEl = null, eager = 0;
-    photos.forEach(function (p, i) {
-      var li = document.createElement('li'), img = document.createElement('img');
-      var ratio = p.w > 0 && p.h > 0 ? p.w / p.h : 0.75;
-      li.style.setProperty('--r', (Math.round(ratio * 1000) / 1000).toString());
-      img.alt = p.alt || (name + ', photograph ' + (i + 1));
-      img.width = p.w > 0 ? p.w : 800; img.height = p.h > 0 ? p.h : 1067;
-      img.decoding = 'async';
-      img.sizes = phone.matches ? '50vw' : '33vw';
-      var set = function () {
-        img.srcset = p.small + ' 800w, ' + p.big + ' 1600w'; img.src = p.small;
+  // The album for one cover photo: the published one, or (older photo lists) just the cover on its own.
+  function albumFor(data, id) {
+    var a = data.albums && typeof data.albums === 'object' ? data.albums[id] : null;
+    if (a && typeof a === 'object') {
+      var photos = cleanList(a.photos, 60);
+      if (!photos.length) return null;
+      return {
+        section: nameOf(a.section) ? a.section : '',
+        title: typeof a.title === 'string' ? a.title.slice(0, 120) : '',
+        text: typeof a.text === 'string' ? a.text.slice(0, 3000) : '',
+        layout: LAYOUTS.indexOf(a.layout) >= 0 ? a.layout : 'grid',
+        columns: Math.round(num(a.columns, 2, 4, 3)), photos: photos
       };
-      var isTarget = target && p.id === target;
-      if (isTarget) { targetEl = li; li.className = 'target'; img.fetchPriority = 'high'; set(); }
-      else if (i < 4 && !target) { eager++; set(); }
-      else { img.loading = 'lazy'; img.dataset.s = '1'; lazy.push([img, set]); }
-      li.appendChild(img); list.appendChild(li);
-    });
+    }
+    for (var i = 0; i < SECTIONS.length; i++) {
+      var list = sectionList(data, SECTIONS[i][0]);
+      for (var j = 0; j < list.length; j++) if (list[j].id === id) return { section: SECTIONS[i][0], title: '', text: '', layout: 'grid', columns: 3, photos: [list[j]] };
+    }
+    return null;
+  }
 
-    // Photos load only when they are about to scroll into view (plus a small head start), so a 60-photo album does not download 60 photos at once.
+  var ioLazy = [];
+  /** One <li> per photo. The first few load at once, the rest only when they are about to scroll into view. */
+  function addPhoto(list, p, i, o) {
+    var li = document.createElement('li'), img = document.createElement('img');
+    var ratio = p.w > 0 && p.h > 0 ? p.w / p.h : 0.75;
+    li.style.setProperty('--r', (Math.round(ratio * 1000) / 1000).toString());
+    li.dataset.ratio = String(ratio);
+    img.alt = p.alt || (o.name + ', photograph ' + (i + 1));
+    img.width = p.w > 0 ? p.w : 800; img.height = p.h > 0 ? p.h : 1067;
+    img.decoding = 'async';
+    img.sizes = o.sizes;
+    if (o.focus) img.style.objectPosition = Math.round(p.fx * 10000) / 100 + '% ' + Math.round(p.fy * 10000) / 100 + '%';
+    var set = function () { img.srcset = p.small + ' 800w, ' + p.big + ' 1600w'; img.src = p.small; };
+    var isTarget = o.target && p.id === o.target;
+    if (isTarget) { o.targetEl = li; li.className = 'target'; img.fetchPriority = 'high'; set(); }
+    else if (i < 4 && !o.target) set();
+    else { img.loading = 'lazy'; img.dataset.s = '1'; ioLazy.push([img, set]); }
+    if (o.link && p.id) { var a = document.createElement('a'); a.href = 'album.html?p=' + encodeURIComponent(p.id); a.appendChild(img); li.appendChild(a); }
+    else li.appendChild(img);
+    list.appendChild(li);
+  }
+  function watchLazy() {
     if ('IntersectionObserver' in window) {
       var io = new IntersectionObserver(function (entries) {
         entries.forEach(function (e) {
           if (!e.isIntersecting) return;
-          var item = lazy.filter(function (x) { return x[0] === e.target; })[0];
+          var item = ioLazy.filter(function (x) { return x[0] === e.target; })[0];
           if (item) item[1](); io.unobserve(e.target);
         });
       }, { rootMargin: '300px 0px' });
-      lazy.forEach(function (x) { io.observe(x[0]); });
-    } else lazy.forEach(function (x) { x[1](); });
+      ioLazy.forEach(function (x) { io.observe(x[0]); });
+    } else ioLazy.forEach(function (x) { x[1](); });
+  }
 
-    if (targetEl) targetEl.scrollIntoView({ block: 'center' });
+  /** "rows": photos keep their shape and fill each row edge to edge; a short last row keeps its natural height and sits in the middle. */
+  function justify(list) {
+    var items = [].slice.call(list.children), W = list.clientWidth, gap = 2, T = phone.matches ? 190 : 340;
+    if (!W) return;
+    var row = [], sum = 0;
+    function place(rowItems, rowSum, complete) {
+      var h = complete ? (W - gap * (rowItems.length - 1)) / rowSum : T, used = 0;
+      rowItems.forEach(function (li, k) {
+        var w = complete && k === rowItems.length - 1 ? W - used - gap * (rowItems.length - 1) : Math.floor(Number(li.dataset.ratio) * h);
+        used += w; li.style.width = w + 'px'; li.style.height = Math.round(h) + 'px';
+      });
+    }
+    items.forEach(function (li) {
+      var r = Number(li.dataset.ratio); row.push(li); sum += r;
+      if (sum * T + gap * (row.length - 1) >= W) { place(row, sum, true); row = []; sum = 0; }
+    });
+    if (row.length) place(row, sum, false);
+  }
+
+  function render(album, opts) {
+    var list = $('photos');
+    list.className = 'pics ' + album.layout;
+    var cols = phone.matches ? Math.min(album.columns, 2) : album.columns;
+    list.style.setProperty('--cols', String(cols));
+    var sizes = album.layout === 'stack' ? 'min(100vw, 1000px)' : album.layout === 'rows' ? (phone.matches ? '100vw' : '50vw') : phone.matches ? '50vw' : Math.round(100 / cols) + 'vw';
+    var o = { name: opts.name, sizes: sizes, focus: album.layout === 'grid', link: opts.link, target: opts.target, targetEl: null };
+    album.photos.forEach(function (p, i) { addPhoto(list, p, i, o); });
+    if (album.layout === 'rows') {
+      justify(list);
+      var t = 0; window.addEventListener('resize', function () { clearTimeout(t); t = setTimeout(function () { justify(list); }, 120); });
+    }
+    watchLazy();
+    $('foot').hidden = false;
+    if (o.targetEl) o.targetEl.scrollIntoView({ block: 'center' });
+  }
+
+  function showHead(label, title, text, count) {
+    $('label').textContent = label; $('title').textContent = title;
+    var box = $('text');
+    box.replaceChildren();
+    String(text || '').split(/\n\s*\n/).forEach(function (para) {
+      para = para.replace(/^\s+|\s+$/g, '');
+      if (!para) return;
+      var p = document.createElement('p'); p.textContent = para; box.appendChild(p);
+    });
+    box.hidden = box.children.length === 0;
+    $('count').textContent = count + (count === 1 ? ' photograph' : ' photographs');
+    $('head').hidden = false;
+    document.title = title + ' · Yarden Eshel';
+  }
+
+  // One photo's own album.
+  function showAlbum(data) {
+    var album = albumFor(data, coverId);
+    if (!album) { say('This album is not available. It may have moved, or it has no photographs yet.'); return; }
+    var section = nameOf(album.section);
+    showHead(album.title ? (section || 'Album') : 'Album', album.title || section || 'Album', album.text, album.photos.length);
+    render(album, { name: album.title || section || 'Album', link: false, target: '' });
+  }
+
+  // Every photo of one category (the "View the full album" link on the home page).
+  function showSection(data) {
+    var name = nameOf(sectionKey);
+    var photos = name ? sectionList(data, sectionKey) : [];
+    if (!name || !photos.length) { say('This album is not available. It may have moved, or it has no photographs yet.'); return; }
+    showHead('Portfolio', name, '', photos.length);
+    var others = $('others');
+    SECTIONS.forEach(function (a) {
+      if (a[0] === sectionKey || !sectionList(data, a[0]).length) return;
+      var li = document.createElement('li'), l = document.createElement('a');
+      l.className = 'caps'; l.href = 'album.html?a=' + encodeURIComponent(a[0]); l.textContent = a[1];
+      li.appendChild(l); others.appendChild(li);
+    });
+    render({ layout: 'masonry', columns: 4, photos: photos }, { name: name, link: true, target: coverId });
   }
 
   (window.__photosReady || Promise.resolve(null)).then(function (data) {
     if (!data || typeof data !== 'object' || data.version !== 1 || !data.sections || typeof data.sections !== 'object') {
       say('The albums could not be loaded right now. Please try again in a moment.'); return;
     }
-    try { show(data); } catch (e) { say('The albums could not be loaded right now. Please try again in a moment.'); }
+    try {
+      if (sectionKey) showSection(data);
+      else if (coverId && SAFE_ID.test(coverId)) showAlbum(data);
+      else say('This album is not available. It may have moved, or it has no photographs yet.');
+    } catch (e) { say('The albums could not be loaded right now. Please try again in a moment.'); }
   });
 })();
 </script>
