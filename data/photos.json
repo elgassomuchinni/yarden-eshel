@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-13T19:47:21.093Z",
+  "publishedAt": "2026-10-14T15:16:10.782Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -68,6 +68,18 @@
           "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
           "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
           "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ac595e2f-c5a4-476d-9b96-30c990c59635",
+          "src": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-1600.jpg",
+          "srcSmall": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -143,6 +155,18 @@
           "src": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-1600.jpg",
           "srcSmall": "photos/c35952b7-f19c-4574-b52f-061896dce4d6-800.jpg",
           "alt": "!#@ gtccdcscsdcsdcsdcsdssssssvsdvsdvsdvsdvdsvdsvsvsdv",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ac595e2f-c5a4-476d-9b96-30c990c59635",
+          "src": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-1600.jpg",
+          "srcSmall": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -550,6 +574,28 @@
           "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
           "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
           "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "ac595e2f-c5a4-476d-9b96-30c990c59635": {
+      "section": "fashion-editorial",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "ac595e2f-c5a4-476d-9b96-30c990c59635",
+          "src": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-1600.jpg",
+          "srcSmall": "photos/ac595e2f-c5a4-476d-9b96-30c990c59635-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
