@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-14T15:16:10.782Z",
+  "publishedAt": "2026-10-14T15:49:20.932Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -179,18 +179,6 @@
     "model-tests": {
       "desktop": [
         {
-          "id": "a93e4b18-a2ac-47bb-801f-229f12e12ad3",
-          "src": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-1600.jpg",
-          "srcSmall": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
           "id": "b3feb5da-e873-4636-aa7a-3f235519fe25",
           "src": "photos/b3feb5da-e873-4636-aa7a-3f235519fe25-1600.jpg",
           "srcSmall": "photos/b3feb5da-e873-4636-aa7a-3f235519fe25-800.jpg",
@@ -206,6 +194,18 @@
           "id": "f879a839-988f-490d-ac92-fb3b3871a10d",
           "src": "photos/f879a839-988f-490d-ac92-fb3b3871a10d-1600.jpg",
           "srcSmall": "photos/f879a839-988f-490d-ac92-fb3b3871a10d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a93e4b18-a2ac-47bb-801f-229f12e12ad3",
+          "src": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-1600.jpg",
+          "srcSmall": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -305,22 +305,22 @@
     "actor-musicians": {
       "desktop": [
         {
-          "id": "9c928ac4-3131-4d02-a55d-22e5a248454b",
-          "src": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-1600.jpg",
-          "srcSmall": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-800.jpg",
-          "alt": "hahaha",
+          "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
+          "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
+          "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
+          "alt": "",
           "width": 1600,
-          "height": 1639,
+          "height": 1887,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "a0032349-f39e-4d3d-9585-09c15d0fb01f",
-          "src": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-1600.jpg",
-          "srcSmall": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-800.jpg",
-          "alt": "hi shalom",
+          "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
+          "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
+          "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -329,10 +329,10 @@
           ]
         },
         {
-          "id": "a847515e-e2ea-4bee-b6fd-92d538e4c461",
-          "src": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-1600.jpg",
-          "srcSmall": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-800.jpg",
-          "alt": "fefefef",
+          "id": "5ad45bd0-3517-430d-8383-001080e9af18",
+          "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
+          "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -341,12 +341,12 @@
           ]
         },
         {
-          "id": "14ab9d3d-5a7b-40e2-93e6-2a69b60d2190",
-          "src": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-1600.jpg",
-          "srcSmall": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-800.jpg",
-          "alt": "sdvsdvwgwgwwww",
+          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
+          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
+          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
+          "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 2371,
           "focus": [
             0.5,
             0.5
@@ -355,22 +355,10 @@
       ],
       "phone": [
         {
-          "id": "9c928ac4-3131-4d02-a55d-22e5a248454b",
-          "src": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-1600.jpg",
-          "srcSmall": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-800.jpg",
-          "alt": "hahaha",
-          "width": 1600,
-          "height": 1639,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "a0032349-f39e-4d3d-9585-09c15d0fb01f",
-          "src": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-1600.jpg",
-          "srcSmall": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-800.jpg",
-          "alt": "hi shalom",
+          "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
+          "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
+          "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -379,10 +367,22 @@
           ]
         },
         {
-          "id": "a847515e-e2ea-4bee-b6fd-92d538e4c461",
-          "src": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-1600.jpg",
-          "srcSmall": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-800.jpg",
-          "alt": "fefefef",
+          "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
+          "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
+          "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1887,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5ad45bd0-3517-430d-8383-001080e9af18",
+          "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
+          "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -391,12 +391,12 @@
           ]
         },
         {
-          "id": "14ab9d3d-5a7b-40e2-93e6-2a69b60d2190",
-          "src": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-1600.jpg",
-          "srcSmall": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-800.jpg",
-          "alt": "sdvsdvwgwgwwww",
+          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
+          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
+          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
+          "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 2371,
           "focus": [
             0.5,
             0.5
@@ -412,8 +412,8 @@
   "grid": {
     "fashion-editorial": {
       "desktop": {
-        "columns": 8,
-        "rows": 2
+        "columns": 4,
+        "rows": 4
       },
       "phone": {
         "columns": 2,
@@ -606,28 +606,6 @@
         }
       ]
     },
-    "a93e4b18-a2ac-47bb-801f-229f12e12ad3": {
-      "section": "model-tests",
-      "title": "",
-      "text": "",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "a93e4b18-a2ac-47bb-801f-229f12e12ad3",
-          "src": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-1600.jpg",
-          "srcSmall": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        }
-      ]
-    },
     "b3feb5da-e873-4636-aa7a-3f235519fe25": {
       "section": "model-tests",
       "title": "",
@@ -662,6 +640,28 @@
           "id": "f879a839-988f-490d-ac92-fb3b3871a10d",
           "src": "photos/f879a839-988f-490d-ac92-fb3b3871a10d-1600.jpg",
           "srcSmall": "photos/f879a839-988f-490d-ac92-fb3b3871a10d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "a93e4b18-a2ac-47bb-801f-229f12e12ad3": {
+      "section": "model-tests",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "a93e4b18-a2ac-47bb-801f-229f12e12ad3",
+          "src": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-1600.jpg",
+          "srcSmall": "photos/a93e4b18-a2ac-47bb-801f-229f12e12ad3-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -716,78 +716,40 @@
         }
       ]
     },
-    "9c928ac4-3131-4d02-a55d-22e5a248454b": {
+    "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d": {
       "section": "actor-musicians",
-      "title": "",
-      "text": "hhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhfffffffffff",
+      "title": "SHIR LAMENSDORF",
+      "text": "",
       "layout": "slideshow",
-      "textPos": "right",
+      "textPos": "below",
       "columns": 3,
       "photos": [
         {
-          "id": "9c928ac4-3131-4d02-a55d-22e5a248454b",
-          "src": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-1600.jpg",
-          "srcSmall": "photos/9c928ac4-3131-4d02-a55d-22e5a248454b-800.jpg",
-          "alt": "hahaha",
-          "width": 1600,
-          "height": 1639,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "88fd01d8-7ce0-4e86-a64d-c69d6b24f50f",
-          "src": "photos/88fd01d8-7ce0-4e86-a64d-c69d6b24f50f-1600.jpg",
-          "srcSmall": "photos/88fd01d8-7ce0-4e86-a64d-c69d6b24f50f-800.jpg",
+          "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
+          "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
+          "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 1887,
           "focus": [
             0.5,
             0.5
           ]
-        },
+        }
+      ]
+    },
+    "e0716251-2001-4624-bcd0-c85d4a958a49": {
+      "section": "actor-musicians",
+      "title": "GAL ZUSMANOVICH",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
         {
-          "id": "c5bb142d-f1be-4f85-85c1-e7c735187c15",
-          "src": "photos/c5bb142d-f1be-4f85-85c1-e7c735187c15-1600.jpg",
-          "srcSmall": "photos/c5bb142d-f1be-4f85-85c1-e7c735187c15-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "87862eec-b1d1-4b84-b750-0ad41c13d180",
-          "src": "photos/87862eec-b1d1-4b84-b750-0ad41c13d180-1600.jpg",
-          "srcSmall": "photos/87862eec-b1d1-4b84-b750-0ad41c13d180-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "2f938f6f-a29a-4373-9b7c-0744a442c3f0",
-          "src": "photos/2f938f6f-a29a-4373-9b7c-0744a442c3f0-1600.jpg",
-          "srcSmall": "photos/2f938f6f-a29a-4373-9b7c-0744a442c3f0-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "301e8be1-7cfc-44a4-93f4-33b73a8e1f28",
-          "src": "photos/301e8be1-7cfc-44a4-93f4-33b73a8e1f28-1600.jpg",
-          "srcSmall": "photos/301e8be1-7cfc-44a4-93f4-33b73a8e1f28-800.jpg",
+          "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
+          "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
+          "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -798,19 +760,19 @@
         }
       ]
     },
-    "a0032349-f39e-4d3d-9585-09c15d0fb01f": {
+    "5ad45bd0-3517-430d-8383-001080e9af18": {
       "section": "actor-musicians",
-      "title": "",
+      "title": "ITAY DALUMI",
       "text": "",
       "layout": "slideshow",
       "textPos": "below",
       "columns": 3,
       "photos": [
         {
-          "id": "a0032349-f39e-4d3d-9585-09c15d0fb01f",
-          "src": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-1600.jpg",
-          "srcSmall": "photos/a0032349-f39e-4d3d-9585-09c15d0fb01f-800.jpg",
-          "alt": "hi shalom",
+          "id": "5ad45bd0-3517-430d-8383-001080e9af18",
+          "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
+          "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -820,43 +782,21 @@
         }
       ]
     },
-    "a847515e-e2ea-4bee-b6fd-92d538e4c461": {
+    "7b3a68a0-78af-478e-93f8-83321ff3f280": {
       "section": "actor-musicians",
-      "title": "",
+      "title": "MIA ASAYAG",
       "text": "",
       "layout": "slideshow",
       "textPos": "below",
       "columns": 3,
       "photos": [
         {
-          "id": "a847515e-e2ea-4bee-b6fd-92d538e4c461",
-          "src": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-1600.jpg",
-          "srcSmall": "photos/a847515e-e2ea-4bee-b6fd-92d538e4c461-800.jpg",
-          "alt": "fefefef",
+          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
+          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
+          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
+          "alt": "",
           "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        }
-      ]
-    },
-    "14ab9d3d-5a7b-40e2-93e6-2a69b60d2190": {
-      "section": "actor-musicians",
-      "title": "",
-      "text": "",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "14ab9d3d-5a7b-40e2-93e6-2a69b60d2190",
-          "src": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-1600.jpg",
-          "srcSmall": "photos/14ab9d3d-5a7b-40e2-93e6-2a69b60d2190-800.jpg",
-          "alt": "sdvsdvwgwgwwww",
-          "width": 1600,
-          "height": 2400,
+          "height": 2371,
           "focus": [
             0.5,
             0.5
