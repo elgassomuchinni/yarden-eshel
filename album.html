@@ -9,9 +9,9 @@
 <!-- Demo build: most portfolio images are placeholders, not Yarden's work. Keep this until her real photographs replace them. -->
 <meta name="robots" content="noindex, nofollow, noarchive, noimageindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%230A0A0A'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='15' fill='%23F5F2EE' text-anchor='middle'%3EYE%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300..600&display=swap">
+<!-- the typeface is served from this site (fonts/), so no visitor data goes to Google -->
+<link rel="preload" href="fonts/source-serif-4-latin-opsz-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts/fonts.css">
 <!-- Starts fetching the published photo list at once; "no-cache" = always ask the server whether it changed. Any failure becomes null. -->
 <script>
 window.__photosReady = (function () {
