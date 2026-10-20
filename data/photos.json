@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-20T18:19:55.786Z",
+  "publishedAt": "2026-10-20T18:35:20.408Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -197,18 +197,6 @@
           ]
         },
         {
-          "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
-          "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
-          "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
-          "alt": "Laughing woman with red lipstick and a hand near her mouth.",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
           "id": "5ad45bd0-3517-430d-8383-001080e9af18",
           "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
           "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
@@ -221,12 +209,36 @@
           ]
         },
         {
-          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
-          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
-          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
-          "alt": "Smiling woman in a white tank top and blue jeans.",
+          "id": "988d78b8-89ec-4059-9057-3b4ff9a43ef9",
+          "src": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-1600.jpg",
+          "srcSmall": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-800.jpg",
+          "alt": "Blonde woman in blue with colorful hair clips and a neon green cuff.",
           "width": 1600,
-          "height": 2371,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
+          "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
+          "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
+          "alt": "Laughing woman with red lipstick and a hand near her mouth.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "fd13d1ec-3685-4e42-b049-e11a9fa78826",
+          "src": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-1600.jpg",
+          "srcSmall": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-800.jpg",
+          "alt": "Woman with long curly blonde hair standing outdoors in a green field.",
+          "width": 1600,
+          "height": 1841,
           "focus": [
             0.5,
             0.5
@@ -239,6 +251,18 @@
           "alt": "Woman with a large white bow and floral outfit against a red background.",
           "width": 1600,
           "height": 2455,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
+          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
+          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
+          "alt": "Smiling woman in a white tank top and blue jeans.",
+          "width": 1600,
+          "height": 2371,
           "focus": [
             0.5,
             0.5
@@ -305,12 +329,230 @@
             0.5,
             0.5
           ]
+        },
+        {
+          "id": "988d78b8-89ec-4059-9057-3b4ff9a43ef9",
+          "src": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-1600.jpg",
+          "srcSmall": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-800.jpg",
+          "alt": "Blonde woman in blue with colorful hair clips and a neon green cuff.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "fd13d1ec-3685-4e42-b049-e11a9fa78826",
+          "src": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-1600.jpg",
+          "srcSmall": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-800.jpg",
+          "alt": "Woman with long curly blonde hair standing outdoors in a green field.",
+          "width": 1600,
+          "height": 1841,
+          "focus": [
+            0.5,
+            0.5
+          ]
         }
       ]
     },
     "personal-work": {
-      "desktop": [],
-      "phone": []
+      "desktop": [
+        {
+          "id": "7dea8f8f-506d-4a71-b33f-703055443f27",
+          "src": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-1600.jpg",
+          "srcSmall": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1322,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ce38c60e-c2d5-4d2c-9f09-d3545ace3445",
+          "src": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-1600.jpg",
+          "srcSmall": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2505,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "583516bd-7693-4623-9e90-01be8182723c",
+          "src": "photos/583516bd-7693-4623-9e90-01be8182723c-1600.jpg",
+          "srcSmall": "photos/583516bd-7693-4623-9e90-01be8182723c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1034,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "6e076b0b-0f56-41b5-9517-bfa0c967ebc2",
+          "src": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-1600.jpg",
+          "srcSmall": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1768,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f04bb9e4-d4e9-4420-a319-6f1c73198c38",
+          "src": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-1600.jpg",
+          "srcSmall": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "462f31aa-7fc7-43b1-836c-1890d619ba73",
+          "src": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-1600.jpg",
+          "srcSmall": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2382,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f139cd47-ea30-4ae3-9de2-1d9c15a93471",
+          "src": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-1600.jpg",
+          "srcSmall": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "821ad262-a257-47e0-a7de-e12eaa7dfac7",
+          "src": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-1600.jpg",
+          "srcSmall": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1902,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ],
+      "phone": [
+        {
+          "id": "6e076b0b-0f56-41b5-9517-bfa0c967ebc2",
+          "src": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-1600.jpg",
+          "srcSmall": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1768,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f04bb9e4-d4e9-4420-a319-6f1c73198c38",
+          "src": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-1600.jpg",
+          "srcSmall": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f139cd47-ea30-4ae3-9de2-1d9c15a93471",
+          "src": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-1600.jpg",
+          "srcSmall": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "462f31aa-7fc7-43b1-836c-1890d619ba73",
+          "src": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-1600.jpg",
+          "srcSmall": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2382,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7dea8f8f-506d-4a71-b33f-703055443f27",
+          "src": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-1600.jpg",
+          "srcSmall": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1322,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "583516bd-7693-4623-9e90-01be8182723c",
+          "src": "photos/583516bd-7693-4623-9e90-01be8182723c-1600.jpg",
+          "srcSmall": "photos/583516bd-7693-4623-9e90-01be8182723c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1034,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "821ad262-a257-47e0-a7de-e12eaa7dfac7",
+          "src": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-1600.jpg",
+          "srcSmall": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1902,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ce38c60e-c2d5-4d2c-9f09-d3545ace3445",
+          "src": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-1600.jpg",
+          "srcSmall": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2505,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
     }
   },
   "grid": {
@@ -346,8 +588,8 @@
     },
     "personal-work": {
       "desktop": {
-        "columns": 3,
-        "rows": 2
+        "columns": 1,
+        "rows": 6
       },
       "phone": {
         "columns": 2,
@@ -988,6 +1230,302 @@
         }
       ]
     },
+    "5ad45bd0-3517-430d-8383-001080e9af18": {
+      "section": "actor-musicians",
+      "title": "ITAY DALUMI",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "5ad45bd0-3517-430d-8383-001080e9af18",
+          "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
+          "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
+          "alt": "Man in a white shirt with his hands behind his head.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "72442723-25d9-48ee-916c-231f1784aa88",
+          "src": "photos/72442723-25d9-48ee-916c-231f1784aa88-1600.jpg",
+          "srcSmall": "photos/72442723-25d9-48ee-916c-231f1784aa88-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8159b2f3-ff7c-44bb-bc1a-6c041868a2a8",
+          "src": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-1600.jpg",
+          "srcSmall": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "903080e4-8d88-4462-94ff-22b2deec20c6",
+          "src": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-1600.jpg",
+          "srcSmall": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "64c36eac-aaa1-4040-8e15-838e664b11ac",
+          "src": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-1600.jpg",
+          "srcSmall": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-800.jpg",
+          "alt": "",
+          "width": 1294,
+          "height": 1680,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "b55b45bb-326c-4bf4-9a3a-c141ceb88ac5",
+          "src": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-1600.jpg",
+          "srcSmall": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a30c2506-413a-4e13-a6e6-ce3861d7360f",
+          "src": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-1600.jpg",
+          "srcSmall": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c3fd9d38-7f92-4cf4-bacf-78631a548ed6",
+          "src": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-1600.jpg",
+          "srcSmall": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16",
+          "src": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-1600.jpg",
+          "srcSmall": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "78a0cbda-84c9-4b4b-9b47-6b2bede8bffa",
+          "src": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-1600.jpg",
+          "srcSmall": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a6bff1d1-8241-45b4-8b57-84e65146c493",
+          "src": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-1600.jpg",
+          "srcSmall": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "988d78b8-89ec-4059-9057-3b4ff9a43ef9": {
+      "section": "actor-musicians",
+      "title": "ALMA GOV",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "988d78b8-89ec-4059-9057-3b4ff9a43ef9",
+          "src": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-1600.jpg",
+          "srcSmall": "photos/988d78b8-89ec-4059-9057-3b4ff9a43ef9-800.jpg",
+          "alt": "Blonde woman in blue with colorful hair clips and a neon green cuff.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2ce36fb1-4b61-4605-9e34-644f6ce8e596",
+          "src": "photos/2ce36fb1-4b61-4605-9e34-644f6ce8e596-1600.jpg",
+          "srcSmall": "photos/2ce36fb1-4b61-4605-9e34-644f6ce8e596-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "065bcc64-530b-47a9-a71f-62da78e6a01f",
+          "src": "photos/065bcc64-530b-47a9-a71f-62da78e6a01f-1600.jpg",
+          "srcSmall": "photos/065bcc64-530b-47a9-a71f-62da78e6a01f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7c8388a8-1a60-43bb-8b74-f02fa8c60c90",
+          "src": "photos/7c8388a8-1a60-43bb-8b74-f02fa8c60c90-1600.jpg",
+          "srcSmall": "photos/7c8388a8-1a60-43bb-8b74-f02fa8c60c90-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2215,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f5520725-698e-465e-ae68-d2c78769eaa7",
+          "src": "photos/f5520725-698e-465e-ae68-d2c78769eaa7-1600.jpg",
+          "srcSmall": "photos/f5520725-698e-465e-ae68-d2c78769eaa7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c57bf094-8f21-4b31-abcf-29658e3d1cb4",
+          "src": "photos/c57bf094-8f21-4b31-abcf-29658e3d1cb4-1600.jpg",
+          "srcSmall": "photos/c57bf094-8f21-4b31-abcf-29658e3d1cb4-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2280,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a568e4e5-3dad-4d6a-8586-bbc58f973fb9",
+          "src": "photos/a568e4e5-3dad-4d6a-8586-bbc58f973fb9-1600.jpg",
+          "srcSmall": "photos/a568e4e5-3dad-4d6a-8586-bbc58f973fb9-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "9e98ad77-55cd-42d0-b16b-8244a00acfa7",
+          "src": "photos/9e98ad77-55cd-42d0-b16b-8244a00acfa7-1600.jpg",
+          "srcSmall": "photos/9e98ad77-55cd-42d0-b16b-8244a00acfa7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "77d0ebc6-23df-413c-b7d7-064f12c30297",
+          "src": "photos/77d0ebc6-23df-413c-b7d7-064f12c30297-1600.jpg",
+          "srcSmall": "photos/77d0ebc6-23df-413c-b7d7-064f12c30297-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "68ba9e42-af94-4af7-b142-8adebaa5d1cb",
+          "src": "photos/68ba9e42-af94-4af7-b142-8adebaa5d1cb-1600.jpg",
+          "srcSmall": "photos/68ba9e42-af94-4af7-b142-8adebaa5d1cb-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "1be13a02-9949-423c-a085-86f5ae93be8d",
+          "src": "photos/1be13a02-9949-423c-a085-86f5ae93be8d-1600.jpg",
+          "srcSmall": "photos/1be13a02-9949-423c-a085-86f5ae93be8d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5c47209e-2061-4169-ba53-3ebb9fbd692d",
+          "src": "photos/5c47209e-2061-4169-ba53-3ebb9fbd692d-1600.jpg",
+          "srcSmall": "photos/5c47209e-2061-4169-ba53-3ebb9fbd692d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
     "e0716251-2001-4624-bcd0-c85d4a958a49": {
       "section": "actor-musicians",
       "title": "GAL ZUSMANOVICH",
@@ -1142,30 +1680,42 @@
         }
       ]
     },
-    "5ad45bd0-3517-430d-8383-001080e9af18": {
+    "fd13d1ec-3685-4e42-b049-e11a9fa78826": {
       "section": "actor-musicians",
-      "title": "ITAY DALUMI",
+      "title": "SHIRA KNOPP",
       "text": "",
       "layout": "slideshow",
       "textPos": "below",
       "columns": 3,
       "photos": [
         {
-          "id": "5ad45bd0-3517-430d-8383-001080e9af18",
-          "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
-          "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
-          "alt": "Man in a white shirt with his hands behind his head.",
+          "id": "fd13d1ec-3685-4e42-b049-e11a9fa78826",
+          "src": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-1600.jpg",
+          "srcSmall": "photos/fd13d1ec-3685-4e42-b049-e11a9fa78826-800.jpg",
+          "alt": "Woman with long curly blonde hair standing outdoors in a green field.",
           "width": 1600,
-          "height": 2400,
+          "height": 1841,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "72442723-25d9-48ee-916c-231f1784aa88",
-          "src": "photos/72442723-25d9-48ee-916c-231f1784aa88-1600.jpg",
-          "srcSmall": "photos/72442723-25d9-48ee-916c-231f1784aa88-800.jpg",
+          "id": "6544085b-f047-4fe0-8a48-61bdfc5f1d5e",
+          "src": "photos/6544085b-f047-4fe0-8a48-61bdfc5f1d5e-1600.jpg",
+          "srcSmall": "photos/6544085b-f047-4fe0-8a48-61bdfc5f1d5e-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2200,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "322342ab-2b40-469f-a0b9-508cf1fced1e",
+          "src": "photos/322342ab-2b40-469f-a0b9-508cf1fced1e-1600.jpg",
+          "srcSmall": "photos/322342ab-2b40-469f-a0b9-508cf1fced1e-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1175,9 +1725,9 @@
           ]
         },
         {
-          "id": "8159b2f3-ff7c-44bb-bc1a-6c041868a2a8",
-          "src": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-1600.jpg",
-          "srcSmall": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-800.jpg",
+          "id": "502fa6cf-b273-4327-9bf5-7dc17a41af34",
+          "src": "photos/502fa6cf-b273-4327-9bf5-7dc17a41af34-1600.jpg",
+          "srcSmall": "photos/502fa6cf-b273-4327-9bf5-7dc17a41af34-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1187,9 +1737,9 @@
           ]
         },
         {
-          "id": "903080e4-8d88-4462-94ff-22b2deec20c6",
-          "src": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-1600.jpg",
-          "srcSmall": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-800.jpg",
+          "id": "4fcb3194-f32d-4529-bc99-c49c0ced9a25",
+          "src": "photos/4fcb3194-f32d-4529-bc99-c49c0ced9a25-1600.jpg",
+          "srcSmall": "photos/4fcb3194-f32d-4529-bc99-c49c0ced9a25-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1199,21 +1749,9 @@
           ]
         },
         {
-          "id": "64c36eac-aaa1-4040-8e15-838e664b11ac",
-          "src": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-1600.jpg",
-          "srcSmall": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-800.jpg",
-          "alt": "",
-          "width": 1294,
-          "height": 1680,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "b55b45bb-326c-4bf4-9a3a-c141ceb88ac5",
-          "src": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-1600.jpg",
-          "srcSmall": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-800.jpg",
+          "id": "d7e3b603-9381-473b-8425-3cc598daac7a",
+          "src": "photos/d7e3b603-9381-473b-8425-3cc598daac7a-1600.jpg",
+          "srcSmall": "photos/d7e3b603-9381-473b-8425-3cc598daac7a-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1223,9 +1761,21 @@
           ]
         },
         {
-          "id": "a30c2506-413a-4e13-a6e6-ce3861d7360f",
-          "src": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-1600.jpg",
-          "srcSmall": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-800.jpg",
+          "id": "0fb5012a-0a60-4fe7-ac90-9380d3287c51",
+          "src": "photos/0fb5012a-0a60-4fe7-ac90-9380d3287c51-1600.jpg",
+          "srcSmall": "photos/0fb5012a-0a60-4fe7-ac90-9380d3287c51-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2018,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f8c7f76b-123c-40e8-81e2-b334c1b9f056",
+          "src": "photos/f8c7f76b-123c-40e8-81e2-b334c1b9f056-1600.jpg",
+          "srcSmall": "photos/f8c7f76b-123c-40e8-81e2-b334c1b9f056-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1235,9 +1785,9 @@
           ]
         },
         {
-          "id": "c3fd9d38-7f92-4cf4-bacf-78631a548ed6",
-          "src": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-1600.jpg",
-          "srcSmall": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-800.jpg",
+          "id": "55ec1a41-06df-4504-99cd-cc5434f7d6b1",
+          "src": "photos/55ec1a41-06df-4504-99cd-cc5434f7d6b1-1600.jpg",
+          "srcSmall": "photos/55ec1a41-06df-4504-99cd-cc5434f7d6b1-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1247,142 +1797,12 @@
           ]
         },
         {
-          "id": "8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16",
-          "src": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-1600.jpg",
-          "srcSmall": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-800.jpg",
+          "id": "c197fd0b-edf4-4a16-9f1d-6a5ad0a355a7",
+          "src": "photos/c197fd0b-edf4-4a16-9f1d-6a5ad0a355a7-1600.jpg",
+          "srcSmall": "photos/c197fd0b-edf4-4a16-9f1d-6a5ad0a355a7-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "78a0cbda-84c9-4b4b-9b47-6b2bede8bffa",
-          "src": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-1600.jpg",
-          "srcSmall": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "a6bff1d1-8241-45b4-8b57-84e65146c493",
-          "src": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-1600.jpg",
-          "srcSmall": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        }
-      ]
-    },
-    "7b3a68a0-78af-478e-93f8-83321ff3f280": {
-      "section": "actor-musicians",
-      "title": "MIA ASAYAG",
-      "text": "",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
-          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
-          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
-          "alt": "Smiling woman in a white tank top and blue jeans.",
-          "width": 1600,
-          "height": 2371,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "40f130c3-0549-4321-86df-a4e86bd4f54c",
-          "src": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-1600.jpg",
-          "srcSmall": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "270ba262-3072-40bd-8ebf-440dac669b90",
-          "src": "photos/270ba262-3072-40bd-8ebf-440dac669b90-1600.jpg",
-          "srcSmall": "photos/270ba262-3072-40bd-8ebf-440dac669b90-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "ad5c5ee0-fb56-4110-a4dc-65c7889ebac0",
-          "src": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-1600.jpg",
-          "srcSmall": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2133,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "4589d852-6440-416a-917b-91ba45bbd6e4",
-          "src": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-1600.jpg",
-          "srcSmall": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2196,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "693f6926-5055-4fd1-b5de-9a791ac04511",
-          "src": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-1600.jpg",
-          "srcSmall": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "bea7ef52-648e-4c80-968a-385078aa2a1a",
-          "src": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-1600.jpg",
-          "srcSmall": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "88df8f6f-0ef1-438f-8d85-6a41b0cb543d",
-          "src": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-1600.jpg",
-          "srcSmall": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 1874,
           "focus": [
             0.5,
             0.5
@@ -1525,6 +1945,288 @@
           "alt": "",
           "width": 1600,
           "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "7b3a68a0-78af-478e-93f8-83321ff3f280": {
+      "section": "actor-musicians",
+      "title": "MIA ASAYAG",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
+          "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
+          "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
+          "alt": "Smiling woman in a white tank top and blue jeans.",
+          "width": 1600,
+          "height": 2371,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "40f130c3-0549-4321-86df-a4e86bd4f54c",
+          "src": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-1600.jpg",
+          "srcSmall": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "270ba262-3072-40bd-8ebf-440dac669b90",
+          "src": "photos/270ba262-3072-40bd-8ebf-440dac669b90-1600.jpg",
+          "srcSmall": "photos/270ba262-3072-40bd-8ebf-440dac669b90-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ad5c5ee0-fb56-4110-a4dc-65c7889ebac0",
+          "src": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-1600.jpg",
+          "srcSmall": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2133,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4589d852-6440-416a-917b-91ba45bbd6e4",
+          "src": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-1600.jpg",
+          "srcSmall": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2196,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "693f6926-5055-4fd1-b5de-9a791ac04511",
+          "src": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-1600.jpg",
+          "srcSmall": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bea7ef52-648e-4c80-968a-385078aa2a1a",
+          "src": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-1600.jpg",
+          "srcSmall": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "88df8f6f-0ef1-438f-8d85-6a41b0cb543d",
+          "src": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-1600.jpg",
+          "srcSmall": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1874,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "7dea8f8f-506d-4a71-b33f-703055443f27": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "7dea8f8f-506d-4a71-b33f-703055443f27",
+          "src": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-1600.jpg",
+          "srcSmall": "photos/7dea8f8f-506d-4a71-b33f-703055443f27-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1322,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "ce38c60e-c2d5-4d2c-9f09-d3545ace3445": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "ce38c60e-c2d5-4d2c-9f09-d3545ace3445",
+          "src": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-1600.jpg",
+          "srcSmall": "photos/ce38c60e-c2d5-4d2c-9f09-d3545ace3445-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2505,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "583516bd-7693-4623-9e90-01be8182723c": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "583516bd-7693-4623-9e90-01be8182723c",
+          "src": "photos/583516bd-7693-4623-9e90-01be8182723c-1600.jpg",
+          "srcSmall": "photos/583516bd-7693-4623-9e90-01be8182723c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1034,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "6e076b0b-0f56-41b5-9517-bfa0c967ebc2": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "6e076b0b-0f56-41b5-9517-bfa0c967ebc2",
+          "src": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-1600.jpg",
+          "srcSmall": "photos/6e076b0b-0f56-41b5-9517-bfa0c967ebc2-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1768,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "f04bb9e4-d4e9-4420-a319-6f1c73198c38": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "f04bb9e4-d4e9-4420-a319-6f1c73198c38",
+          "src": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-1600.jpg",
+          "srcSmall": "photos/f04bb9e4-d4e9-4420-a319-6f1c73198c38-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "462f31aa-7fc7-43b1-836c-1890d619ba73": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "462f31aa-7fc7-43b1-836c-1890d619ba73",
+          "src": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-1600.jpg",
+          "srcSmall": "photos/462f31aa-7fc7-43b1-836c-1890d619ba73-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2382,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "f139cd47-ea30-4ae3-9de2-1d9c15a93471": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "f139cd47-ea30-4ae3-9de2-1d9c15a93471",
+          "src": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-1600.jpg",
+          "srcSmall": "photos/f139cd47-ea30-4ae3-9de2-1d9c15a93471-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "821ad262-a257-47e0-a7de-e12eaa7dfac7": {
+      "section": "personal-work",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "821ad262-a257-47e0-a7de-e12eaa7dfac7",
+          "src": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-1600.jpg",
+          "srcSmall": "photos/821ad262-a257-47e0-a7de-e12eaa7dfac7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1902,
           "focus": [
             0.5,
             0.5
