@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-20T18:09:39.876Z",
+  "publishedAt": "2026-10-20T18:19:55.786Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -231,6 +231,18 @@
             0.5,
             0.5
           ]
+        },
+        {
+          "id": "bc3420bd-43a9-49b3-bb23-1a4d425e9c7c",
+          "src": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-1600.jpg",
+          "srcSmall": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-800.jpg",
+          "alt": "Woman with a large white bow and floral outfit against a red background.",
+          "width": 1600,
+          "height": 2455,
+          "focus": [
+            0.5,
+            0.5
+          ]
         }
       ],
       "phone": [
@@ -281,6 +293,18 @@
             0.5,
             0.5
           ]
+        },
+        {
+          "id": "bc3420bd-43a9-49b3-bb23-1a4d425e9c7c",
+          "src": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-1600.jpg",
+          "srcSmall": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-800.jpg",
+          "alt": "Woman with a large white bow and floral outfit against a red background.",
+          "width": 1600,
+          "height": 2455,
+          "focus": [
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -313,7 +337,7 @@
     "actor-musicians": {
       "desktop": {
         "columns": 2,
-        "rows": 2
+        "rows": 6
       },
       "phone": {
         "columns": 2,
@@ -983,6 +1007,138 @@
             0.5,
             0.5
           ]
+        },
+        {
+          "id": "786c7d52-6907-4b5b-b83a-502072775f6f",
+          "src": "photos/786c7d52-6907-4b5b-b83a-502072775f6f-1600.jpg",
+          "srcSmall": "photos/786c7d52-6907-4b5b-b83a-502072775f6f-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "38f07061-deac-44fd-be2b-4cbc4bcb5d11",
+          "src": "photos/38f07061-deac-44fd-be2b-4cbc4bcb5d11-1600.jpg",
+          "srcSmall": "photos/38f07061-deac-44fd-be2b-4cbc4bcb5d11-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "e43feeb5-5db1-421b-ad99-62beabc7e742",
+          "src": "photos/e43feeb5-5db1-421b-ad99-62beabc7e742-1600.jpg",
+          "srcSmall": "photos/e43feeb5-5db1-421b-ad99-62beabc7e742-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "fcd4d76f-d136-4652-bbdc-d8dceb0dccac",
+          "src": "photos/fcd4d76f-d136-4652-bbdc-d8dceb0dccac-1600.jpg",
+          "srcSmall": "photos/fcd4d76f-d136-4652-bbdc-d8dceb0dccac-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2226,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "93c436fb-3468-4eff-a424-23617335d310",
+          "src": "photos/93c436fb-3468-4eff-a424-23617335d310-1600.jpg",
+          "srcSmall": "photos/93c436fb-3468-4eff-a424-23617335d310-800.jpg",
+          "alt": "",
+          "width": 1411,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ddacad90-343f-4cb3-b486-ee7d2e14022e",
+          "src": "photos/ddacad90-343f-4cb3-b486-ee7d2e14022e-1600.jpg",
+          "srcSmall": "photos/ddacad90-343f-4cb3-b486-ee7d2e14022e-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7012aea2-03c8-4e18-b135-f0e61a33524b",
+          "src": "photos/7012aea2-03c8-4e18-b135-f0e61a33524b-1600.jpg",
+          "srcSmall": "photos/7012aea2-03c8-4e18-b135-f0e61a33524b-800.jpg",
+          "alt": "",
+          "width": 1030,
+          "height": 1291,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "85c53f4a-cb36-41a8-903a-c6e2f06c0c18",
+          "src": "photos/85c53f4a-cb36-41a8-903a-c6e2f06c0c18-1600.jpg",
+          "srcSmall": "photos/85c53f4a-cb36-41a8-903a-c6e2f06c0c18-800.jpg",
+          "alt": "",
+          "width": 1234,
+          "height": 1373,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c52340a7-ad61-4c06-8a4a-d345b80bbd7c",
+          "src": "photos/c52340a7-ad61-4c06-8a4a-d345b80bbd7c-1600.jpg",
+          "srcSmall": "photos/c52340a7-ad61-4c06-8a4a-d345b80bbd7c-800.jpg",
+          "alt": "",
+          "width": 809,
+          "height": 756,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "aaf694ab-8ec1-4105-ba76-e5046c795597",
+          "src": "photos/aaf694ab-8ec1-4105-ba76-e5046c795597-1600.jpg",
+          "srcSmall": "photos/aaf694ab-8ec1-4105-ba76-e5046c795597-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2351,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2d0ba5a5-3320-4d63-b0be-a9fce14c681b",
+          "src": "photos/2d0ba5a5-3320-4d63-b0be-a9fce14c681b-1600.jpg",
+          "srcSmall": "photos/2d0ba5a5-3320-4d63-b0be-a9fce14c681b-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
         }
       ]
     },
@@ -1227,6 +1383,148 @@
           "alt": "",
           "width": 1600,
           "height": 1874,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "bc3420bd-43a9-49b3-bb23-1a4d425e9c7c": {
+      "section": "actor-musicians",
+      "title": "GAL DE PAZ",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "bc3420bd-43a9-49b3-bb23-1a4d425e9c7c",
+          "src": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-1600.jpg",
+          "srcSmall": "photos/bc3420bd-43a9-49b3-bb23-1a4d425e9c7c-800.jpg",
+          "alt": "Woman with a large white bow and floral outfit against a red background.",
+          "width": 1600,
+          "height": 2455,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4e74e338-62c1-401a-8d18-1fc48dbb6258",
+          "src": "photos/4e74e338-62c1-401a-8d18-1fc48dbb6258-1600.jpg",
+          "srcSmall": "photos/4e74e338-62c1-401a-8d18-1fc48dbb6258-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "6fa35f31-1802-4b14-9da0-3cd3770b1128",
+          "src": "photos/6fa35f31-1802-4b14-9da0-3cd3770b1128-1600.jpg",
+          "srcSmall": "photos/6fa35f31-1802-4b14-9da0-3cd3770b1128-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2029,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ceac59ca-0b26-4c49-a4c6-d396f8894e72",
+          "src": "photos/ceac59ca-0b26-4c49-a4c6-d396f8894e72-1600.jpg",
+          "srcSmall": "photos/ceac59ca-0b26-4c49-a4c6-d396f8894e72-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "1281e33d-32ca-46e2-bedd-0460f1a7466a",
+          "src": "photos/1281e33d-32ca-46e2-bedd-0460f1a7466a-1600.jpg",
+          "srcSmall": "photos/1281e33d-32ca-46e2-bedd-0460f1a7466a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "6c22d9de-07a2-4584-ab73-6ad24c22d050",
+          "src": "photos/6c22d9de-07a2-4584-ab73-6ad24c22d050-1600.jpg",
+          "srcSmall": "photos/6c22d9de-07a2-4584-ab73-6ad24c22d050-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5070cb03-26fe-48d3-a26c-9939fddcc404",
+          "src": "photos/5070cb03-26fe-48d3-a26c-9939fddcc404-1600.jpg",
+          "srcSmall": "photos/5070cb03-26fe-48d3-a26c-9939fddcc404-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2295,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "53b67afe-d05d-438a-b3e2-ada93c388c9b",
+          "src": "photos/53b67afe-d05d-438a-b3e2-ada93c388c9b-1600.jpg",
+          "srcSmall": "photos/53b67afe-d05d-438a-b3e2-ada93c388c9b-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2193,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "e9b6db17-11cc-43cc-b273-e1858078d21c",
+          "src": "photos/e9b6db17-11cc-43cc-b273-e1858078d21c-1600.jpg",
+          "srcSmall": "photos/e9b6db17-11cc-43cc-b273-e1858078d21c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2463,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "22d85061-a177-419c-81be-b5e913a8c8a2",
+          "src": "photos/22d85061-a177-419c-81be-b5e913a8c8a2-1600.jpg",
+          "srcSmall": "photos/22d85061-a177-419c-81be-b5e913a8c8a2-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2281,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "fb2147bb-ed06-4b48-9308-feb242d05598",
+          "src": "photos/fb2147bb-ed06-4b48-9308-feb242d05598-1600.jpg",
+          "srcSmall": "photos/fb2147bb-ed06-4b48-9308-feb242d05598-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
