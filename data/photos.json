@@ -1,26 +1,26 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-20T18:35:20.408Z",
+  "publishedAt": "2026-10-20T18:53:25.474Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
         {
-          "id": "62573b67-3d83-47b3-8ced-89ea7290d4a0",
-          "src": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-1600.jpg",
-          "srcSmall": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-800.jpg",
-          "alt": "gv",
+          "id": "509a9e59-8948-44df-8216-1e4f6bccaa09",
+          "src": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-1600.jpg",
+          "srcSmall": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-800.jpg",
+          "alt": "Woman in a gold textured dress with raised arms against a green background.",
           "width": 1600,
-          "height": 2400,
+          "height": 2543,
           "focus": [
-            0.409,
-            0.247
+            0.5,
+            0.5
           ]
         },
         {
-          "id": "bd0487e1-0b9b-4a73-b686-d501e14c9834",
-          "src": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-1600.jpg",
-          "srcSmall": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-800.jpg",
-          "alt": "sv",
+          "id": "55f6f9fe-9e4a-426f-80a0-beb2788a0bcb",
+          "src": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-1600.jpg",
+          "srcSmall": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-800.jpg",
+          "alt": "Blonde woman in a polka-dot hoodie crouching beside a brown dog on a city street.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -29,22 +29,10 @@
           ]
         },
         {
-          "id": "afd2b05b-4faa-4715-8417-48de56358a85",
-          "src": "photos/afd2b05b-4faa-4715-8417-48de56358a85-1600.jpg",
-          "srcSmall": "photos/afd2b05b-4faa-4715-8417-48de56358a85-800.jpg",
-          "alt": "dsvsdvsdvsdv",
-          "width": 1600,
-          "height": 1638,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
-          "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
-          "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
-          "alt": "Woman in a beige cap and green vest at the beach.",
+          "id": "0325b96f-12a7-4a81-8e82-9087af1513c9",
+          "src": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-1600.jpg",
+          "srcSmall": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-800.jpg",
+          "alt": "Woman in a green dress with feather details and bold pink eye makeup.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -55,22 +43,10 @@
       ],
       "phone": [
         {
-          "id": "62573b67-3d83-47b3-8ced-89ea7290d4a0",
-          "src": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-1600.jpg",
-          "srcSmall": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-800.jpg",
-          "alt": "gv",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.409,
-            0.247
-          ]
-        },
-        {
-          "id": "bd0487e1-0b9b-4a73-b686-d501e14c9834",
-          "src": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-1600.jpg",
-          "srcSmall": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-800.jpg",
-          "alt": "sv",
+          "id": "0325b96f-12a7-4a81-8e82-9087af1513c9",
+          "src": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-1600.jpg",
+          "srcSmall": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-800.jpg",
+          "alt": "Woman in a green dress with feather details and bold pink eye makeup.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -79,22 +55,22 @@
           ]
         },
         {
-          "id": "afd2b05b-4faa-4715-8417-48de56358a85",
-          "src": "photos/afd2b05b-4faa-4715-8417-48de56358a85-1600.jpg",
-          "srcSmall": "photos/afd2b05b-4faa-4715-8417-48de56358a85-800.jpg",
-          "alt": "dsvsdvsdvsdv",
+          "id": "509a9e59-8948-44df-8216-1e4f6bccaa09",
+          "src": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-1600.jpg",
+          "srcSmall": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-800.jpg",
+          "alt": "Woman in a gold textured dress with raised arms against a green background.",
           "width": 1600,
-          "height": 1638,
+          "height": 2543,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
-          "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
-          "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
-          "alt": "Woman in a beige cap and green vest at the beach.",
+          "id": "55f6f9fe-9e4a-426f-80a0-beb2788a0bcb",
+          "src": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-1600.jpg",
+          "srcSmall": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-800.jpg",
+          "alt": "Blonde woman in a polka-dot hoodie crouching beside a brown dog on a city street.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -558,8 +534,8 @@
   "grid": {
     "fashion-editorial": {
       "desktop": {
-        "columns": 4,
-        "rows": 4
+        "columns": 1,
+        "rows": 6
       },
       "phone": {
         "columns": 2,
@@ -598,51 +574,7 @@
     }
   },
   "albums": {
-    "62573b67-3d83-47b3-8ced-89ea7290d4a0": {
-      "section": "fashion-editorial",
-      "title": "fdvddd",
-      "text": "",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "62573b67-3d83-47b3-8ced-89ea7290d4a0",
-          "src": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-1600.jpg",
-          "srcSmall": "photos/62573b67-3d83-47b3-8ced-89ea7290d4a0-800.jpg",
-          "alt": "gv",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.409,
-            0.247
-          ]
-        }
-      ]
-    },
-    "bd0487e1-0b9b-4a73-b686-d501e14c9834": {
-      "section": "fashion-editorial",
-      "title": "ggfgfg",
-      "text": "hhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhffffffffffffgfgdfddf`hdhdzhhhfffffffffff",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "bd0487e1-0b9b-4a73-b686-d501e14c9834",
-          "src": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-1600.jpg",
-          "srcSmall": "photos/bd0487e1-0b9b-4a73-b686-d501e14c9834-800.jpg",
-          "alt": "sv",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        }
-      ]
-    },
-    "afd2b05b-4faa-4715-8417-48de56358a85": {
+    "509a9e59-8948-44df-8216-1e4f6bccaa09": {
       "section": "fashion-editorial",
       "title": "",
       "text": "",
@@ -651,12 +583,144 @@
       "columns": 3,
       "photos": [
         {
-          "id": "afd2b05b-4faa-4715-8417-48de56358a85",
-          "src": "photos/afd2b05b-4faa-4715-8417-48de56358a85-1600.jpg",
-          "srcSmall": "photos/afd2b05b-4faa-4715-8417-48de56358a85-800.jpg",
-          "alt": "dsvsdvsdvsdv",
+          "id": "509a9e59-8948-44df-8216-1e4f6bccaa09",
+          "src": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-1600.jpg",
+          "srcSmall": "photos/509a9e59-8948-44df-8216-1e4f6bccaa09-800.jpg",
+          "alt": "Woman in a gold textured dress with raised arms against a green background.",
           "width": 1600,
-          "height": 1638,
+          "height": 2543,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4789c892-60cd-4dd6-a185-3b132c449693",
+          "src": "photos/4789c892-60cd-4dd6-a185-3b132c449693-1600.jpg",
+          "srcSmall": "photos/4789c892-60cd-4dd6-a185-3b132c449693-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4f1f3d29-8403-4149-bb84-3c619971fd7e",
+          "src": "photos/4f1f3d29-8403-4149-bb84-3c619971fd7e-1600.jpg",
+          "srcSmall": "photos/4f1f3d29-8403-4149-bb84-3c619971fd7e-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "acb98e2c-c80a-46aa-b72e-c0742811ac43",
+          "src": "photos/acb98e2c-c80a-46aa-b72e-c0742811ac43-1600.jpg",
+          "srcSmall": "photos/acb98e2c-c80a-46aa-b72e-c0742811ac43-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "95e2de3e-6694-45fa-a59d-eb2d571426ae",
+          "src": "photos/95e2de3e-6694-45fa-a59d-eb2d571426ae-1600.jpg",
+          "srcSmall": "photos/95e2de3e-6694-45fa-a59d-eb2d571426ae-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "52c9a6b0-b153-4ef3-a642-98015e3fa9dd",
+          "src": "photos/52c9a6b0-b153-4ef3-a642-98015e3fa9dd-1600.jpg",
+          "srcSmall": "photos/52c9a6b0-b153-4ef3-a642-98015e3fa9dd-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "cb347360-b040-42ad-a800-d23c485c389b",
+          "src": "photos/cb347360-b040-42ad-a800-d23c485c389b-1600.jpg",
+          "srcSmall": "photos/cb347360-b040-42ad-a800-d23c485c389b-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1819,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "903b48fe-d053-422f-bdea-a139fafd9703",
+          "src": "photos/903b48fe-d053-422f-bdea-a139fafd9703-1600.jpg",
+          "srcSmall": "photos/903b48fe-d053-422f-bdea-a139fafd9703-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "77c2adff-4c4b-44ff-a37e-daf2be568108",
+          "src": "photos/77c2adff-4c4b-44ff-a37e-daf2be568108-1600.jpg",
+          "srcSmall": "photos/77c2adff-4c4b-44ff-a37e-daf2be568108-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "0954b9f9-4044-434a-9a5c-8631283cb81e",
+          "src": "photos/0954b9f9-4044-434a-9a5c-8631283cb81e-1600.jpg",
+          "srcSmall": "photos/0954b9f9-4044-434a-9a5c-8631283cb81e-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2248,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ea6235e2-39f7-4c89-a53f-fef5096e45ae",
+          "src": "photos/ea6235e2-39f7-4c89-a53f-fef5096e45ae-1600.jpg",
+          "srcSmall": "photos/ea6235e2-39f7-4c89-a53f-fef5096e45ae-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f76c3993-68a1-4923-ad5c-a9d2afd0a4b1",
+          "src": "photos/f76c3993-68a1-4923-ad5c-a9d2afd0a4b1-1600.jpg",
+          "srcSmall": "photos/f76c3993-68a1-4923-ad5c-a9d2afd0a4b1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
@@ -664,19 +728,305 @@
         }
       ]
     },
-    "594f07db-0d23-4fb9-8524-7d3e61d72cd1": {
+    "55f6f9fe-9e4a-426f-80a0-beb2788a0bcb": {
       "section": "fashion-editorial",
-      "title": "\"sorry its tabu\"",
+      "title": "",
       "text": "",
       "layout": "slideshow",
       "textPos": "below",
       "columns": 3,
       "photos": [
         {
-          "id": "594f07db-0d23-4fb9-8524-7d3e61d72cd1",
-          "src": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-1600.jpg",
-          "srcSmall": "photos/594f07db-0d23-4fb9-8524-7d3e61d72cd1-800.jpg",
-          "alt": "Woman in a beige cap and green vest at the beach.",
+          "id": "55f6f9fe-9e4a-426f-80a0-beb2788a0bcb",
+          "src": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-1600.jpg",
+          "srcSmall": "photos/55f6f9fe-9e4a-426f-80a0-beb2788a0bcb-800.jpg",
+          "alt": "Blonde woman in a polka-dot hoodie crouching beside a brown dog on a city street.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "68b698aa-a178-4e13-95b9-6e458fcf7b00",
+          "src": "photos/68b698aa-a178-4e13-95b9-6e458fcf7b00-1600.jpg",
+          "srcSmall": "photos/68b698aa-a178-4e13-95b9-6e458fcf7b00-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "df356362-b718-45c0-8132-0496570c2acf",
+          "src": "photos/df356362-b718-45c0-8132-0496570c2acf-1600.jpg",
+          "srcSmall": "photos/df356362-b718-45c0-8132-0496570c2acf-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "d2b914c3-1241-48c3-bce4-2f1086bd1d50",
+          "src": "photos/d2b914c3-1241-48c3-bce4-2f1086bd1d50-1600.jpg",
+          "srcSmall": "photos/d2b914c3-1241-48c3-bce4-2f1086bd1d50-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "3b1fa700-716a-40bb-97c1-5d4bb0f1725d",
+          "src": "photos/3b1fa700-716a-40bb-97c1-5d4bb0f1725d-1600.jpg",
+          "srcSmall": "photos/3b1fa700-716a-40bb-97c1-5d4bb0f1725d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2143,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "53f164ae-a9a4-49d4-bc5b-80dba6218769",
+          "src": "photos/53f164ae-a9a4-49d4-bc5b-80dba6218769-1600.jpg",
+          "srcSmall": "photos/53f164ae-a9a4-49d4-bc5b-80dba6218769-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "36701694-4640-4cd9-9147-6018c16346bf",
+          "src": "photos/36701694-4640-4cd9-9147-6018c16346bf-1600.jpg",
+          "srcSmall": "photos/36701694-4640-4cd9-9147-6018c16346bf-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1713,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "0de4b984-9f43-4a1a-b522-c90d626c1a42",
+          "src": "photos/0de4b984-9f43-4a1a-b522-c90d626c1a42-1600.jpg",
+          "srcSmall": "photos/0de4b984-9f43-4a1a-b522-c90d626c1a42-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "9dcfbaa0-0cc8-4457-a0a3-46e5d58d40fa",
+          "src": "photos/9dcfbaa0-0cc8-4457-a0a3-46e5d58d40fa-1600.jpg",
+          "srcSmall": "photos/9dcfbaa0-0cc8-4457-a0a3-46e5d58d40fa-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c99fca0a-aa48-41ee-9d2f-a5ee2d62e5af",
+          "src": "photos/c99fca0a-aa48-41ee-9d2f-a5ee2d62e5af-1600.jpg",
+          "srcSmall": "photos/c99fca0a-aa48-41ee-9d2f-a5ee2d62e5af-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "89c199d5-b53a-434c-a35e-a43614a02bea",
+          "src": "photos/89c199d5-b53a-434c-a35e-a43614a02bea-1600.jpg",
+          "srcSmall": "photos/89c199d5-b53a-434c-a35e-a43614a02bea-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a42bc9e9-9f10-46ab-a2cd-42c477e4b08e",
+          "src": "photos/a42bc9e9-9f10-46ab-a2cd-42c477e4b08e-1600.jpg",
+          "srcSmall": "photos/a42bc9e9-9f10-46ab-a2cd-42c477e4b08e-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "0325b96f-12a7-4a81-8e82-9087af1513c9": {
+      "section": "fashion-editorial",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "0325b96f-12a7-4a81-8e82-9087af1513c9",
+          "src": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-1600.jpg",
+          "srcSmall": "photos/0325b96f-12a7-4a81-8e82-9087af1513c9-800.jpg",
+          "alt": "Woman in a green dress with feather details and bold pink eye makeup.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ad3575a0-a3e7-4bca-93b8-ec512c5a9092",
+          "src": "photos/ad3575a0-a3e7-4bca-93b8-ec512c5a9092-1600.jpg",
+          "srcSmall": "photos/ad3575a0-a3e7-4bca-93b8-ec512c5a9092-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "87d403c6-4afb-43cb-b775-2935691ccd71",
+          "src": "photos/87d403c6-4afb-43cb-b775-2935691ccd71-1600.jpg",
+          "srcSmall": "photos/87d403c6-4afb-43cb-b775-2935691ccd71-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "757a2ded-9841-4767-b387-d78726d486d5",
+          "src": "photos/757a2ded-9841-4767-b387-d78726d486d5-1600.jpg",
+          "srcSmall": "photos/757a2ded-9841-4767-b387-d78726d486d5-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "b0a6c51c-b468-4992-8d9a-5b583b04669f",
+          "src": "photos/b0a6c51c-b468-4992-8d9a-5b583b04669f-1600.jpg",
+          "srcSmall": "photos/b0a6c51c-b468-4992-8d9a-5b583b04669f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2cce059a-d735-4563-8ea1-48c188e5a6fa",
+          "src": "photos/2cce059a-d735-4563-8ea1-48c188e5a6fa-1600.jpg",
+          "srcSmall": "photos/2cce059a-d735-4563-8ea1-48c188e5a6fa-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2419,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "93f6d8dc-7839-4ce2-86ce-757f4ee8ec42",
+          "src": "photos/93f6d8dc-7839-4ce2-86ce-757f4ee8ec42-1600.jpg",
+          "srcSmall": "photos/93f6d8dc-7839-4ce2-86ce-757f4ee8ec42-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "76625c0a-64a9-475c-8df8-41b4215e1925",
+          "src": "photos/76625c0a-64a9-475c-8df8-41b4215e1925-1600.jpg",
+          "srcSmall": "photos/76625c0a-64a9-475c-8df8-41b4215e1925-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "1c159a7b-e563-4041-8e00-e36576f77748",
+          "src": "photos/1c159a7b-e563-4041-8e00-e36576f77748-1600.jpg",
+          "srcSmall": "photos/1c159a7b-e563-4041-8e00-e36576f77748-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7c5cc79d-cde1-41b4-94b0-b19a9341fe7a",
+          "src": "photos/7c5cc79d-cde1-41b4-94b0-b19a9341fe7a-1600.jpg",
+          "srcSmall": "photos/7c5cc79d-cde1-41b4-94b0-b19a9341fe7a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "79a79af9-9a3c-47a8-9255-00dad4d32391",
+          "src": "photos/79a79af9-9a3c-47a8-9255-00dad4d32391-1600.jpg",
+          "srcSmall": "photos/79a79af9-9a3c-47a8-9255-00dad4d32391-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "1be8d794-dfcf-4506-ba92-814133ac296c",
+          "src": "photos/1be8d794-dfcf-4506-ba92-814133ac296c-1600.jpg",
+          "srcSmall": "photos/1be8d794-dfcf-4506-ba92-814133ac296c-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
