@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-20T05:21:42.700Z",
+  "publishedAt": "2026-10-20T05:35:01.486Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -110,7 +110,31 @@
           "id": "30a7748c-17f9-40b0-b221-530d5f5494d4",
           "src": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-1600.jpg",
           "srcSmall": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-800.jpg",
-          "alt": "",
+          "alt": "Woman crouching in a striped top and black heels.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "09f1d616-3941-47dc-9a7e-2fdf53b8387c",
+          "src": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-1600.jpg",
+          "srcSmall": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-800.jpg",
+          "alt": "Close-up of a woman with wet hair and hands on her head.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8b8e0de8-fd23-4708-947c-8e67ff6202be",
+          "src": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-1600.jpg",
+          "srcSmall": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-800.jpg",
+          "alt": "Woman in a gray dress sitting on the floor, looking sideways.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -124,7 +148,31 @@
           "id": "30a7748c-17f9-40b0-b221-530d5f5494d4",
           "src": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-1600.jpg",
           "srcSmall": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-800.jpg",
-          "alt": "",
+          "alt": "Woman crouching in a striped top and black heels.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "09f1d616-3941-47dc-9a7e-2fdf53b8387c",
+          "src": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-1600.jpg",
+          "srcSmall": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-800.jpg",
+          "alt": "Close-up of a woman with wet hair and hands on her head.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8b8e0de8-fd23-4708-947c-8e67ff6202be",
+          "src": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-1600.jpg",
+          "srcSmall": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-800.jpg",
+          "alt": "Woman in a gray dress sitting on the floor, looking sideways.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -375,7 +423,7 @@
     "30a7748c-17f9-40b0-b221-530d5f5494d4": {
       "section": "model-tests",
       "title": "RADHA",
-      "text": "Woman crouching in a striped top and black heels.",
+      "text": "",
       "layout": "slideshow",
       "textPos": "hidden",
       "columns": 3,
@@ -384,7 +432,7 @@
           "id": "30a7748c-17f9-40b0-b221-530d5f5494d4",
           "src": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-1600.jpg",
           "srcSmall": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-800.jpg",
-          "alt": "",
+          "alt": "Woman crouching in a striped top and black heels.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -519,6 +567,242 @@
           "alt": "",
           "width": 1600,
           "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "09f1d616-3941-47dc-9a7e-2fdf53b8387c": {
+      "section": "model-tests",
+      "title": "RON",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "09f1d616-3941-47dc-9a7e-2fdf53b8387c",
+          "src": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-1600.jpg",
+          "srcSmall": "photos/09f1d616-3941-47dc-9a7e-2fdf53b8387c-800.jpg",
+          "alt": "Close-up of a woman with wet hair and hands on her head.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "53c9c150-8f33-4fe1-8b4b-c851198ea4d3",
+          "src": "photos/53c9c150-8f33-4fe1-8b4b-c851198ea4d3-1600.jpg",
+          "srcSmall": "photos/53c9c150-8f33-4fe1-8b4b-c851198ea4d3-800.jpg",
+          "alt": "",
+          "width": 948,
+          "height": 1128,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c09e337b-9e8c-42ff-9308-14ef2e6fae49",
+          "src": "photos/c09e337b-9e8c-42ff-9308-14ef2e6fae49-1600.jpg",
+          "srcSmall": "photos/c09e337b-9e8c-42ff-9308-14ef2e6fae49-800.jpg",
+          "alt": "",
+          "width": 1507,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a44f090f-afcd-450c-b678-073370ec7da6",
+          "src": "photos/a44f090f-afcd-450c-b678-073370ec7da6-1600.jpg",
+          "srcSmall": "photos/a44f090f-afcd-450c-b678-073370ec7da6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "b9b39642-e933-4a56-9170-ff9488dc74bc",
+          "src": "photos/b9b39642-e933-4a56-9170-ff9488dc74bc-1600.jpg",
+          "srcSmall": "photos/b9b39642-e933-4a56-9170-ff9488dc74bc-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "d591f0e3-7a98-4825-b34d-3bb6fb36aaaa",
+          "src": "photos/d591f0e3-7a98-4825-b34d-3bb6fb36aaaa-1600.jpg",
+          "srcSmall": "photos/d591f0e3-7a98-4825-b34d-3bb6fb36aaaa-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1804,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "176e76b6-e218-4336-8ecb-f7be6c9fc48a",
+          "src": "photos/176e76b6-e218-4336-8ecb-f7be6c9fc48a-1600.jpg",
+          "srcSmall": "photos/176e76b6-e218-4336-8ecb-f7be6c9fc48a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1889,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ddaedff7-bde9-427c-9548-d15153c24364",
+          "src": "photos/ddaedff7-bde9-427c-9548-d15153c24364-1600.jpg",
+          "srcSmall": "photos/ddaedff7-bde9-427c-9548-d15153c24364-800.jpg",
+          "alt": "",
+          "width": 1365,
+          "height": 2048,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "524e98dc-749a-4889-94f1-404651b19daf",
+          "src": "photos/524e98dc-749a-4889-94f1-404651b19daf-1600.jpg",
+          "srcSmall": "photos/524e98dc-749a-4889-94f1-404651b19daf-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1636,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "72faaa1c-ed32-4c37-a87e-33044f4868f7",
+          "src": "photos/72faaa1c-ed32-4c37-a87e-33044f4868f7-1600.jpg",
+          "srcSmall": "photos/72faaa1c-ed32-4c37-a87e-33044f4868f7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2240,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "765f8c79-2c1b-45a4-a58f-78649eecc615",
+          "src": "photos/765f8c79-2c1b-45a4-a58f-78649eecc615-1600.jpg",
+          "srcSmall": "photos/765f8c79-2c1b-45a4-a58f-78649eecc615-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "f1cacc1c-550e-44c9-ad02-b46927180e3a",
+          "src": "photos/f1cacc1c-550e-44c9-ad02-b46927180e3a-1600.jpg",
+          "srcSmall": "photos/f1cacc1c-550e-44c9-ad02-b46927180e3a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1791,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "8b8e0de8-fd23-4708-947c-8e67ff6202be": {
+      "section": "model-tests",
+      "title": "RENANA",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "8b8e0de8-fd23-4708-947c-8e67ff6202be",
+          "src": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-1600.jpg",
+          "srcSmall": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-800.jpg",
+          "alt": "Woman in a gray dress sitting on the floor, looking sideways.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "1db00736-7413-49b8-b721-c426b32d6c54",
+          "src": "photos/1db00736-7413-49b8-b721-c426b32d6c54-1600.jpg",
+          "srcSmall": "photos/1db00736-7413-49b8-b721-c426b32d6c54-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2424,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4aad896b-fc05-4f96-ab7a-86be6a4feadc",
+          "src": "photos/4aad896b-fc05-4f96-ab7a-86be6a4feadc-1600.jpg",
+          "srcSmall": "photos/4aad896b-fc05-4f96-ab7a-86be6a4feadc-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1962,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5817d514-8781-46bf-9aa2-a99672114018",
+          "src": "photos/5817d514-8781-46bf-9aa2-a99672114018-1600.jpg",
+          "srcSmall": "photos/5817d514-8781-46bf-9aa2-a99672114018-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "66558254-17d3-4a56-a4c2-33647e1276c5",
+          "src": "photos/66558254-17d3-4a56-a4c2-33647e1276c5-1600.jpg",
+          "srcSmall": "photos/66558254-17d3-4a56-a4c2-33647e1276c5-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bf7d291a-e1ec-4fca-879d-0ddf3b12e7e1",
+          "src": "photos/bf7d291a-e1ec-4fca-879d-0ddf3b12e7e1-1600.jpg",
+          "srcSmall": "photos/bf7d291a-e1ec-4fca-879d-0ddf3b12e7e1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2019,
           "focus": [
             0.5,
             0.5
