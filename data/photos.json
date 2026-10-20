@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-10-20T05:35:01.486Z",
+  "publishedAt": "2026-10-20T18:09:39.876Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -188,7 +188,7 @@
           "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
           "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
           "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in black against a red background.",
           "width": 1600,
           "height": 1887,
           "focus": [
@@ -200,7 +200,7 @@
           "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
           "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
           "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
-          "alt": "",
+          "alt": "Laughing woman with red lipstick and a hand near her mouth.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -212,7 +212,7 @@
           "id": "5ad45bd0-3517-430d-8383-001080e9af18",
           "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
           "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
-          "alt": "",
+          "alt": "Man in a white shirt with his hands behind his head.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -224,7 +224,7 @@
           "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
           "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
           "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in a white tank top and blue jeans.",
           "width": 1600,
           "height": 2371,
           "focus": [
@@ -238,7 +238,7 @@
           "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
           "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
           "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
-          "alt": "",
+          "alt": "Laughing woman with red lipstick and a hand near her mouth.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -250,7 +250,7 @@
           "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
           "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
           "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in black against a red background.",
           "width": 1600,
           "height": 1887,
           "focus": [
@@ -262,7 +262,7 @@
           "id": "5ad45bd0-3517-430d-8383-001080e9af18",
           "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
           "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
-          "alt": "",
+          "alt": "Man in a white shirt with his hands behind his head.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -274,7 +274,7 @@
           "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
           "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
           "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in a white tank top and blue jeans.",
           "width": 1600,
           "height": 2371,
           "focus": [
@@ -822,9 +822,141 @@
           "id": "ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d",
           "src": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-1600.jpg",
           "srcSmall": "photos/ba9f213d-f4f8-41f3-8757-2fe08c0dcf2d-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in black against a red background.",
           "width": 1600,
           "height": 1887,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8795d121-970e-4bd4-926a-dc12b05a8ed1",
+          "src": "photos/8795d121-970e-4bd4-926a-dc12b05a8ed1-1600.jpg",
+          "srcSmall": "photos/8795d121-970e-4bd4-926a-dc12b05a8ed1-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "e1f4f675-ecf0-4db5-a745-31333e9cdbac",
+          "src": "photos/e1f4f675-ecf0-4db5-a745-31333e9cdbac-1600.jpg",
+          "srcSmall": "photos/e1f4f675-ecf0-4db5-a745-31333e9cdbac-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1073,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8842aee4-8176-4597-b4aa-8c57e358639d",
+          "src": "photos/8842aee4-8176-4597-b4aa-8c57e358639d-1600.jpg",
+          "srcSmall": "photos/8842aee4-8176-4597-b4aa-8c57e358639d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ce3ee9a1-ed85-460f-8698-ce6cb2370260",
+          "src": "photos/ce3ee9a1-ed85-460f-8698-ce6cb2370260-1600.jpg",
+          "srcSmall": "photos/ce3ee9a1-ed85-460f-8698-ce6cb2370260-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5d83ef3c-6508-48fe-b261-e12a949e89e5",
+          "src": "photos/5d83ef3c-6508-48fe-b261-e12a949e89e5-1600.jpg",
+          "srcSmall": "photos/5d83ef3c-6508-48fe-b261-e12a949e89e5-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2124,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "429d1a48-949a-41ad-8ed7-7c228e6c6914",
+          "src": "photos/429d1a48-949a-41ad-8ed7-7c228e6c6914-1600.jpg",
+          "srcSmall": "photos/429d1a48-949a-41ad-8ed7-7c228e6c6914-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "00956f46-4a51-45ea-87e5-43ccfadd1970",
+          "src": "photos/00956f46-4a51-45ea-87e5-43ccfadd1970-1600.jpg",
+          "srcSmall": "photos/00956f46-4a51-45ea-87e5-43ccfadd1970-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "d8b4d6f4-c8ba-4fea-bb04-f8b8b6375b3b",
+          "src": "photos/d8b4d6f4-c8ba-4fea-bb04-f8b8b6375b3b-1600.jpg",
+          "srcSmall": "photos/d8b4d6f4-c8ba-4fea-bb04-f8b8b6375b3b-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "077b69bb-cf97-4123-a95d-22284da1c188",
+          "src": "photos/077b69bb-cf97-4123-a95d-22284da1c188-1600.jpg",
+          "srcSmall": "photos/077b69bb-cf97-4123-a95d-22284da1c188-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5932f198-3415-4834-b3f8-fa4f066f681d",
+          "src": "photos/5932f198-3415-4834-b3f8-fa4f066f681d-1600.jpg",
+          "srcSmall": "photos/5932f198-3415-4834-b3f8-fa4f066f681d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2389,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "88a6e838-c4a6-44b3-80ae-0f9d76afaeca",
+          "src": "photos/88a6e838-c4a6-44b3-80ae-0f9d76afaeca-1600.jpg",
+          "srcSmall": "photos/88a6e838-c4a6-44b3-80ae-0f9d76afaeca-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
@@ -844,7 +976,7 @@
           "id": "e0716251-2001-4624-bcd0-c85d4a958a49",
           "src": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-1600.jpg",
           "srcSmall": "photos/e0716251-2001-4624-bcd0-c85d4a958a49-800.jpg",
-          "alt": "",
+          "alt": "Laughing woman with red lipstick and a hand near her mouth.",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -866,6 +998,126 @@
           "id": "5ad45bd0-3517-430d-8383-001080e9af18",
           "src": "photos/5ad45bd0-3517-430d-8383-001080e9af18-1600.jpg",
           "srcSmall": "photos/5ad45bd0-3517-430d-8383-001080e9af18-800.jpg",
+          "alt": "Man in a white shirt with his hands behind his head.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "72442723-25d9-48ee-916c-231f1784aa88",
+          "src": "photos/72442723-25d9-48ee-916c-231f1784aa88-1600.jpg",
+          "srcSmall": "photos/72442723-25d9-48ee-916c-231f1784aa88-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8159b2f3-ff7c-44bb-bc1a-6c041868a2a8",
+          "src": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-1600.jpg",
+          "srcSmall": "photos/8159b2f3-ff7c-44bb-bc1a-6c041868a2a8-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "903080e4-8d88-4462-94ff-22b2deec20c6",
+          "src": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-1600.jpg",
+          "srcSmall": "photos/903080e4-8d88-4462-94ff-22b2deec20c6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "64c36eac-aaa1-4040-8e15-838e664b11ac",
+          "src": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-1600.jpg",
+          "srcSmall": "photos/64c36eac-aaa1-4040-8e15-838e664b11ac-800.jpg",
+          "alt": "",
+          "width": 1294,
+          "height": 1680,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "b55b45bb-326c-4bf4-9a3a-c141ceb88ac5",
+          "src": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-1600.jpg",
+          "srcSmall": "photos/b55b45bb-326c-4bf4-9a3a-c141ceb88ac5-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a30c2506-413a-4e13-a6e6-ce3861d7360f",
+          "src": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-1600.jpg",
+          "srcSmall": "photos/a30c2506-413a-4e13-a6e6-ce3861d7360f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c3fd9d38-7f92-4cf4-bacf-78631a548ed6",
+          "src": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-1600.jpg",
+          "srcSmall": "photos/c3fd9d38-7f92-4cf4-bacf-78631a548ed6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16",
+          "src": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-1600.jpg",
+          "srcSmall": "photos/8acb6b63-cd12-4ac0-a2ff-bfe51acdeb16-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "78a0cbda-84c9-4b4b-9b47-6b2bede8bffa",
+          "src": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-1600.jpg",
+          "srcSmall": "photos/78a0cbda-84c9-4b4b-9b47-6b2bede8bffa-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a6bff1d1-8241-45b4-8b57-84e65146c493",
+          "src": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-1600.jpg",
+          "srcSmall": "photos/a6bff1d1-8241-45b4-8b57-84e65146c493-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -888,9 +1140,93 @@
           "id": "7b3a68a0-78af-478e-93f8-83321ff3f280",
           "src": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-1600.jpg",
           "srcSmall": "photos/7b3a68a0-78af-478e-93f8-83321ff3f280-800.jpg",
-          "alt": "",
+          "alt": "Smiling woman in a white tank top and blue jeans.",
           "width": 1600,
           "height": 2371,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "40f130c3-0549-4321-86df-a4e86bd4f54c",
+          "src": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-1600.jpg",
+          "srcSmall": "photos/40f130c3-0549-4321-86df-a4e86bd4f54c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "270ba262-3072-40bd-8ebf-440dac669b90",
+          "src": "photos/270ba262-3072-40bd-8ebf-440dac669b90-1600.jpg",
+          "srcSmall": "photos/270ba262-3072-40bd-8ebf-440dac669b90-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ad5c5ee0-fb56-4110-a4dc-65c7889ebac0",
+          "src": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-1600.jpg",
+          "srcSmall": "photos/ad5c5ee0-fb56-4110-a4dc-65c7889ebac0-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2133,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "4589d852-6440-416a-917b-91ba45bbd6e4",
+          "src": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-1600.jpg",
+          "srcSmall": "photos/4589d852-6440-416a-917b-91ba45bbd6e4-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2196,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "693f6926-5055-4fd1-b5de-9a791ac04511",
+          "src": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-1600.jpg",
+          "srcSmall": "photos/693f6926-5055-4fd1-b5de-9a791ac04511-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bea7ef52-648e-4c80-968a-385078aa2a1a",
+          "src": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-1600.jpg",
+          "srcSmall": "photos/bea7ef52-648e-4c80-968a-385078aa2a1a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "88df8f6f-0ef1-438f-8d85-6a41b0cb543d",
+          "src": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-1600.jpg",
+          "srcSmall": "photos/88df8f6f-0ef1-438f-8d85-6a41b0cb543d-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1874,
           "focus": [
             0.5,
             0.5
