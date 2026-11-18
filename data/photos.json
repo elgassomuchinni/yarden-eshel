@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-11-04T13:46:34.126Z",
+  "publishedAt": "2026-11-18T14:55:51.508Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -11,18 +11,6 @@
           "alt": "Woman in a gold textured dress with raised arms against a green background.",
           "width": 1600,
           "height": 2543,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "33ab0ec2-b98d-486a-b695-acb96529f94a",
-          "src": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-1600.jpg",
-          "srcSmall": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
           "focus": [
             0.5,
             0.5
@@ -41,21 +29,21 @@
           ]
         },
         {
-          "id": "7c148f90-3244-44a0-84f6-ed04c2faf859",
-          "src": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-1600.jpg",
-          "srcSmall": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-800.jpg",
+          "id": "33ab0ec2-b98d-486a-b695-acb96529f94a",
+          "src": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-1600.jpg",
+          "srcSmall": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2588,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "86291882-820a-4241-a0ff-61903ad6123a",
-          "src": "photos/86291882-820a-4241-a0ff-61903ad6123a-1600.jpg",
-          "srcSmall": "photos/86291882-820a-4241-a0ff-61903ad6123a-800.jpg",
+          "id": "3b61d564-50de-41fc-ba2c-61931dafec89",
+          "src": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-1600.jpg",
+          "srcSmall": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -77,12 +65,24 @@
           ]
         },
         {
-          "id": "29da8a6b-eb29-4217-8084-177134dbb225",
-          "src": "photos/29da8a6b-eb29-4217-8084-177134dbb225-1600.jpg",
-          "srcSmall": "photos/29da8a6b-eb29-4217-8084-177134dbb225-800.jpg",
+          "id": "86291882-820a-4241-a0ff-61903ad6123a",
+          "src": "photos/86291882-820a-4241-a0ff-61903ad6123a-1600.jpg",
+          "srcSmall": "photos/86291882-820a-4241-a0ff-61903ad6123a-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "7c148f90-3244-44a0-84f6-ed04c2faf859",
+          "src": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-1600.jpg",
+          "srcSmall": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2588,
           "focus": [
             0.5,
             0.5
@@ -163,18 +163,6 @@
           ]
         },
         {
-          "id": "29da8a6b-eb29-4217-8084-177134dbb225",
-          "src": "photos/29da8a6b-eb29-4217-8084-177134dbb225-1600.jpg",
-          "srcSmall": "photos/29da8a6b-eb29-4217-8084-177134dbb225-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
           "id": "33ab0ec2-b98d-486a-b695-acb96529f94a",
           "src": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-1600.jpg",
           "srcSmall": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-800.jpg",
@@ -193,6 +181,18 @@
           "alt": "",
           "width": 1600,
           "height": 1066,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "3b61d564-50de-41fc-ba2c-61931dafec89",
+          "src": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-1600.jpg",
+          "srcSmall": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
           "focus": [
             0.5,
             0.5
@@ -968,148 +968,6 @@
         }
       ]
     },
-    "33ab0ec2-b98d-486a-b695-acb96529f94a": {
-      "section": "fashion-editorial",
-      "title": "",
-      "text": "",
-      "layout": "slideshow",
-      "textPos": "below",
-      "columns": 3,
-      "photos": [
-        {
-          "id": "33ab0ec2-b98d-486a-b695-acb96529f94a",
-          "src": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-1600.jpg",
-          "srcSmall": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "83ed1125-edcc-44b4-a1dc-0eb59b51d405",
-          "src": "photos/83ed1125-edcc-44b4-a1dc-0eb59b51d405-1600.jpg",
-          "srcSmall": "photos/83ed1125-edcc-44b4-a1dc-0eb59b51d405-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 1911,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "b8c91851-ab40-4e88-901c-93bc7cba9597",
-          "src": "photos/b8c91851-ab40-4e88-901c-93bc7cba9597-1600.jpg",
-          "srcSmall": "photos/b8c91851-ab40-4e88-901c-93bc7cba9597-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2401,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "bb909875-79df-4fdb-877f-27125eb6cd9c",
-          "src": "photos/bb909875-79df-4fdb-877f-27125eb6cd9c-1600.jpg",
-          "srcSmall": "photos/bb909875-79df-4fdb-877f-27125eb6cd9c-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "1a7fdad0-3050-45c1-915a-4a6588e4b475",
-          "src": "photos/1a7fdad0-3050-45c1-915a-4a6588e4b475-1600.jpg",
-          "srcSmall": "photos/1a7fdad0-3050-45c1-915a-4a6588e4b475-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2103,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "32d92c3a-3d71-41df-ba2b-0ccc41e8edc9",
-          "src": "photos/32d92c3a-3d71-41df-ba2b-0ccc41e8edc9-1600.jpg",
-          "srcSmall": "photos/32d92c3a-3d71-41df-ba2b-0ccc41e8edc9-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "3899f079-c53e-4db7-8f36-6d7f890753ea",
-          "src": "photos/3899f079-c53e-4db7-8f36-6d7f890753ea-1600.jpg",
-          "srcSmall": "photos/3899f079-c53e-4db7-8f36-6d7f890753ea-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2026,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "73574545-8e77-4ea6-a9de-f47862799083",
-          "src": "photos/73574545-8e77-4ea6-a9de-f47862799083-1600.jpg",
-          "srcSmall": "photos/73574545-8e77-4ea6-a9de-f47862799083-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "38f29a00-c864-4910-bbcd-22230188b285",
-          "src": "photos/38f29a00-c864-4910-bbcd-22230188b285-1600.jpg",
-          "srcSmall": "photos/38f29a00-c864-4910-bbcd-22230188b285-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 1897,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "694c60c0-6b4a-4693-a4e6-635236e5399c",
-          "src": "photos/694c60c0-6b4a-4693-a4e6-635236e5399c-1600.jpg",
-          "srcSmall": "photos/694c60c0-6b4a-4693-a4e6-635236e5399c-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 1872,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "4ed44f0e-b6d7-4add-aa3f-56be0952b80c",
-          "src": "photos/4ed44f0e-b6d7-4add-aa3f-56be0952b80c-1600.jpg",
-          "srcSmall": "photos/4ed44f0e-b6d7-4add-aa3f-56be0952b80c-800.jpg",
-          "alt": "",
-          "width": 1581,
-          "height": 1724,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        }
-      ]
-    },
     "c6a3ed7a-ab1e-49ec-8869-5fc211a43d5c": {
       "section": "fashion-editorial",
       "title": "",
@@ -1264,7 +1122,7 @@
         }
       ]
     },
-    "7c148f90-3244-44a0-84f6-ed04c2faf859": {
+    "33ab0ec2-b98d-486a-b695-acb96529f94a": {
       "section": "fashion-editorial",
       "title": "",
       "text": "",
@@ -1273,21 +1131,9 @@
       "columns": 3,
       "photos": [
         {
-          "id": "7c148f90-3244-44a0-84f6-ed04c2faf859",
-          "src": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-1600.jpg",
-          "srcSmall": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2588,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "d11d6f41-1d85-4369-b2a7-5958f4b7010c",
-          "src": "photos/d11d6f41-1d85-4369-b2a7-5958f4b7010c-1600.jpg",
-          "srcSmall": "photos/d11d6f41-1d85-4369-b2a7-5958f4b7010c-800.jpg",
+          "id": "33ab0ec2-b98d-486a-b695-acb96529f94a",
+          "src": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-1600.jpg",
+          "srcSmall": "photos/33ab0ec2-b98d-486a-b695-acb96529f94a-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1297,9 +1143,33 @@
           ]
         },
         {
-          "id": "ea6f80c8-9459-4a0a-a014-455864b063fd",
-          "src": "photos/ea6f80c8-9459-4a0a-a014-455864b063fd-1600.jpg",
-          "srcSmall": "photos/ea6f80c8-9459-4a0a-a014-455864b063fd-800.jpg",
+          "id": "83ed1125-edcc-44b4-a1dc-0eb59b51d405",
+          "src": "photos/83ed1125-edcc-44b4-a1dc-0eb59b51d405-1600.jpg",
+          "srcSmall": "photos/83ed1125-edcc-44b4-a1dc-0eb59b51d405-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1911,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "b8c91851-ab40-4e88-901c-93bc7cba9597",
+          "src": "photos/b8c91851-ab40-4e88-901c-93bc7cba9597-1600.jpg",
+          "srcSmall": "photos/b8c91851-ab40-4e88-901c-93bc7cba9597-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2401,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bb909875-79df-4fdb-877f-27125eb6cd9c",
+          "src": "photos/bb909875-79df-4fdb-877f-27125eb6cd9c-1600.jpg",
+          "srcSmall": "photos/bb909875-79df-4fdb-877f-27125eb6cd9c-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1309,9 +1179,21 @@
           ]
         },
         {
-          "id": "743b3c92-a69d-4afd-af66-263d5d8a6b4c",
-          "src": "photos/743b3c92-a69d-4afd-af66-263d5d8a6b4c-1600.jpg",
-          "srcSmall": "photos/743b3c92-a69d-4afd-af66-263d5d8a6b4c-800.jpg",
+          "id": "1a7fdad0-3050-45c1-915a-4a6588e4b475",
+          "src": "photos/1a7fdad0-3050-45c1-915a-4a6588e4b475-1600.jpg",
+          "srcSmall": "photos/1a7fdad0-3050-45c1-915a-4a6588e4b475-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2103,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "32d92c3a-3d71-41df-ba2b-0ccc41e8edc9",
+          "src": "photos/32d92c3a-3d71-41df-ba2b-0ccc41e8edc9-1600.jpg",
+          "srcSmall": "photos/32d92c3a-3d71-41df-ba2b-0ccc41e8edc9-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1321,9 +1203,21 @@
           ]
         },
         {
-          "id": "a572956b-56ed-4f43-89d0-d6248892960a",
-          "src": "photos/a572956b-56ed-4f43-89d0-d6248892960a-1600.jpg",
-          "srcSmall": "photos/a572956b-56ed-4f43-89d0-d6248892960a-800.jpg",
+          "id": "3899f079-c53e-4db7-8f36-6d7f890753ea",
+          "src": "photos/3899f079-c53e-4db7-8f36-6d7f890753ea-1600.jpg",
+          "srcSmall": "photos/3899f079-c53e-4db7-8f36-6d7f890753ea-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2026,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "73574545-8e77-4ea6-a9de-f47862799083",
+          "src": "photos/73574545-8e77-4ea6-a9de-f47862799083-1600.jpg",
+          "srcSmall": "photos/73574545-8e77-4ea6-a9de-f47862799083-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1333,84 +1227,36 @@
           ]
         },
         {
-          "id": "ab5b1a73-d42b-4a36-9b79-0fec9a49cc62",
-          "src": "photos/ab5b1a73-d42b-4a36-9b79-0fec9a49cc62-1600.jpg",
-          "srcSmall": "photos/ab5b1a73-d42b-4a36-9b79-0fec9a49cc62-800.jpg",
+          "id": "38f29a00-c864-4910-bbcd-22230188b285",
+          "src": "photos/38f29a00-c864-4910-bbcd-22230188b285-1600.jpg",
+          "srcSmall": "photos/38f29a00-c864-4910-bbcd-22230188b285-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 1897,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "6381430a-4462-4f99-8af5-1c1d5062eac8",
-          "src": "photos/6381430a-4462-4f99-8af5-1c1d5062eac8-1600.jpg",
-          "srcSmall": "photos/6381430a-4462-4f99-8af5-1c1d5062eac8-800.jpg",
+          "id": "694c60c0-6b4a-4693-a4e6-635236e5399c",
+          "src": "photos/694c60c0-6b4a-4693-a4e6-635236e5399c-1600.jpg",
+          "srcSmall": "photos/694c60c0-6b4a-4693-a4e6-635236e5399c-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 1872,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "27fcf5c9-9ca3-4740-a4db-3a27e3990859",
-          "src": "photos/27fcf5c9-9ca3-4740-a4db-3a27e3990859-1600.jpg",
-          "srcSmall": "photos/27fcf5c9-9ca3-4740-a4db-3a27e3990859-800.jpg",
+          "id": "4ed44f0e-b6d7-4add-aa3f-56be0952b80c",
+          "src": "photos/4ed44f0e-b6d7-4add-aa3f-56be0952b80c-1600.jpg",
+          "srcSmall": "photos/4ed44f0e-b6d7-4add-aa3f-56be0952b80c-800.jpg",
           "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20",
-          "src": "photos/c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20-1600.jpg",
-          "srcSmall": "photos/c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "ddaff6e9-52bf-406a-a327-62ae497ea9ed",
-          "src": "photos/ddaff6e9-52bf-406a-a327-62ae497ea9ed-1600.jpg",
-          "srcSmall": "photos/ddaff6e9-52bf-406a-a327-62ae497ea9ed-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "3ce8c464-36ec-4a74-80de-82c504d6f640",
-          "src": "photos/3ce8c464-36ec-4a74-80de-82c504d6f640-1600.jpg",
-          "srcSmall": "photos/3ce8c464-36ec-4a74-80de-82c504d6f640-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "c2c5e996-0653-42cc-a87b-0029628e9428",
-          "src": "photos/c2c5e996-0653-42cc-a87b-0029628e9428-1600.jpg",
-          "srcSmall": "photos/c2c5e996-0653-42cc-a87b-0029628e9428-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
+          "width": 1581,
+          "height": 1724,
           "focus": [
             0.5,
             0.5
@@ -1418,7 +1264,7 @@
         }
       ]
     },
-    "86291882-820a-4241-a0ff-61903ad6123a": {
+    "3b61d564-50de-41fc-ba2c-61931dafec89": {
       "section": "fashion-editorial",
       "title": "",
       "text": "",
@@ -1427,9 +1273,9 @@
       "columns": 3,
       "photos": [
         {
-          "id": "86291882-820a-4241-a0ff-61903ad6123a",
-          "src": "photos/86291882-820a-4241-a0ff-61903ad6123a-1600.jpg",
-          "srcSmall": "photos/86291882-820a-4241-a0ff-61903ad6123a-800.jpg",
+          "id": "3b61d564-50de-41fc-ba2c-61931dafec89",
+          "src": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-1600.jpg",
+          "srcSmall": "photos/3b61d564-50de-41fc-ba2c-61931dafec89-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1439,9 +1285,21 @@
           ]
         },
         {
-          "id": "7dbf5da7-388e-4643-9ab2-21a9e2c8058b",
-          "src": "photos/7dbf5da7-388e-4643-9ab2-21a9e2c8058b-1600.jpg",
-          "srcSmall": "photos/7dbf5da7-388e-4643-9ab2-21a9e2c8058b-800.jpg",
+          "id": "d9f9ea08-2a0c-45e1-b7ef-7eca5dae0ee4",
+          "src": "photos/d9f9ea08-2a0c-45e1-b7ef-7eca5dae0ee4-1600.jpg",
+          "srcSmall": "photos/d9f9ea08-2a0c-45e1-b7ef-7eca5dae0ee4-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1067,
+          "focus": [
+            0.475,
+            0.502
+          ]
+        },
+        {
+          "id": "47685032-f206-41e4-9092-5147503666c4",
+          "src": "photos/47685032-f206-41e4-9092-5147503666c4-1600.jpg",
+          "srcSmall": "photos/47685032-f206-41e4-9092-5147503666c4-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1451,9 +1309,9 @@
           ]
         },
         {
-          "id": "c5c92824-c4b8-47cd-911f-ad34084e1c05",
-          "src": "photos/c5c92824-c4b8-47cd-911f-ad34084e1c05-1600.jpg",
-          "srcSmall": "photos/c5c92824-c4b8-47cd-911f-ad34084e1c05-800.jpg",
+          "id": "8e0d2359-c291-47b3-afd5-9ddd1525f8e5",
+          "src": "photos/8e0d2359-c291-47b3-afd5-9ddd1525f8e5-1600.jpg",
+          "srcSmall": "photos/8e0d2359-c291-47b3-afd5-9ddd1525f8e5-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1463,57 +1321,45 @@
           ]
         },
         {
-          "id": "95e1d0d7-1c24-41ee-bad5-d1f181de0c47",
-          "src": "photos/95e1d0d7-1c24-41ee-bad5-d1f181de0c47-1600.jpg",
-          "srcSmall": "photos/95e1d0d7-1c24-41ee-bad5-d1f181de0c47-800.jpg",
+          "id": "9749d8f2-e188-41ee-a72f-97ba34b91a6a",
+          "src": "photos/9749d8f2-e188-41ee-a72f-97ba34b91a6a-1600.jpg",
+          "srcSmall": "photos/9749d8f2-e188-41ee-a72f-97ba34b91a6a-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2340,
+          "height": 1067,
           "focus": [
-            0.5,
-            0.5
+            0.518,
+            0.456
           ]
         },
         {
-          "id": "fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f",
-          "src": "photos/fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f-1600.jpg",
-          "srcSmall": "photos/fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f-800.jpg",
+          "id": "30cd8b8a-b010-406b-8193-4ce3943f0b68",
+          "src": "photos/30cd8b8a-b010-406b-8193-4ce3943f0b68-1600.jpg",
+          "srcSmall": "photos/30cd8b8a-b010-406b-8193-4ce3943f0b68-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2201,
+          "height": 1067,
           "focus": [
-            0.5,
-            0.5
+            0.168,
+            0.535
           ]
         },
         {
-          "id": "2b0e0407-6544-4a1e-9663-b6ce18a132a1",
-          "src": "photos/2b0e0407-6544-4a1e-9663-b6ce18a132a1-1600.jpg",
-          "srcSmall": "photos/2b0e0407-6544-4a1e-9663-b6ce18a132a1-800.jpg",
+          "id": "e49424ba-41b2-4e2e-802c-2f9fcc03a019",
+          "src": "photos/e49424ba-41b2-4e2e-802c-2f9fcc03a019-1600.jpg",
+          "srcSmall": "photos/e49424ba-41b2-4e2e-802c-2f9fcc03a019-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2400,
+          "height": 1081,
           "focus": [
-            0.5,
-            0.5
+            0.957,
+            0.465
           ]
         },
         {
-          "id": "47414048-a14a-411a-90dd-2a77a557d0e1",
-          "src": "photos/47414048-a14a-411a-90dd-2a77a557d0e1-1600.jpg",
-          "srcSmall": "photos/47414048-a14a-411a-90dd-2a77a557d0e1-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "81571aa4-1993-469f-bec7-087eeef1efbc",
-          "src": "photos/81571aa4-1993-469f-bec7-087eeef1efbc-1600.jpg",
-          "srcSmall": "photos/81571aa4-1993-469f-bec7-087eeef1efbc-800.jpg",
+          "id": "d8b9e0b9-4a87-473f-9340-9d8635a01cb3",
+          "src": "photos/d8b9e0b9-4a87-473f-9340-9d8635a01cb3-1600.jpg",
+          "srcSmall": "photos/d8b9e0b9-4a87-473f-9340-9d8635a01cb3-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1523,9 +1369,9 @@
           ]
         },
         {
-          "id": "63ea2aab-b386-4721-89d3-1f3897ceeee6",
-          "src": "photos/63ea2aab-b386-4721-89d3-1f3897ceeee6-1600.jpg",
-          "srcSmall": "photos/63ea2aab-b386-4721-89d3-1f3897ceeee6-800.jpg",
+          "id": "e4b7326c-9278-47d9-a990-c8aec9625ab0",
+          "src": "photos/e4b7326c-9278-47d9-a990-c8aec9625ab0-1600.jpg",
+          "srcSmall": "photos/e4b7326c-9278-47d9-a990-c8aec9625ab0-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1535,33 +1381,21 @@
           ]
         },
         {
-          "id": "bb53aeb9-bd20-4106-a129-1c6c3a35d0e3",
-          "src": "photos/bb53aeb9-bd20-4106-a129-1c6c3a35d0e3-1600.jpg",
-          "srcSmall": "photos/bb53aeb9-bd20-4106-a129-1c6c3a35d0e3-800.jpg",
+          "id": "02a71214-c3ca-486c-8491-5749d387784a",
+          "src": "photos/02a71214-c3ca-486c-8491-5749d387784a-1600.jpg",
+          "srcSmall": "photos/02a71214-c3ca-486c-8491-5749d387784a-800.jpg",
           "alt": "",
           "width": 1600,
-          "height": 2456,
+          "height": 1067,
           "focus": [
             0.5,
             0.5
           ]
         },
         {
-          "id": "2dd1481c-a3e3-4137-aa15-6d52884b3250",
-          "src": "photos/2dd1481c-a3e3-4137-aa15-6d52884b3250-1600.jpg",
-          "srcSmall": "photos/2dd1481c-a3e3-4137-aa15-6d52884b3250-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 1422,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "46052d18-f692-45ac-91c1-fe1b69128ad6",
-          "src": "photos/46052d18-f692-45ac-91c1-fe1b69128ad6-1600.jpg",
-          "srcSmall": "photos/46052d18-f692-45ac-91c1-fe1b69128ad6-800.jpg",
+          "id": "9bc27637-6cfb-409d-903e-5481002e4e59",
+          "src": "photos/9bc27637-6cfb-409d-903e-5481002e4e59-1600.jpg",
+          "srcSmall": "photos/9bc27637-6cfb-409d-903e-5481002e4e59-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1726,7 +1560,7 @@
         }
       ]
     },
-    "29da8a6b-eb29-4217-8084-177134dbb225": {
+    "86291882-820a-4241-a0ff-61903ad6123a": {
       "section": "fashion-editorial",
       "title": "",
       "text": "",
@@ -1735,9 +1569,9 @@
       "columns": 3,
       "photos": [
         {
-          "id": "29da8a6b-eb29-4217-8084-177134dbb225",
-          "src": "photos/29da8a6b-eb29-4217-8084-177134dbb225-1600.jpg",
-          "srcSmall": "photos/29da8a6b-eb29-4217-8084-177134dbb225-800.jpg",
+          "id": "86291882-820a-4241-a0ff-61903ad6123a",
+          "src": "photos/86291882-820a-4241-a0ff-61903ad6123a-1600.jpg",
+          "srcSmall": "photos/86291882-820a-4241-a0ff-61903ad6123a-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1747,9 +1581,9 @@
           ]
         },
         {
-          "id": "cf6cf42f-3ddf-488e-8646-5091f31957b5",
-          "src": "photos/cf6cf42f-3ddf-488e-8646-5091f31957b5-1600.jpg",
-          "srcSmall": "photos/cf6cf42f-3ddf-488e-8646-5091f31957b5-800.jpg",
+          "id": "7dbf5da7-388e-4643-9ab2-21a9e2c8058b",
+          "src": "photos/7dbf5da7-388e-4643-9ab2-21a9e2c8058b-1600.jpg",
+          "srcSmall": "photos/7dbf5da7-388e-4643-9ab2-21a9e2c8058b-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1759,9 +1593,9 @@
           ]
         },
         {
-          "id": "52b4e612-67b1-42d3-ae23-7d30c10218aa",
-          "src": "photos/52b4e612-67b1-42d3-ae23-7d30c10218aa-1600.jpg",
-          "srcSmall": "photos/52b4e612-67b1-42d3-ae23-7d30c10218aa-800.jpg",
+          "id": "c5c92824-c4b8-47cd-911f-ad34084e1c05",
+          "src": "photos/c5c92824-c4b8-47cd-911f-ad34084e1c05-1600.jpg",
+          "srcSmall": "photos/c5c92824-c4b8-47cd-911f-ad34084e1c05-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1771,9 +1605,33 @@
           ]
         },
         {
-          "id": "0c792782-1fdc-4d14-b229-3f791f29f417",
-          "src": "photos/0c792782-1fdc-4d14-b229-3f791f29f417-1600.jpg",
-          "srcSmall": "photos/0c792782-1fdc-4d14-b229-3f791f29f417-800.jpg",
+          "id": "95e1d0d7-1c24-41ee-bad5-d1f181de0c47",
+          "src": "photos/95e1d0d7-1c24-41ee-bad5-d1f181de0c47-1600.jpg",
+          "srcSmall": "photos/95e1d0d7-1c24-41ee-bad5-d1f181de0c47-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2340,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f",
+          "src": "photos/fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f-1600.jpg",
+          "srcSmall": "photos/fc80c58a-224b-45ed-96fc-9e8e5aa7fc2f-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2201,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2b0e0407-6544-4a1e-9663-b6ce18a132a1",
+          "src": "photos/2b0e0407-6544-4a1e-9663-b6ce18a132a1-1600.jpg",
+          "srcSmall": "photos/2b0e0407-6544-4a1e-9663-b6ce18a132a1-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1783,9 +1641,9 @@
           ]
         },
         {
-          "id": "8e1e47d6-6965-4307-91fd-218018b2f26b",
-          "src": "photos/8e1e47d6-6965-4307-91fd-218018b2f26b-1600.jpg",
-          "srcSmall": "photos/8e1e47d6-6965-4307-91fd-218018b2f26b-800.jpg",
+          "id": "47414048-a14a-411a-90dd-2a77a557d0e1",
+          "src": "photos/47414048-a14a-411a-90dd-2a77a557d0e1-1600.jpg",
+          "srcSmall": "photos/47414048-a14a-411a-90dd-2a77a557d0e1-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1795,9 +1653,9 @@
           ]
         },
         {
-          "id": "4a91fb19-0c95-46b9-9c2f-c5a2fb528302",
-          "src": "photos/4a91fb19-0c95-46b9-9c2f-c5a2fb528302-1600.jpg",
-          "srcSmall": "photos/4a91fb19-0c95-46b9-9c2f-c5a2fb528302-800.jpg",
+          "id": "81571aa4-1993-469f-bec7-087eeef1efbc",
+          "src": "photos/81571aa4-1993-469f-bec7-087eeef1efbc-1600.jpg",
+          "srcSmall": "photos/81571aa4-1993-469f-bec7-087eeef1efbc-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
@@ -1807,9 +1665,199 @@
           ]
         },
         {
-          "id": "fe31cb0c-1965-4edc-b530-55dea8e34892",
-          "src": "photos/fe31cb0c-1965-4edc-b530-55dea8e34892-1600.jpg",
-          "srcSmall": "photos/fe31cb0c-1965-4edc-b530-55dea8e34892-800.jpg",
+          "id": "63ea2aab-b386-4721-89d3-1f3897ceeee6",
+          "src": "photos/63ea2aab-b386-4721-89d3-1f3897ceeee6-1600.jpg",
+          "srcSmall": "photos/63ea2aab-b386-4721-89d3-1f3897ceeee6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "bb53aeb9-bd20-4106-a129-1c6c3a35d0e3",
+          "src": "photos/bb53aeb9-bd20-4106-a129-1c6c3a35d0e3-1600.jpg",
+          "srcSmall": "photos/bb53aeb9-bd20-4106-a129-1c6c3a35d0e3-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2456,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "2dd1481c-a3e3-4137-aa15-6d52884b3250",
+          "src": "photos/2dd1481c-a3e3-4137-aa15-6d52884b3250-1600.jpg",
+          "srcSmall": "photos/2dd1481c-a3e3-4137-aa15-6d52884b3250-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 1422,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "46052d18-f692-45ac-91c1-fe1b69128ad6",
+          "src": "photos/46052d18-f692-45ac-91c1-fe1b69128ad6-1600.jpg",
+          "srcSmall": "photos/46052d18-f692-45ac-91c1-fe1b69128ad6-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        }
+      ]
+    },
+    "7c148f90-3244-44a0-84f6-ed04c2faf859": {
+      "section": "fashion-editorial",
+      "title": "",
+      "text": "",
+      "layout": "slideshow",
+      "textPos": "below",
+      "columns": 3,
+      "photos": [
+        {
+          "id": "7c148f90-3244-44a0-84f6-ed04c2faf859",
+          "src": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-1600.jpg",
+          "srcSmall": "photos/7c148f90-3244-44a0-84f6-ed04c2faf859-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2588,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "d11d6f41-1d85-4369-b2a7-5958f4b7010c",
+          "src": "photos/d11d6f41-1d85-4369-b2a7-5958f4b7010c-1600.jpg",
+          "srcSmall": "photos/d11d6f41-1d85-4369-b2a7-5958f4b7010c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ea6f80c8-9459-4a0a-a014-455864b063fd",
+          "src": "photos/ea6f80c8-9459-4a0a-a014-455864b063fd-1600.jpg",
+          "srcSmall": "photos/ea6f80c8-9459-4a0a-a014-455864b063fd-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "743b3c92-a69d-4afd-af66-263d5d8a6b4c",
+          "src": "photos/743b3c92-a69d-4afd-af66-263d5d8a6b4c-1600.jpg",
+          "srcSmall": "photos/743b3c92-a69d-4afd-af66-263d5d8a6b4c-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "a572956b-56ed-4f43-89d0-d6248892960a",
+          "src": "photos/a572956b-56ed-4f43-89d0-d6248892960a-1600.jpg",
+          "srcSmall": "photos/a572956b-56ed-4f43-89d0-d6248892960a-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ab5b1a73-d42b-4a36-9b79-0fec9a49cc62",
+          "src": "photos/ab5b1a73-d42b-4a36-9b79-0fec9a49cc62-1600.jpg",
+          "srcSmall": "photos/ab5b1a73-d42b-4a36-9b79-0fec9a49cc62-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "6381430a-4462-4f99-8af5-1c1d5062eac8",
+          "src": "photos/6381430a-4462-4f99-8af5-1c1d5062eac8-1600.jpg",
+          "srcSmall": "photos/6381430a-4462-4f99-8af5-1c1d5062eac8-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "27fcf5c9-9ca3-4740-a4db-3a27e3990859",
+          "src": "photos/27fcf5c9-9ca3-4740-a4db-3a27e3990859-1600.jpg",
+          "srcSmall": "photos/27fcf5c9-9ca3-4740-a4db-3a27e3990859-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20",
+          "src": "photos/c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20-1600.jpg",
+          "srcSmall": "photos/c3ee5b2e-0ce8-4f2c-a09a-29a471e38d20-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "ddaff6e9-52bf-406a-a327-62ae497ea9ed",
+          "src": "photos/ddaff6e9-52bf-406a-a327-62ae497ea9ed-1600.jpg",
+          "srcSmall": "photos/ddaff6e9-52bf-406a-a327-62ae497ea9ed-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "3ce8c464-36ec-4a74-80de-82c504d6f640",
+          "src": "photos/3ce8c464-36ec-4a74-80de-82c504d6f640-1600.jpg",
+          "srcSmall": "photos/3ce8c464-36ec-4a74-80de-82c504d6f640-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "c2c5e996-0653-42cc-a87b-0029628e9428",
+          "src": "photos/c2c5e996-0653-42cc-a87b-0029628e9428-1600.jpg",
+          "srcSmall": "photos/c2c5e996-0653-42cc-a87b-0029628e9428-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
