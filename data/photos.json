@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-11-18T15:09:08.129Z",
+  "publishedAt": "2026-11-18T15:09:33.372Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -750,11 +750,11 @@
   "grid": {
     "fashion-editorial": {
       "desktop": {
-        "columns": 2,
+        "columns": 1,
         "rows": 6
       },
       "phone": {
-        "columns": 1,
+        "columns": 2,
         "rows": 6
       }
     },
