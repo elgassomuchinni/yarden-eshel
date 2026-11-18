@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "publishedAt": "2026-11-18T15:04:14.394Z",
+  "publishedAt": "2026-11-18T15:06:01.158Z",
   "sections": {
     "fashion-editorial": {
       "desktop": [
@@ -313,6 +313,18 @@
       ],
       "phone": [
         {
+          "id": "f005ffa5-c363-4054-b08b-777dab1f29b7",
+          "src": "photos/f005ffa5-c363-4054-b08b-777dab1f29b7-1600.jpg",
+          "srcSmall": "photos/f005ffa5-c363-4054-b08b-777dab1f29b7-800.jpg",
+          "alt": "",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
           "id": "30a7748c-17f9-40b0-b221-530d5f5494d4",
           "src": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-1600.jpg",
           "srcSmall": "photos/30a7748c-17f9-40b0-b221-530d5f5494d4-800.jpg",
@@ -341,6 +353,18 @@
           "src": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-1600.jpg",
           "srcSmall": "photos/8b8e0de8-fd23-4708-947c-8e67ff6202be-800.jpg",
           "alt": "Woman in a gray dress sitting on the floor, looking sideways.",
+          "width": 1600,
+          "height": 2400,
+          "focus": [
+            0.5,
+            0.5
+          ]
+        },
+        {
+          "id": "5d273eba-a792-43ed-b631-993a08bd5c60",
+          "src": "photos/5d273eba-a792-43ed-b631-993a08bd5c60-1600.jpg",
+          "srcSmall": "photos/5d273eba-a792-43ed-b631-993a08bd5c60-800.jpg",
+          "alt": "",
           "width": 1600,
           "height": 2400,
           "focus": [
@@ -385,33 +409,9 @@
           ]
         },
         {
-          "id": "5d273eba-a792-43ed-b631-993a08bd5c60",
-          "src": "photos/5d273eba-a792-43ed-b631-993a08bd5c60-1600.jpg",
-          "srcSmall": "photos/5d273eba-a792-43ed-b631-993a08bd5c60-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
           "id": "49f4ed2b-552b-4916-b0a2-1e25afeff2c4",
           "src": "photos/49f4ed2b-552b-4916-b0a2-1e25afeff2c4-1600.jpg",
           "srcSmall": "photos/49f4ed2b-552b-4916-b0a2-1e25afeff2c4-800.jpg",
-          "alt": "",
-          "width": 1600,
-          "height": 2400,
-          "focus": [
-            0.5,
-            0.5
-          ]
-        },
-        {
-          "id": "f005ffa5-c363-4054-b08b-777dab1f29b7",
-          "src": "photos/f005ffa5-c363-4054-b08b-777dab1f29b7-1600.jpg",
-          "srcSmall": "photos/f005ffa5-c363-4054-b08b-777dab1f29b7-800.jpg",
           "alt": "",
           "width": 1600,
           "height": 2400,
